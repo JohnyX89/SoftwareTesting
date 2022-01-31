@@ -1,0 +1,189 @@
+{
+  "uid" : "e67a6975df041f28",
+  "name" : "006-Back button",
+  "fullName" : "Angular_Prezman.006-Back button",
+  "historyId" : "9542b7c904abecc298fd6a5c32574888",
+  "time" : {
+    "start" : 1619981054476,
+    "stop" : 1619981055064,
+    "duration" : 588
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1619981054476,
+        "stop" : 1619981054519,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dff90952233dc646",
+        "name" : "Request",
+        "source" : "dff90952233dc646.json",
+        "type" : "application/json",
+        "size" : 155
+      }, {
+        "uid" : "9faaa5b2df8057cf",
+        "name" : "Response",
+        "source" : "9faaa5b2df8057cf.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1619981054521,
+        "stop" : 1619981054554,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "84aae87a9334e965",
+        "name" : "Request",
+        "source" : "84aae87a9334e965.json",
+        "type" : "application/json",
+        "size" : 202
+      }, {
+        "uid" : "212e4be39964582b",
+        "name" : "Response",
+        "source" : "212e4be39964582b.json",
+        "type" : "application/json",
+        "size" : 1281
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "POST /session/:sessionId/element/0efb1c02-8b62-4715-a56e-1ffde8030c22/click",
+      "time" : {
+        "start" : 1619981054560,
+        "stop" : 1619981054745,
+        "duration" : 185
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1619981054746,
+        "stop" : 1619981054831,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b30e50542d2b917a",
+        "name" : "Request",
+        "source" : "b30e50542d2b917a.json",
+        "type" : "application/json",
+        "size" : 202
+      }, {
+        "uid" : "6c17240699a9f821",
+        "name" : "Response",
+        "source" : "6c17240699a9f821.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "POST /session/:sessionId/execute/sync",
+      "time" : {
+        "start" : 1619981054844,
+        "stop" : 1619981055063,
+        "duration" : 219
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "435069af574da948",
+        "name" : "Request",
+        "source" : "435069af574da948.json",
+        "type" : "application/json",
+        "size" : 8337
+      }, {
+        "uid" : "9d49bbeeba3a4e3b",
+        "name" : "Response",
+        "source" : "9d49bbeeba3a4e3b.json",
+        "type" : "application/json",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testClass",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testMethod",
+    "value" : "006-Back button"
+  }, {
+    "name" : "package",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-90.0.4430.93"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e67a6975df041f28.json",
+  "parameterValues" : [ "chrome-90.0.4430.93" ]
+}

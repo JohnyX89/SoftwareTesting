@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1113b36c-8329-4895-8129-2bd68b7f38a0"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Prezman_go_back"
+	namespace="Bakalarka.Angular.Prezman">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="135;15"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e0dd00c9-6180-48a9-8969-57466547d496"
+		sx="167"
+		sy="275"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3a815a52-fa95-47e2-a1f7-7375153b957b"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="32,260,168,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						back-button__text
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;retour r&#233;alisations&#32;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						back-button__text
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="_ngcontent-has-c11"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main//a[@href&gt;'https://www.prezman.fr/re']/?/?/span[@innertext=' retour r&#233;alisations ']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="1e469bac-3895-4520-ada2-3a3fb16ceaa6">
+				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
+2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c26a77ec-33e4-4b20-bc35-b0c486eaf92c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="32edfc72-00d6-4986-9285-99b5fd56b138"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='www.prezman.fr']//body/app-root[1]/div[1]/main[1]/app-use-case[1]/div[1]/div[1]/div[2]/div[1]/div[1]/slider-usecases[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/a[1]/span[3]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="388887fe-d26a-421d-8dd2-ea1190f74f0a">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Prezman_go_back.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

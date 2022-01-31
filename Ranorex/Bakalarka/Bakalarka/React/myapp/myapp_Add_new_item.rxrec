@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="43f38394-d962-4520-bbf5-ebb4bc864ab7"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Myapp_Add_new_item"
+	namespace="Bakalarka.React.myapp">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1be949d5-b67f-4109-bddc-3f5e55f2a03c"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5b0c095c-e8f9-401f-a056-d9d9059e2bd3"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']/?/?/nav//a[@innertext=$navbarDropdown]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f28b447d-2ba3-49e0-82a2-cd97e9973e58"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="148a3062-a17c-480b-b966-0481542fbd0a"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']/?/?/nav/ul//a[@innertext='To-do']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="36a9fcab-9964-4743-840f-d1003e03f740">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e82e09f3-3265-4061-8017-5e076e32cc83"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']//input[@name='name']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="42ff433e-0190-4d1f-9e9c-b9a7790c57a1">
+			</arguments>
+		</invokeactionrecorditem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="TodoBegin"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="ac91c60c-cff7-4157-9c67-035155b918da">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Set name
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="045b0643-5fce-454d-a344-7c992751de86">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e82e09f3-3265-4061-8017-5e076e32cc83"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']//input[@name='name']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="887b6d70-9b90-4ff3-98dd-da9a162f1a0c">
+			</arguments>
+		</invokeactionrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a6f6cf76-44a7-4395-8a9d-5519cd0a015b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e82e09f3-3265-4061-8017-5e076e32cc83"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']//input[@name='name']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<setvaluerecorditem
+		attrname="Value"
+		enabled="False"
+		optional="False"
+		searchpropertyid="9ac960a8-716e-4e8b-89a5-8b175f9bed00">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e82e09f3-3265-4061-8017-5e076e32cc83"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']//input[@name='name']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+				Test
+			</AttributeValue>
+		</setvaluerecorditem>
+		<keysequenceitem
+		KeySequence="Test"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="ac9e4eb1-ac91-4e4e-b485-cd17a6c03c4f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e82e09f3-3265-4061-8017-5e076e32cc83"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']//input[@name='name']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Set description
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a6f6cf76-44a7-4395-8a9d-5519cd0a015b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17bee815-ac38-4850-813a-e0c78d051682"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']//textarea[@placeholder='Description']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<setvaluerecorditem
+		attrname="InnerText"
+		enabled="False"
+		optional="False"
+		searchpropertyid="be111dc5-dc1c-42fd-9c18-d6659725b066">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17bee815-ac38-4850-813a-e0c78d051682"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']//textarea[@placeholder='Description']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+				new item
+			</AttributeValue>
+		</setvaluerecorditem>
+		<keysequenceitem
+		KeySequence="item"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="ac9e4eb1-ac91-4e4e-b485-cd17a6c03c4f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17bee815-ac38-4850-813a-e0c78d051682"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, textareatag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="textareatag"
+				rect="700,421,500,58"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						css-16dh20g
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-16dh20g
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						textarea
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="cols"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						description
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Description
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="rows"
+					type="System.String">
+						2
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="spellcheck"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']//textarea[@placeholder='Description']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="a7e92975-d776-4c31-8237-37fc21efefaa">
+				/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADxAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigCCJZJYkkM7qXUNgBcDP4U7yn/5+JPyX/Ci1/49If8AcX+VS0AReU//AD8Sfkv+
+FHlP/wA/En5L/hUtFAEXlP8A8/En5L/hR5T/APPxJ+S/4VLRQBF5T/8APxJ+S/4UeU//AD8Sfkv+
+FS0UAReU/wDz8Sfkv+FHlP8A8/En5L/hUtFAEXlP/wA/En5L/hR5T/8APxJ+S/4VLRQBF5T/APPx
+J+S/4UeU/wDz8Sfkv+FS0UAReU//AD8Sfkv+FHlP/wA/En5L/hUtFAEXlP8A8/En5L/hR5T/APPx
+J+S/4VLRQBF5T/8APxJ+S/4UeU//AD8Sfkv+FS0UAReU/wDz8Sfkv+FHlP8A8/En5L/hUtFAEXlP
+/wA/En5L/hR5T/8APxJ+S/4VLRQBF5T/APPxJ+S/4UeU/wDz8Sfkv+FS0UAReU//AD8Sfkv+FHlP
+/wA/En5L/hUtFAEXlP8A8/En5L/hR5T/APPxJ+S/4VLRQBF5T/8APxJ+S/4UeU//AD8Sfkv+FS0U
+AReU/wDz8Sfkv+FHlP8A8/En5L/hUtFAEXlP/wA/En5L/hR5T/8APxJ+S/4VLRQBF5T/APPxJ+S/
+4UeU/wDz8Sfkv+FS0UAReU//AD8Sfkv+FHlP/wA/En5L/hUtFAEXlP8A8/En5L/hR5T/APPxJ+S/
+4VLRQBF5T/8APxJ+S/4UeU//AD8Sfkv+FS0UAReU/wDz8Sfkv+FHlP8A8/En5L/hUtFAEXlP/wA/
+En5L/hR5T/8APxJ+S/4VLRQBF5T/APPxJ+S/4UeU/wDz8Sfkv+FS0UAReU//AD8Sfkv+FHlP/wA/
+En5L/hUtFAEXlP8A8/En5L/hR5T/APPxJ+S/4VLRQBF5T/8APxJ+S/4UeU//AD8Sfkv+FS0UAReU
+/wDz8Sfkv+FHlP8A8/En5L/hUtFAEXlP/wA/En5L/hR5T/8APxJ+S/4VLRQBF5T/APPxJ+S/4UeU
+/wDz8Sfkv+FS0UAZ15eTWkojUiQFd2XHP6YoqDWP+Ptf9wfzNFAGna/8ekP+4v8AKqMutRwzCJ7K
+93EkL+6+9j055q9a/wDHpD/uL/KqOpf8hfTP95/5UAX7eXz4Vk8uSPd/DIuGH1FSVydvHLPeec9x
+aR3AnwS8rCXr0A6Yxx0qwIrdNZYT+VdG4kZQ6THfHkEYZc9O1G4bHQQTxXCF4X3KCVzjuOtSVi+G
+4raOKUx7RPvYON+TtB44raoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKAMfWP+Ptf9wfzNFGsf8AH2v+4P5migDTtf8Aj0h/3F/lT2ijd1d0VmT7
+pIyV+lMtf+PSH/cX+VS0ARG2tzN5xgiMv9/YN350LbW6TGZYI1kPVwg3fnUtFAEaW8McjSRwxq7f
+eZVAJ+pqSiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAx9Y/4+1/3B/M0Uax/x9r/uD+ZooA0kjmRAiSJtUYGUJOPzpds//PSP/v2f/iqlooAi
+2z/89I/+/Z/+Ko2z/wDPSP8A79n/AOKqWigCLbP/AM9I/wDv2f8A4qjbP/z0j/79n/4qpaKAIts/
+/PSP/v2f/iqNs/8Az0j/AO/Z/wDiqlooAi2z/wDPSP8A79n/AOKo2z/89I/+/Z/+KqWigCLbP/z0
+j/79n/4qjbP/AM9I/wDv2f8A4qpaKAIts/8Az0j/AO/Z/wDiqNs//PSP/v2f/iqlooAi2z/89I/+
+/Z/+Ko2z/wDPSP8A79n/AOKqWigCLbP/AM9I/wDv2f8A4qjbP/z0j/79n/4qpaKAIts//PSP/v2f
+/iqNs/8Az0j/AO/Z/wDiqlooAi2z/wDPSP8A79n/AOKo2z/89I/+/Z/+KqWigCLbP/z0j/79n/4q
+jbP/AM9I/wDv2f8A4qpaKAIts/8Az0j/AO/Z/wDiqNs//PSP/v2f/iqlooAi2z/89I/+/Z/+Ko2z
+/wDPSP8A79n/AOKqWigCLbP/AM9I/wDv2f8A4qjbP/z0j/79n/4qpaKAIts//PSP/v2f/iqNs/8A
+z0j/AO/Z/wDiqlooAi2z/wDPSP8A79n/AOKo2z/89I/+/Z/+KqWigCLbP/z0j/79n/4qjbP/AM9I
+/wDv2f8A4qpaKAIts/8Az0j/AO/Z/wDiqNs//PSP/v2f/iqlooAi2z/89I/+/Z/+Ko2z/wDPSP8A
+79n/AOKqWigCLbP/AM9I/wDv2f8A4qjbP/z0j/79n/4qpaKAIts//PSP/v2f/iqNs/8Az0j/AO/Z
+/wDiqlooAi2z/wDPSP8A79n/AOKo2z/89I/+/Z/+KqWigCLbP/z0j/79n/4qjbP/AM9I/wDv2f8A
+4qpaKAIts/8Az0j/AO/Z/wDiqNs//PSP/v2f/iqlooAi2z/89I/+/Z/+Ko2z/wDPSP8A79n/AOKq
+WigCLbP/AM9I/wDv2f8A4qjbP/z0j/79n/4qpaKAIts//PSP/v2f/iqNs/8Az0j/AO/Z/wDiqloo
+Ai2z/wDPSP8A79n/AOKo2z/89I/+/Z/+KqWigCLbP/z0j/79n/4qjbP/AM9I/wDv2f8A4qpaKAIt
+s/8Az0j/AO/Z/wDiqNs//PSP/v2f/iqlooAqTWK3Dh53JYDA2DAx+OaKt0UAFFZH9oQMSYbW9mQH
+AeOLKn6Gl+3J/wA+Go/9+ax5qn8v4/8AAKsu5rUVk/bk/wCfDUf+/NH25P8Anw1H/vzRzVP5fx/4
+AWXc1qKyftyf8+Go/wDfmj7cn/PhqP8A35o5qn8v4/8AACy7mtRWT9uT/nw1H/vzR9uT/nw1H/vz
+RzVP5fx/4AWXc1qKyftyf8+Go/8Afmj7cn/PhqP/AH5o5qn8v4/8ALLua1FZP25P+fDUf+/NH25P
++fDUf+/NHNU/l/H/AIAWXc1qKyftyf8APhqP/fmj7cn/AD4aj/35o5qn8v4/8ALLua1FZP25P+fD
+Uf8AvzR9uT/nw1H/AL80c1T+X8f+AFl3Naisn7cn/PhqP/fmj7cn/PhqP/fmjmqfy/j/AMALLua1
+FZP25P8Anw1H/vzR9uT/AJ8NR/780c1T+X8f+AFl3Naisn7cn/PhqP8A35o+3J/z4aj/AN+aOap/
+L+P/AAAsu5rUVk/bk/58NR/780fbk/58NR/780c1T+X8f+AFl3Naisn7cn/PhqP/AH5o+3J/z4aj
+/wB+aOap/L+P/ACy7mtRWT9uT/nw1H/vzR9uT/nw1H/vzRzVP5fx/wCAFl3Naisn7cn/AD4aj/35
+o+3J/wA+Go/9+aOap/L+P/ACy7mtRWT9uT/nw1H/AL80fbk/58NR/wC/NHNU/l/H/gBZdzWorJ+3
+J/z4aj/35o+3J/z4aj/35o5qn8v4/wDACy7mtRWT9uT/AJ8NR/780fbk/wCfDUf+/NHNU/l/H/gB
+ZdzWorJ+3J/z4aj/AN+aPtyf8+Go/wDfmjmqfy/j/wAALLua1FZP25P+fDUf+/NH25P+fDUf+/NH
+NU/l/H/gBZdzWorJ+3J/z4aj/wB+aPtyf8+Go/8Afmjmqfy/j/wAsu5rUVk/bk/58NR/780fbk/5
+8NR/780c1T+X8f8AgBZdzWorJ+3J/wA+Go/9+aPtyf8APhqP/fmjmqfy/j/wAsu5rUVk/bk/58NR
+/wC/NH25P+fDUf8AvzRzVP5fx/4AWXc1qKyftyf8+Go/9+aPtyf8+Go/9+aOap/L+P8AwAsu5rUV
+k/bk/wCfDUf+/NH25P8Anw1H/vzRzVP5fx/4AWXc1qKyftyf8+Go/wDfmj7cn/PhqP8A35o5qn8v
+4/8AACy7mtRWT9uT/nw1H/vzR9uT/nw1H/vzRzVP5fx/4AWXc1qKyftyf8+Go/8Afmj7cn/PhqP/
+AH5o5qn8v4/8ALLua1FZP25P+fDUf+/NH25P+fDUf+/NHNU/l/H/AIAWXc1qKyftyf8APhqP/fmj
+7cn/AD4aj/35o5qn8v4/8ALLua1FZSahYEESvJA4OCkq4YfhRRzVP5fx/wCAFl3JPD//ACBbf/gX
+/oRrRrO8P/8AIFg/4F/6Eazv7Qu4bS2+zLLIHuChMsoZm5+7kjjPr2rbrYk6Ko7ebzoy+3bh3TGc
+/dYj+lZt3rRtpBF9nUyqgaRWnVNpPYE/eP0q1pEqz2AmUELJJIwz1wXY0AXKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopsjrGhdjgDrWVNdzXD7Y9yg9FXqaD
+OpUUNzXorFNvcx/Psce461YtL9gwSY5U9GPanYzjXV7SVjSooopHQcZ4g/5DVx/wH/0EUUeIP+Q1
+cf8AAf8A0EUUAdF4f/5Atv8A8C/9CNVzpNythFGjxedFcecu7O089DVjw/8A8gW3/wCBf+hGtGgD
+GuNMunuftKx2MskiASrMhZQw7r3q9pSeXYhDt+WSQfKMD77dB2FW6bHGsSlUGAWLfiTk/qaAHUUU
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFHVXIiRP7xyfw/wD1
+1WRjBZh04eQkbvQCrmpxF4A4GShz+FUYWSWDyJGCEHKMen0NM4qt/aP8CJJpEfcrsD9aJpPNkL7Q
+ueoFWIrdon3SGHZjqxyPwpt4I2eMwKAGXoB70zJxko6mlaOZLWNj1xj8uKmqOCPyoETuBz9akqT0
+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
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKhuPvw/wC/
+/wCympqhuPvw/wC//wCymgB1FFFABRRRQAUUUUAFFFFABRRRQAUUVnavdzW8caWvMrEt0z8qjJ/w
+oA0aKqS6jDFaRTkO4lxsRBlmJ7AVUttV4vJrkSJHG6hI2TDDI6Y9aANais2yv5LrU5YyksUSxAhJ
+UCnOetF1evb30q7pJAkG8QrGD3xnOc0AaVFZltqyvp63E8MquSFCqn+sJ/u+tSf2tbiBpXSaPY4R
+0dMMuehIoAv0VmHW4B5gNvdb4+WTyuQPU+grQikWaJJUOVcBgfagB9FFFABRRRQAUUUUAFFFFABR
+RRQBHN9xf99P/QhViq833F/30/8AQhVigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAqG4+/D/v8A/spqaobj78P+/wD+ymgB1FFFABRR
+RQAUUUUAFFFFABRRRQAVlzWEt7qEks0k0EaKEiMTgFh3zWpRQBhJZX0MMASHzDaTN5YLgeYh/kaW
+SxvZo7mRolWV5UmRN4IOO2a3KKAM2zjum1KS6uYBCHiChQ4bGD3pZbSaTVpZQv7p7Yxhsj72fzrR
+ooAwWsbufTIYZbQBrZhhDKP3o78jpT109/sRWGxFu5mRinnb8gHrk1t0UAZstrM1zfuE+WaEKhyO
+Tg1asY3hsYI5Bh0QAj0OKsUUAFFFFABRRRQAUUUUAFFFFABRRRQBHN9xf99P/QhViq833F/30/8A
+QhVigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAqG4+/D/v8A/spqaobgH92wBIV8nAyehH9aAHUVH5y/3ZP+/bf4Uecv92T/AL9t/hQB
+JRUfnL/dk/79t/hR5y/3ZP8Av23+FAElFR+cv92T/v23+FHnL/dk/wC/bf4UASUVH5y/3ZP+/bf4
+Uecv92T/AL9t/hQBJRUfnL/dk/79t/hR5y/3ZP8Av23+FAElFR+cv92T/v23+FHnL/dk/wC/bf4U
+ASUVH5y/3ZP+/bf4Uecv92T/AL9t/hQBJRUfnL/dk/79t/hR5y/3ZP8Av23+FAElFR+cv92T/v23
++FHnL/dk/wC/bf4UASUVH5y/3ZP+/bf4Uecv92T/AL9t/hQBJRUfnL/dk/79t/hR5y/3ZP8Av23+
+FAElFR+cv92T/v23+FHnL/dk/wC/bf4UASUVH5y/3ZP+/bf4Uecv92T/AL9t/hQBJRUfnL/dk/79
+t/hR5y/3ZP8Av23+FAElFR+cv92T/v23+FHnL/dk/wC/bf4UAE33F/30/wDQhViqrN5m1VV871PK
+EDgg96tUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==
+			</helperscreenshot>
+		</keysequenceitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a6f6cf76-44a7-4395-8a9d-5519cd0a015b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d90e3f2c-f7b4-48d5-9acf-0114e5889539"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']//button[@innertext='Add item']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="TodoAddedItem"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="b5e5e227-43bd-4213-9622-63b4d0096463">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		myapp_Add_new_item.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

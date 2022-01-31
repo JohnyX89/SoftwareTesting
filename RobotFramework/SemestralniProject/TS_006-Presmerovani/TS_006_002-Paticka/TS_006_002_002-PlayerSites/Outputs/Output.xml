@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20200614 21:21:50.221" rpa="false">
+<suite id="s1" name="Test" source="C:\Users\Johny\Desktop\UTB\4. semestr\TSO\SemestralniProject\TS_006-Presmerovani\TS_006_002-Paticka\TS_006_002_002-PlayerSites\test.robot">
+<test id="s1-t1" name="Pre-conditions">
+<kw name="Prepare Main Page" library="mainKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${MainPage}</arg>
+<arg>${ProhlizecChrome}</arg>
+</arguments>
+<msg timestamp="20200614 21:21:50.651" level="INFO">Opening browser 'Chrome' to base url 'https://www.nhl.com'.</msg>
+<status status="PASS" starttime="20200614 21:21:50.651" endtime="20200614 21:21:56.526"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200614 21:21:56.527" endtime="20200614 21:21:59.824"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Dialog}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:21:59.825" endtime="20200614 21:22:02.168"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Dialog}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:02.169" level="INFO">Clicking element '//*[@id="languageModal"]/div[2]/div/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20200614 21:22:02.168" endtime="20200614 21:22:04.255"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Privacy}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:04.256" level="INFO">Clicking element '//*[@id="homepage_index"]/section/button/i'.</msg>
+<status status="PASS" starttime="20200614 21:22:04.255" endtime="20200614 21:22:05.052"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:21:50.650" endtime="20200614 21:22:05.052"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:21:50.649" endtime="20200614 21:22:05.053" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC_006_002_002_001 - David Backes">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Footer}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:22:05.069" endtime="20200614 21:22:05.752"></status>
+</kw>
+<kw name="Check And Click" library="mainKeywords">
+<arguments>
+<arg>${PlayerSites}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:22:05.807" endtime="20200614 21:22:06.875"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:06.877" level="INFO">Clicking element '//footer[@class='site-footer']//div[2]//div[1]'.</msg>
+<status status="PASS" starttime="20200614 21:22:06.876" endtime="20200614 21:22:07.124"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:05.806" endtime="20200614 21:22:07.126"></status>
+</kw>
+<kw name="Check And Click" library="mainKeywords">
+<arguments>
+<arg>${BackesLink}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:22:07.128" endtime="20200614 21:22:07.220"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:07.221" level="INFO">Clicking element '//a[contains(text(),'David Backes')]'.</msg>
+<status status="PASS" starttime="20200614 21:22:07.221" endtime="20200614 21:22:09.901"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:07.127" endtime="20200614 21:22:09.902"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${BackesSite}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:09.942" level="INFO">Current location is 'http://www.davidbackes.com/'.</msg>
+<status status="PASS" starttime="20200614 21:22:09.902" endtime="20200614 21:22:09.942"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.body.style.zoom="70%"</arg>
+</arguments>
+<msg timestamp="20200614 21:22:09.944" level="INFO">Executing JavaScript:
+document.body.style.zoom="70%"
+Without any arguments.</msg>
+<status status="PASS" starttime="20200614 21:22:09.943" endtime="20200614 21:22:10.066"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}DavidBackes.png</arg>
+</arguments>
+<msg timestamp="20200614 21:22:10.887" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/DavidBackes.png"&gt;&lt;img src="../Screenshots/DavidBackes.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 21:22:10.068" endtime="20200614 21:22:10.888"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:05.067" endtime="20200614 21:22:10.890" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC_006_002_002_002 - Alex Steen">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.body.style.zoom="100%"</arg>
+</arguments>
+<msg timestamp="20200614 21:22:10.895" level="INFO">Executing JavaScript:
+document.body.style.zoom="100%"
+Without any arguments.</msg>
+<status status="PASS" starttime="20200614 21:22:10.894" endtime="20200614 21:22:10.989"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${MainPage}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:10.994" level="INFO">Opening url 'https://www.nhl.com'</msg>
+<status status="PASS" starttime="20200614 21:22:10.992" endtime="20200614 21:22:13.479"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Footer}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:22:13.480" endtime="20200614 21:22:17.308"></status>
+</kw>
+<kw name="Check And Click" library="mainKeywords">
+<arguments>
+<arg>${PlayerSites}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:22:17.310" endtime="20200614 21:22:18.061"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:18.063" level="INFO">Clicking element '//footer[@class='site-footer']//div[2]//div[1]'.</msg>
+<status status="PASS" starttime="20200614 21:22:18.062" endtime="20200614 21:22:18.371"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:17.309" endtime="20200614 21:22:18.372"></status>
+</kw>
+<kw name="Check And Click" library="mainKeywords">
+<arguments>
+<arg>${SteenLink}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:22:18.384" endtime="20200614 21:22:18.538"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:18.539" level="INFO">Clicking element '//a[contains(text(),'Alex Steen')]'.</msg>
+<status status="PASS" starttime="20200614 21:22:18.538" endtime="20200614 21:22:22.246"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:18.382" endtime="20200614 21:22:22.246"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${SteenSite}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:22.288" level="INFO">Current location is 'http://steen20.com/'.</msg>
+<status status="PASS" starttime="20200614 21:22:22.251" endtime="20200614 21:22:22.289"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.body.style.zoom="70%"</arg>
+</arguments>
+<msg timestamp="20200614 21:22:22.291" level="INFO">Executing JavaScript:
+document.body.style.zoom="70%"
+Without any arguments.</msg>
+<status status="PASS" starttime="20200614 21:22:22.290" endtime="20200614 21:22:22.585"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}AlexSteen.png</arg>
+</arguments>
+<msg timestamp="20200614 21:22:23.478" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/AlexSteen.png"&gt;&lt;img src="../Screenshots/AlexSteen.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 21:22:22.588" endtime="20200614 21:22:23.478"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:10.892" endtime="20200614 21:22:23.479" critical="yes"></status>
+</test>
+<test id="s1-t4" name="TC_006_002_002_003 - Pavel Bure">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.body.style.zoom="100%"</arg>
+</arguments>
+<msg timestamp="20200614 21:22:23.485" level="INFO">Executing JavaScript:
+document.body.style.zoom="100%"
+Without any arguments.</msg>
+<status status="PASS" starttime="20200614 21:22:23.484" endtime="20200614 21:22:23.562"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${MainPage}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:23.563" level="INFO">Opening url 'https://www.nhl.com'</msg>
+<status status="PASS" starttime="20200614 21:22:23.562" endtime="20200614 21:22:26.345"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Footer}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:22:26.345" endtime="20200614 21:22:29.481"></status>
+</kw>
+<kw name="Check And Click" library="mainKeywords">
+<arguments>
+<arg>${PlayerSites}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:22:29.484" endtime="20200614 21:22:30.284"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:30.285" level="INFO">Clicking element '//footer[@class='site-footer']//div[2]//div[1]'.</msg>
+<status status="PASS" starttime="20200614 21:22:30.284" endtime="20200614 21:22:30.760"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:29.482" endtime="20200614 21:22:30.760"></status>
+</kw>
+<kw name="Check And Click" library="mainKeywords">
+<arguments>
+<arg>${BureLink}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 21:22:30.770" endtime="20200614 21:22:30.972"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:30.973" level="INFO">Clicking element '//a[contains(text(),'Pavel Bure (Ret.)')]'.</msg>
+<status status="PASS" starttime="20200614 21:22:30.972" endtime="20200614 21:22:34.088"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:30.769" endtime="20200614 21:22:34.089"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${BureSite}</arg>
+</arguments>
+<msg timestamp="20200614 21:22:34.108" level="INFO">Current location is 'https://pavelbure.net/'.</msg>
+<status status="PASS" starttime="20200614 21:22:34.089" endtime="20200614 21:22:34.109"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.body.style.zoom="70%"</arg>
+</arguments>
+<msg timestamp="20200614 21:22:34.112" level="INFO">Executing JavaScript:
+document.body.style.zoom="70%"
+Without any arguments.</msg>
+<status status="PASS" starttime="20200614 21:22:34.110" endtime="20200614 21:22:34.163"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}PavelBure.png</arg>
+</arguments>
+<msg timestamp="20200614 21:22:35.170" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/PavelBure.png"&gt;&lt;img src="../Screenshots/PavelBure.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 21:22:34.163" endtime="20200614 21:22:35.170"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:23.483" endtime="20200614 21:22:35.171" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Post-conditions">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200614 21:22:35.174" endtime="20200614 21:22:38.970"></status>
+</kw>
+<status status="PASS" starttime="20200614 21:22:35.173" endtime="20200614 21:22:38.971" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200614 21:21:50.228" endtime="20200614 21:22:38.974"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="00c4bd37-8750-4477-b329-943da28d1cc5"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Myapp_CloseBrowser"
+	namespace="Bakalarka.React.myapp">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="78261423-80d9-4c08-8724-6420f27e2e71">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f2a9f9b2-344d-47b8-9a9b-65ea462cdc8d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:3000']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		myapp_CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

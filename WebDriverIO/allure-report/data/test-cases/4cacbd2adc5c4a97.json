@@ -1,0 +1,56 @@
+{
+  "uid" : "4cacbd2adc5c4a97",
+  "name" : "011-Redirect to LinkedIn",
+  "fullName" : "Angular_Prezman.011-Redirect to LinkedIn",
+  "historyId" : "1368d3f1099dbccefed3c2b9c3e8003c",
+  "time" : {
+    "start" : 1619980339982,
+    "stop" : 1619980344594,
+    "duration" : 4612
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testClass",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testMethod",
+    "value" : "011-Redirect to LinkedIn"
+  }, {
+    "name" : "package",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-90.0.4430.93"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4cacbd2adc5c4a97.json",
+  "parameterValues" : [ "chrome-90.0.4430.93" ]
+}

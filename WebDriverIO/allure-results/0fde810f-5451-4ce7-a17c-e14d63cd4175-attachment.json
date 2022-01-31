@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//body/app-root[1]/div[1]/main[1]/app-offres[1]/div[1]/div[1]/prez-main-footer[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/ul[1]/li[1]"
+}

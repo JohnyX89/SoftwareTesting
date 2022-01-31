@@ -1,0 +1,11 @@
+[0321/204614.581:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0321/223258.885:ERROR:process_reader_win.cc(123)] NtOpenThread: {Pøístup byl odepøen} Proces požadoval pøístup k objektu, ale nebyla mu udìlena odpovídající pøístupová práva. (0xc0000022)
+[0321/223258.903:ERROR:exception_snapshot_win.cc(98)] thread ID 21844 not found in process
+[0321/223259.020:ERROR:process_reader_win.cc(123)] NtOpenThread: {Pøístup byl odepøen} Proces požadoval pøístup k objektu, ale nebyla mu udìlena odpovídající pøístupová práva. (0xc0000022)
+[0321/223259.020:ERROR:exception_snapshot_win.cc(98)] thread ID 21876 not found in process
+[0322/130806.464:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0323/014448.715:ERROR:process_reader_win.cc(123)] NtOpenThread: {Pøístup byl odepøen} Proces požadoval pøístup k objektu, ale nebyla mu udìlena odpovídající pøístupová práva. (0xc0000022)
+[0323/014448.722:ERROR:exception_snapshot_win.cc(98)] thread ID 27376 not found in process
+[0323/014448.827:ERROR:process_reader_win.cc(123)] NtOpenThread: {Pøístup byl odepøen} Proces požadoval pøístup k objektu, ale nebyla mu udìlena odpovídající pøístupová práva. (0xc0000022)
+[0323/014448.827:ERROR:exception_snapshot_win.cc(98)] thread ID 25620 not found in process
+[0323/115401.097:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0

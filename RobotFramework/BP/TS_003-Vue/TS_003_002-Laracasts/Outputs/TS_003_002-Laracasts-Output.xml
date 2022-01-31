@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on win32)" generated="20210511 19:15:23.569" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\Users\bure\Desktop\UTB\Bakalarka\Testovani\RobotFW\BP\TS_003-Vue\TS_003_002-Laracasts\test.robot">
+<test id="s1-t1" name="Pre-conditions">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210511 19:15:23.922" endtime="20210511 19:15:23.923"/>
+</kw>
+<kw name="Prepare Main Page" library="globalKeywords">
+<arg>${MainPage}</arg>
+<arg>Chrome</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${MainPage}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210511 19:15:23.924" level="INFO">Opening browser 'Chrome' to base url 'https://laracasts.com/'.</msg>
+<status status="PASS" starttime="20210511 19:15:23.924" endtime="20210511 19:15:26.484"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210511 19:15:26.484" endtime="20210511 19:15:27.371"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:23.923" endtime="20210511 19:15:27.371"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:23.922" endtime="20210511 19:15:27.380"/>
+</test>
+<test id="s1-t2" name="TC_002_002_001-Check navbar items">
+<for flavor="IN">
+<var>${Element}</var>
+<value>@{MainElements}</value>
+<iter>
+<var name="${Element}">//*[@id="root"]/div[1]/div[1]/div/nav/div/div[3]/div/a[1]</var>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210511 19:15:27.413" endtime="20210511 19:15:27.888"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:27.413" endtime="20210511 19:15:27.888"/>
+</iter>
+<iter>
+<var name="${Element}">//*[@id="root"]/div[1]/div[2]/section[2]</var>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210511 19:15:27.888" endtime="20210511 19:15:28.257"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:27.888" endtime="20210511 19:15:28.257"/>
+</iter>
+<iter>
+<var name="${Element}">//a[contains(text(),'Get Started')]</var>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210511 19:15:28.258" endtime="20210511 19:15:28.767"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:28.257" endtime="20210511 19:15:28.767"/>
+</iter>
+<status status="PASS" starttime="20210511 19:15:27.413" endtime="20210511 19:15:28.767"/>
+</for>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/MainPage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:30.650" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/MainPage.png"&gt;&lt;img src="Screenshots/MainPage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:28.769" endtime="20210511 19:15:30.650"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:27.412" endtime="20210511 19:15:30.652"/>
+</test>
+<test id="s1-t3" name="TC_002_002_002-Show sign in">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NavbarSignIn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:30.656" level="INFO">Clicking element '//body/div[@id='root']/div[1]/div[1]/div[1]/nav[1]/div[1]/div[3]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20210511 19:15:30.655" endtime="20210511 19:15:30.995"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SignInInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:15:30.996" endtime="20210511 19:15:32.525"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/SignIn.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:33.575" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/SignIn.png"&gt;&lt;img src="Screenshots/SignIn.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:32.541" endtime="20210511 19:15:33.575"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:30.654" endtime="20210511 19:15:33.576"/>
+</test>
+<test id="s1-t4" name="TC_002_002_003-Close sign in">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SignInBack}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:15:33.578" endtime="20210511 19:15:33.834"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SignInBack}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:33.835" level="INFO">Clicking element '//body/div[@id='root']/div[2]/div[1]/div[2]/section[1]/button[1]'.</msg>
+<status status="PASS" starttime="20210511 19:15:33.834" endtime="20210511 19:15:34.110"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:33.577" endtime="20210511 19:15:34.111"/>
+</test>
+<test id="s1-t5" name="TC_002_002_004-Check main stats">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${HeaderUnderStats}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20210511 19:15:34.114" endtime="20210511 19:15:34.726"/>
+</kw>
+<kw name="Screenshot During Hover" library="globalKeywords">
+<arg>${FWSerNumber}</arg>
+<arg>Frameworks</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:15:34.729" endtime="20210511 19:15:34.990"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210511 19:15:34.991" level="INFO">Simulating Mouse Over on element '//*[@id="home-skills"]/div/div[3]/div[1]/div[2]/div/div[1]/a/span[1]'.</msg>
+<status status="PASS" starttime="20210511 19:15:34.990" endtime="20210511 19:15:35.528"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/Hover${Name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:36.338" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/HoverFrameworks.png"&gt;&lt;img src="Screenshots/HoverFrameworks.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:35.528" endtime="20210511 19:15:36.338"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:34.728" endtime="20210511 19:15:36.338"/>
+</kw>
+<kw name="Screenshot During Hover" library="globalKeywords">
+<arg>${LangSerNumber}</arg>
+<arg>Languages</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:15:36.340" endtime="20210511 19:15:36.596"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210511 19:15:36.596" level="INFO">Simulating Mouse Over on element '//*[@id="home-skills"]/div/div[3]/div[2]/div[2]/div/div[1]/a/span[1]'.</msg>
+<status status="PASS" starttime="20210511 19:15:36.596" endtime="20210511 19:15:37.106"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/Hover${Name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:38.010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/HoverLanguages.png"&gt;&lt;img src="Screenshots/HoverLanguages.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:37.106" endtime="20210511 19:15:38.010"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:36.339" endtime="20210511 19:15:38.010"/>
+</kw>
+<kw name="Screenshot During Hover" library="globalKeywords">
+<arg>${TechSerNumber}</arg>
+<arg>Techniques</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:15:38.019" endtime="20210511 19:15:38.275"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210511 19:15:38.276" level="INFO">Simulating Mouse Over on element '//*[@id="home-skills"]/div/div[3]/div[3]/div[2]/div/div[1]/a/span[1]'.</msg>
+<status status="PASS" starttime="20210511 19:15:38.276" endtime="20210511 19:15:38.782"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/Hover${Name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:39.571" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/HoverTechniques.png"&gt;&lt;img src="Screenshots/HoverTechniques.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:38.782" endtime="20210511 19:15:39.571"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:38.018" endtime="20210511 19:15:39.571"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:34.113" endtime="20210511 19:15:39.572"/>
+</test>
+<test id="s1-t6" name="TC_002_002_005-Log main stats">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${HeaderUnderStats}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20210511 19:15:39.574" endtime="20210511 19:15:40.071"/>
+</kw>
+<kw name="Log Complex Info Of 2" library="globalKeywords">
+<arg>${FWSerNumber}</arg>
+<arg>${FWVidNumber}</arg>
+<arg>Frameworks</arg>
+<arg>series</arg>
+<arg>videos</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Text01}</var>
+<arg>${Item01}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:40.316" level="INFO">${Text01} = 53</msg>
+<status status="PASS" starttime="20210511 19:15:40.072" endtime="20210511 19:15:40.316"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Text02}</var>
+<arg>${Item02}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:40.562" level="INFO">${Text02} = 893</msg>
+<status status="PASS" starttime="20210511 19:15:40.316" endtime="20210511 19:15:40.562"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Header}:_${Des01}=${Text01},_${Des02}=${Text02}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210511 19:15:40.563" level="INFO">Frameworks:_series=53,_videos=893</msg>
+<status status="PASS" starttime="20210511 19:15:40.562" endtime="20210511 19:15:40.563"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Header}:_${Des01}=${Text01},_${Des02}=${Text02}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210511 19:15:40.563" endtime="20210511 19:15:40.564"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:40.071" endtime="20210511 19:15:40.565"/>
+</kw>
+<kw name="Log Complex Info Of 2" library="globalKeywords">
+<arg>${LangSerNumber}</arg>
+<arg>${LangVidNumber}</arg>
+<arg>Languages</arg>
+<arg>series</arg>
+<arg>videos</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Text01}</var>
+<arg>${Item01}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:40.824" level="INFO">${Text01} = 16</msg>
+<status status="PASS" starttime="20210511 19:15:40.566" endtime="20210511 19:15:40.824"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Text02}</var>
+<arg>${Item02}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:41.102" level="INFO">${Text02} = 138</msg>
+<status status="PASS" starttime="20210511 19:15:40.825" endtime="20210511 19:15:41.102"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Header}:_${Des01}=${Text01},_${Des02}=${Text02}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210511 19:15:41.103" level="INFO">Languages:_series=16,_videos=138</msg>
+<status status="PASS" starttime="20210511 19:15:41.102" endtime="20210511 19:15:41.103"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Header}:_${Des01}=${Text01},_${Des02}=${Text02}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210511 19:15:41.103" endtime="20210511 19:15:41.104"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:40.565" endtime="20210511 19:15:41.104"/>
+</kw>
+<kw name="Log Complex Info Of 2" library="globalKeywords">
+<arg>${TechSerNumber}</arg>
+<arg>${TechVidNumber}</arg>
+<arg>Techniques</arg>
+<arg>series</arg>
+<arg>videos</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Text01}</var>
+<arg>${Item01}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:41.351" level="INFO">${Text01} = 31</msg>
+<status status="PASS" starttime="20210511 19:15:41.105" endtime="20210511 19:15:41.351"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Text02}</var>
+<arg>${Item02}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:41.631" level="INFO">${Text02} = 321</msg>
+<status status="PASS" starttime="20210511 19:15:41.352" endtime="20210511 19:15:41.631"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Header}:_${Des01}=${Text01},_${Des02}=${Text02}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210511 19:15:41.633" level="INFO">Techniques:_series=31,_videos=321</msg>
+<status status="PASS" starttime="20210511 19:15:41.631" endtime="20210511 19:15:41.633"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Header}:_${Des01}=${Text01},_${Des02}=${Text02}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210511 19:15:41.633" endtime="20210511 19:15:41.634"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:41.105" endtime="20210511 19:15:41.635"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:39.573" endtime="20210511 19:15:41.635"/>
+</test>
+<test id="s1-t7" name="TC_002_002_006-Redirect to Laravel Course">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${LaravelCourse}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20210511 19:15:41.638" endtime="20210511 19:15:42.183"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LaravelCourseGoto}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:42.185" level="INFO">Clicking element '//body/div[@id='root']/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/a[1]'.</msg>
+<status status="PASS" starttime="20210511 19:15:42.184" endtime="20210511 19:15:43.391"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LaravelPageMenu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:15:43.392" endtime="20210511 19:15:44.006"/>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>laravel</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20210511 19:15:44.161" level="INFO">Current location contains 'laravel'.</msg>
+<status status="PASS" starttime="20210511 19:15:44.007" endtime="20210511 19:15:44.161"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/LaravelCourseMenu.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:44.940" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/LaravelCourseMenu.png"&gt;&lt;img src="Screenshots/LaravelCourseMenu.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:44.163" endtime="20210511 19:15:44.940"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:41.637" endtime="20210511 19:15:44.942"/>
+</test>
+<test id="s1-t8" name="TC_002_002_007-Play Laravel Course">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LaravelCoursePlay}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:44.952" level="INFO">Clicking element '//*[@id="root"]/div[1]/div[2]/section[2]/div/div[1]/div/div[2]/div[2]/a'.</msg>
+<status status="PASS" starttime="20210511 19:15:44.947" endtime="20210511 19:15:45.519"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LaravelCourseVideo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:15:45.519" endtime="20210511 19:15:46.150"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/LaravelCourseVideoStart.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:46.754" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/LaravelCourseVideoStart.png"&gt;&lt;img src="Screenshots/LaravelCourseVideoStart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:46.246" endtime="20210511 19:15:46.754"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210511 19:15:51.756" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210511 19:15:46.755" endtime="20210511 19:15:51.757"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${LaravelCourseVideo}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210511 19:15:51.761" level="INFO">Simulating Mouse Over on element '//body/div[@id='root']/div[1]/div[1]/nav[1]/div[1]/div[4]/div[1]/a[2]'.</msg>
+<status status="PASS" starttime="20210511 19:15:51.758" endtime="20210511 19:15:52.282"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/LaravelCourseVideoLater.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:52.700" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/LaravelCourseVideoLater.png"&gt;&lt;img src="Screenshots/LaravelCourseVideoLater.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:52.283" endtime="20210511 19:15:52.700"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:44.945" endtime="20210511 19:15:52.701"/>
+</test>
+<test id="s1-t9" name="TC_002_002_008-Redirect to main page by logo in navbar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:52.703" level="INFO">Clicking element '//*[@id="logo-white-animated"]'.</msg>
+<status status="PASS" starttime="20210511 19:15:52.703" endtime="20210511 19:15:53.735"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://laracasts.com/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20210511 19:15:54.197" level="INFO">Current location is 'https://laracasts.com/'.</msg>
+<status status="PASS" starttime="20210511 19:15:53.736" endtime="20210511 19:15:54.197"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:52.702" endtime="20210511 19:15:54.198"/>
+</test>
+<test id="s1-t10" name="TC_002_002_009-Show finder">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NavbarFinder}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:15:54.200" endtime="20210511 19:15:54.503"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NavbarFinder}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:54.504" level="INFO">Clicking element '//body/div[@id='root']/div[1]/div[1]/div[1]/nav[1]/div[1]/div[3]/div[1]/button[1]/*[1]'.</msg>
+<status status="PASS" starttime="20210511 19:15:54.504" endtime="20210511 19:15:54.810"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/Finder.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:56.020" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/Finder.png"&gt;&lt;img src="Screenshots/Finder.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:54.811" endtime="20210511 19:15:56.020"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:54.199" endtime="20210511 19:15:56.022"/>
+</test>
+<test id="s1-t11" name="TC_002_002_010-Search whisper results for Vue">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FinderInput}</arg>
+<arg>Vue</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 19:15:56.031" level="INFO">Typing text 'Vue' into text field '//*[@id="search-button"]'.</msg>
+<status status="PASS" starttime="20210511 19:15:56.030" endtime="20210511 19:15:56.482"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/FinderWhisper.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:57.176" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/FinderWhisper.png"&gt;&lt;img src="Screenshots/FinderWhisper.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:56.484" endtime="20210511 19:15:57.177"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:56.025" endtime="20210511 19:15:57.183"/>
+</test>
+<test id="s1-t12" name="TC_002_002_011-Search Vue">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${FinderInput}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210511 19:15:57.200" level="INFO">Sending key(s) ('ENTER',) to //*[@id="search-button"] element.</msg>
+<msg timestamp="20210511 19:15:57.727" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20210511 19:15:57.732" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20210511 19:15:57.193" endtime="20210511 19:15:58.319"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SearchPageViewMore}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:15:58.320" endtime="20210511 19:15:59.265"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/SearchedVue.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:15:59.636" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/SearchedVue.png"&gt;&lt;img src="Screenshots/SearchedVue.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:15:59.268" endtime="20210511 19:15:59.637"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:57.189" endtime="20210511 19:15:59.637"/>
+</test>
+<test id="s1-t13" name="TC_002_002_012-Search-Show more of the side menu">
+<kw name="Check And Scroll To" library="globalKeywords">
+<arg>${SearchPageViewMore}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210511 19:15:59.641" endtime="20210511 19:16:00.005"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20210511 19:16:00.005" endtime="20210511 19:16:00.516"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:59.640" endtime="20210511 19:16:00.516"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SearchPageViewMore}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:16:00.518" level="INFO">Clicking element '//*[@id="root"]/div[1]/section/div/div/div[1]/div[2]/div[1]/ul/li[5]/div[2]/a/span'.</msg>
+<status status="PASS" starttime="20210511 19:16:00.517" endtime="20210511 19:16:00.841"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210511 19:16:01.355" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20210511 19:16:00.843" endtime="20210511 19:16:01.355"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/SearchPageViewMore.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:16:01.736" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/SearchPageViewMore.png"&gt;&lt;img src="Screenshots/SearchPageViewMore.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:16:01.357" endtime="20210511 19:16:01.737"/>
+</kw>
+<status status="PASS" starttime="20210511 19:15:59.639" endtime="20210511 19:16:01.739"/>
+</test>
+<test id="s1-t14" name="TC_002_002_013-Redirect to course &quot;Build a client app using Vue&quot;">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${BuildAClientCourse}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20210511 19:16:01.748" endtime="20210511 19:16:02.314"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BuildAClientCourse}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:16:02.320" level="INFO">Clicking element '//*[@id="root"]/div[1]/section/div/div/div[1]/div[2]/div[2]/div/div/div[3]'.</msg>
+<status status="PASS" starttime="20210511 19:16:02.318" endtime="20210511 19:16:03.420"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://laracasts.com/series/playing-with-php/episodes/2</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20210511 19:16:03.745" level="INFO">Current location is 'https://laracasts.com/series/playing-with-php/episodes/2'.</msg>
+<status status="PASS" starttime="20210511 19:16:03.420" endtime="20210511 19:16:03.745"/>
+</kw>
+<status status="PASS" starttime="20210511 19:16:01.744" endtime="20210511 19:16:03.746"/>
+</test>
+<test id="s1-t15" name="TC_002_002_014-Redirect to main menu by logo">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:16:03.752" endtime="20210511 19:16:04.054"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:16:04.056" level="INFO">Clicking element '//*[@id="logo-white-animated"]'.</msg>
+<status status="PASS" starttime="20210511 19:16:04.055" endtime="20210511 19:16:04.657"/>
+</kw>
+<status status="PASS" starttime="20210511 19:16:03.749" endtime="20210511 19:16:04.660"/>
+</test>
+<test id="s1-t16" name="TC_002_002_015-Redirect to Twitter profile by footer logo">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${Twitter}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210511 19:16:04.665" endtime="20210511 19:16:05.461"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Twitter}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20210511 19:16:05.463" endtime="20210511 19:16:06.033"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Twitter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:16:06.039" level="INFO">Clicking element '//*[@id="root"]/div[1]/div[2]/section[2]/footer/div[1]/div[1]/div[2]/a[2]'.</msg>
+<status status="PASS" starttime="20210511 19:16:06.035" endtime="20210511 19:16:06.433"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20210511 19:16:06.557" level="INFO">${handles} = ['CDwindow-E8289EBEF96B1ED7B27FFD23A9C26359', 'CDwindow-1B4AE62C010BC1DC2562EC1887C23F02']</msg>
+<status status="PASS" starttime="20210511 19:16:06.434" endtime="20210511 19:16:06.558"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20210511 19:16:06.559" endtime="20210511 19:16:07.594"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/TwitterPage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:16:08.580" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/TwitterPage.png"&gt;&lt;img src="Screenshots/TwitterPage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:16:07.595" endtime="20210511 19:16:08.580"/>
+</kw>
+<status status="PASS" starttime="20210511 19:16:04.663" endtime="20210511 19:16:08.581"/>
+</test>
+<test id="s1-t17" name="Post-conditions">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210511 19:16:08.587" endtime="20210511 19:16:11.396"/>
+</kw>
+<status status="PASS" starttime="20210511 19:16:08.584" endtime="20210511 19:16:11.398"/>
+</test>
+<status status="PASS" starttime="20210511 19:15:23.573" endtime="20210511 19:16:11.406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="17" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="17" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

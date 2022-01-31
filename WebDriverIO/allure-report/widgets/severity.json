@@ -1,0 +1,121 @@
+[ {
+  "uid" : "b010694a055660d0",
+  "name" : "001-Layout",
+  "time" : {
+    "start" : 1619981509971,
+    "stop" : 1619981513933,
+    "duration" : 3962
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3b2d7e7d0ea172d",
+  "name" : "005-CarouselItemPage",
+  "time" : {
+    "start" : 1619981524834,
+    "stop" : 1619981534050,
+    "duration" : 9216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47a750630f4a8b0d",
+  "name" : "002-Navbar",
+  "time" : {
+    "start" : 1619981513934,
+    "stop" : 1619981518661,
+    "duration" : 4727
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4777535404e047fa",
+  "name" : "007-Log text",
+  "time" : {
+    "start" : 1619981534636,
+    "stop" : 1619981536917,
+    "duration" : 2281
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f097fc93478ec949",
+  "name" : "011-Redirect to LinkedIn",
+  "time" : {
+    "start" : 1619981544723,
+    "stop" : 1619981550511,
+    "duration" : 5788
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22f4c88fb967b74f",
+  "name" : "010-Redirect by logo",
+  "time" : {
+    "start" : 1619981540374,
+    "stop" : 1619981544723,
+    "duration" : 4349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2dac115bb72b4b16",
+  "name" : "009-Search",
+  "time" : {
+    "start" : 1619981537496,
+    "stop" : 1619981540374,
+    "duration" : 2878
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28685b8b637ba3a8",
+  "name" : "003-Main page",
+  "time" : {
+    "start" : 1619981518662,
+    "stop" : 1619981519586,
+    "duration" : 924
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d6904aa29b58d51a",
+  "name" : "008-Scroll top",
+  "time" : {
+    "start" : 1619981536917,
+    "stop" : 1619981537496,
+    "duration" : 579
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7b7e350ac7272261",
+  "name" : "004-Carousel",
+  "time" : {
+    "start" : 1619981519586,
+    "stop" : 1619981524834,
+    "duration" : 5248
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d0be06fb0970dac9",
+  "name" : "000-Prepare main page",
+  "time" : {
+    "start" : 1619981507728,
+    "stop" : 1619981509968,
+    "duration" : 2240
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b09ed87d9f96046",
+  "name" : "006-Back button",
+  "time" : {
+    "start" : 1619981534050,
+    "stop" : 1619981534636,
+    "duration" : 586
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

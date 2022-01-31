@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "element not interactable\n                  (Session info: chrome=90.0.4430.93)",
+      "children" : [ {
+        "name" : "008-Scroll top",
+        "uid" : "d6904aa29b58d51a",
+        "parentUid" : "78c120d8611c83dff78b5e5c73b84495",
+        "status" : "broken",
+        "time" : {
+          "start" : 1619981536917,
+          "stop" : 1619981537496,
+          "duration" : 579
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-90.0.4430.93" ]
+      } ],
+      "uid" : "78c120d8611c83dff78b5e5c73b84495"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

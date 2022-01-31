@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fc9b1ed3-62a4-43ae-874f-56ef86691095"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Prezman_click_logo"
+	namespace="Bakalarka.Angular.Prezman">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="79;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0c4a014b-3d8c-45bd-a95b-5bc95ab01571"
+		sx="116"
+		sy="174"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3c7e40ea-bb58-416d-8947-a6457190a69c"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="37,165,175,30"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						prez-main-menu__logo__img
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						prez-main-menu__logo__img
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="alt"
+					type="System.String">
+						Prezman - L'agence Powerpoint
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						24
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://www.prezman.fr/blog/wp-content/themes/squaretype-child/_dist/assets/images/logo-prezman-black.svg
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						140
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='www.prezman.fr']//header[#'masthead']/div[1]//img[@alt&gt;'Prezman - L''agence Powerp']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="164e8e9d-3bda-41e2-91a2-08cbb1232eb8">
+				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
+91Z3EzXMJjDKACSOea6CqX9rWP8Az3/8cb/Cj+1rH/nv/wCON/hRzLuHsan8r+4x9S0K5juzdaae
+p3bQ21lPt7VCW8RzDyj5wHTOFX9a3v7Wsf8Anv8A+ON/hR/a1j/z3/8AHG/wo5l3D2NT+V/cQ2cO
+oWekusjrPOq/u19PbPeubk03U4nNzJGyMG3GRnUYOeuc11X9rWP/AD3/APHG/wAKgvdQtLi1aOO4
+VXyGUsjYyCDzx7Ucy7h7Gp/K/uKPh9rx9QLXcpkXymCHzA4zlc9D9KuyaeWsYkMCl0tGQjA4fC4/
+Hg1Lp00N85u1j8uZQY3Xj2I579K0KZm01ozM022+zLJAqlSbeNmXP8Z3An9B+VZ/hzTruzv3kuIT
+GhiKgkjrkf4VqSXlvbanMJpNuYowOCe7+n1p39rWP/Pf/wAcb/Ck5ItU5yV0mRa/bTXWmmKBC77g
+cCo9JsGGitaXkZXeWyMjOD3qz/a1j/z3/wDHG/wo/tax/wCe/wD443+FHMu4/Y1P5X9xzraXqul3
+Bez3uOgePnI9xUhsdZ1RD9sZ1RFJVWAXJxwMD+db39rWP/Pf/wAcb/Cj+1rH/nv/AOON/hRzLuHs
+an8r+4ydI067t7DUY5oSryxbUGR8xw3+IqXw1YXVnJcG5iMYYLjJHPWtH+1rH/nv/wCON/hR/a1j
+/wA9/wDxxv8ACjmXcPY1P5X9w/VYnn02eKJdzsuAPWszw/Y3dpbXSyxmJ3xsyR1wa0P7Wsf+e/8A
+443+FH9rWP8Az3/8cb/ClzLuNUqn8r+4yb2K6S1zPuCmQcMc84NdHWJrF9bXNqqQybmDg42kcYPr
+W3Sja7sbYhycIuStv+gUUUVZyBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAET2
+0EjFngjZj1JQE0n2O1/59of++BU1FKyK5pdyH7Ha/wDPtD/3wKPsdr/z7Q/98CpqKLIOeXch+x2v
+/PtD/wB8Cj7Ha/8APtD/AN8CpqKLIOeXch+x2v8Az7Q/98Cj7Ha/8+0P/fAqaiiyDnl3Ifsdr/z7
+Q/8AfAo+x2v/AD7Q/wDfAqaiiyDnl3M+8s5Yv3+mCOKbo6Ywsijtj19+OtLJPqLRBYrTZIeNzldo
+9+GzV+imSUrSwxGz3qxTXDsWdtoIHYAZHTH9an+x2v8Az7Q/98CpqKVilKS2ZD9jtf8An2h/74FH
+2O1/59of++BU1FFkHPLuQ/Y7X/n2h/74FH2O1/59of8AvgVNRRZBzy7kP2O1/wCfaH/vgUfY7X/n
+2h/74FTUUWQc8u5D9jtf+faH/vgUfY7X/n2h/wC+BU1FFkHPLuQ/Y7X/AJ9of++BU1FFMTbe4UUU
+UCCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="dfa27b6e-fb0b-48f4-b141-81ee7d448801">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6b07dc09-24aa-4560-9cce-da000763902b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='www.prezman.fr']//body/app-root[1]/div[1]/app-main-nav[1]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[2]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="e47b04ae-3197-4ce7-9b79-898d9d4a672b">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Prezman_click_logo.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

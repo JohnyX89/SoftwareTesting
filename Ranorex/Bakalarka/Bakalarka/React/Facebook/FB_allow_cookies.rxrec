@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c8161900-df01-4fbe-bdd8-a543399a99a1"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="FB_allow_cookies"
+	namespace="Bakalarka.React.Facebook">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="09c15937-e82e-4a79-b505-468e15178cf1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2f1af50b-4f20-4c2c-ad23-8ecce79a77bf"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="0,128,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-cookiebanner"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-testid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='www.facebook.com']/body/div[3]/div[2]/div/div/div/div/div[3]/button[@title='Přijmout vše']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="a852ddd1-7a8b-43b8-91d3-08e75e840bb6">
+			</arguments>
+		</invokeactionrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="89;22"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b5f34908-072e-42c8-a8d9-1d50d705f535"
+		sx="1050"
+		sy="619"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2f1af50b-4f20-4c2c-ad23-8ecce79a77bf"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="961,597,217,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						_42ft _4jy0 _9o-t _4jy3 _4jy1 selected _51sy
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						u_0_j_1n
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Přijmout vše
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						_42ft _4jy0 _4jy1 _4jy3 _51sy _9o-t
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						Přijmout vše
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						1
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-cookiebanner"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-testid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='www.facebook.com']/body/div[3]/div[2]/div/div/div/div/div[3]/button[@title='Přijmout vše']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="1fc2d88f-ab3e-47c4-8309-ce3079ac4737">
+				/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABkAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArM8QErZRkHB80fyNadZfiH/jxj/66j+Rp
+PYT2MJpXcYZs0vmOX35+Yd8VGKWsbsxuSLNIpJDYJ68UiuyNuU4NNopXC44OwUqDwetOE8oXbvOK
+joouwuxySMmdpxnrT4HSNtzBiw6Y6VFRQnYLisSzEnqTTkmkRdqtgUyii4XH+dJv37vm6UNLIzBi
+xyOlMoouwux7yvJjc2cUPK8gAc5xTKKLhdhRRRSEdlRRRXSdAUUUUAFFFFABRRRQAUUUUAFFFFAB
+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
+oAKKKKACiiigD//Z
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		FB_allow_cookies.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

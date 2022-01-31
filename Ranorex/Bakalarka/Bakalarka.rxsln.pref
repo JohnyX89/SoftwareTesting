@@ -1,0 +1,24 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{29A939EB-B699-4BE0-93B8-4C06F10C8441}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>fdec81ae-c37c-44e3-8002-c0a4099d451d</string>
+      <string>674dd7ad-7e5e-4c25-8bdb-3bc419c88363</string>
+      <string>bd884cfa-52e2-44ad-8d17-aa941b2bac30</string>
+      <string>35af12ec-dbff-4c33-86e0-4af32448c1bd</string>
+      <string>ea783415-71a5-4ee6-8028-13256a9c3a19</string>
+      <string>d30d2b56-555d-4181-9e50-3d63b4158f52</string>
+      <string>c2c93734-a570-4003-8664-3cd1af908e56</string>
+      <string>74f1137b-181e-40f1-9149-6b9934376d52</string>
+      <string>17d40c73-0556-4978-8c7d-cbcca140ce54</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution Bakalarka[Bakalarka[]]]&#xD;&#xA;Solution Bakalarka\Bakalarka\Vue_Laracasts.rxtst&#xD;&#xA;Solution Bakalarka" />
+  <StartupProject value="{29A939EB-B699-4BE0-93B8-4C06F10C8441}" />
+</Properties>

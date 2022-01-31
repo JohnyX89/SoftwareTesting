@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@id=\"root\"]/div[1]/div[2]/section[2]/footer/div[1]/div[1]/div[2]/a[2]"
+}

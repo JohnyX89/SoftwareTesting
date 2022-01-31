@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="167272a6-beb4-47f4-a453-ce2235d6b524"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Laracasts_show_signIn"
+	namespace="Bakalarka.Vue.Laracasts">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e76cb7ef-0442-471a-aaae-9c5aa4551c13">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bd166c62-b914-4455-8e43-8e85469e67b4"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="atag"
+				rect="1656,187,56,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						tw-text-white hover:tw-text-white link tw-font-semibold tw-uppercase tw-mx-6 tw-text-xs
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#10;Sign In&#10;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						link tw-font-semibold tw-mx-6 tw-text-white tw-text-xs tw-uppercase
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://laracasts.com/login
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='laracasts.com']/body/div/div/div[1]/?/?/nav//a[@innertext='Sign In']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="f82cc6af-5ce1-42b7-b50f-d72659e0565d">
+			</arguments>
+		</invokeactionrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="42;11"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1f812200-13b5-40f2-8bf4-0d633c3b1063"
+		sx="1677"
+		sy="189"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bd166c62-b914-4455-8e43-8e85469e67b4"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="atag"
+				rect="1635,178,56,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						tw-text-white hover:tw-text-white link tw-font-semibold tw-uppercase tw-mx-6 tw-text-xs
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#10;Sign In&#10;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						link tw-font-semibold tw-mx-6 tw-text-white tw-text-xs tw-uppercase
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://laracasts.com/login
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='laracasts.com']//div[#'root']/div[1]/div[1]/?/?/nav//a[@innertext='Sign In']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="0e6edfc2-ae19-49c5-bc76-07f13a6c269b">
+				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
+oooqyQooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Laracasts_show_signIn.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

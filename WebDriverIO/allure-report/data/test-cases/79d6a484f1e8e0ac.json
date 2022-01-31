@@ -1,0 +1,56 @@
+{
+  "uid" : "79d6a484f1e8e0ac",
+  "name" : "001-Layout",
+  "fullName" : "Angular_Prezman.001-Layout",
+  "historyId" : "c51095679c37003b9a8119b662c8947",
+  "time" : {
+    "start" : 1619980250072,
+    "stop" : 1619980254350,
+    "duration" : 4278
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testClass",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testMethod",
+    "value" : "001-Layout"
+  }, {
+    "name" : "package",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-90.0.4430.93"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "79d6a484f1e8e0ac.json",
+  "parameterValues" : [ "chrome-90.0.4430.93" ]
+}

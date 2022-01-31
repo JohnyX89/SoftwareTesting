@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@id=\"section-stake-container\"]/div[1]/h4"
+}

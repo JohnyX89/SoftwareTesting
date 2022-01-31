@@ -1,0 +1,202 @@
+{
+  "uid" : "d6904aa29b58d51a",
+  "name" : "008-Scroll top",
+  "fullName" : "Angular_Prezman.008-Scroll top",
+  "historyId" : "6fc2586a59a4100c34f597042900f13",
+  "time" : {
+    "start" : 1619981536917,
+    "stop" : 1619981537496,
+    "duration" : 579
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element not interactable\n                  (Session info: chrome=90.0.4430.93)",
+  "statusTrace" : "element not interactable\n                  (Session info: chrome=90.0.4430.93)\n                    at Object.getErrorFromResponseBody (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriver\\build\\utils.js:189:12)\n                    at WebDriverRequest._request (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriver\\build\\request.js:168:31)\n                    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n                    at async Element.elementErrorHandlerCallbackFn (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriverio\\build\\middlewares.js:23:32)\n                    at async Element.runCommandWithHooks (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:105:25)\n                    at Element.runCommandWithHooks (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:100:24)\n                    at Element.wrapCommandFn (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:67:44)\n                    at Element.elementErrorHandlerCallback (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriverio\\build\\middlewares.js:44:12)\n                    at Context.<anonymous> (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\test\\specs\\Angular_Prezman.js:106:17)\n                    at Context.executeSync (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\index.js:38:22)\n                    at C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\index.js:69:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element not interactable\n                  (Session info: chrome=90.0.4430.93)",
+    "statusTrace" : "element not interactable\n                  (Session info: chrome=90.0.4430.93)\n                    at Object.getErrorFromResponseBody (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriver\\build\\utils.js:189:12)\n                    at WebDriverRequest._request (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriver\\build\\request.js:168:31)\n                    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n                    at async Element.elementErrorHandlerCallbackFn (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriverio\\build\\middlewares.js:23:32)\n                    at async Element.runCommandWithHooks (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:105:25)\n                    at Element.runCommandWithHooks (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:100:24)\n                    at Element.wrapCommandFn (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:67:44)\n                    at Element.elementErrorHandlerCallback (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriverio\\build\\middlewares.js:44:12)\n                    at Context.<anonymous> (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\test\\specs\\Angular_Prezman.js:106:17)\n                    at Context.executeSync (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\index.js:38:22)\n                    at C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\index.js:69:68",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1619981536918,
+        "stop" : 1619981536949,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2dcf1a7e1bdfb866",
+        "name" : "Request",
+        "source" : "2dcf1a7e1bdfb866.json",
+        "type" : "application/json",
+        "size" : 143
+      }, {
+        "uid" : "8100de7f0d5ce867",
+        "name" : "Response",
+        "source" : "8100de7f0d5ce867.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1619981536952,
+        "stop" : 1619981536978,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f8eda138c3ee82da",
+        "name" : "Request",
+        "source" : "f8eda138c3ee82da.json",
+        "type" : "application/json",
+        "size" : 71
+      }, {
+        "uid" : "45e317ae6a46be6c",
+        "name" : "Response",
+        "source" : "45e317ae6a46be6c.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "GET /session/:sessionId/screenshot",
+      "time" : {
+        "start" : 1619981536982,
+        "stop" : 1619981537412,
+        "duration" : 430
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "323cfe300abc1bd1",
+        "name" : "Screenshot",
+        "source" : "323cfe300abc1bd1.png",
+        "type" : "image/png",
+        "size" : 506123
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "POST /session/:sessionId/element/2f9e2c37-0bb8-486f-98b3-a53ea6572b47/click",
+      "time" : {
+        "start" : 1619981537418,
+        "stop" : 1619981537496,
+        "duration" : 78
+      },
+      "status" : "broken",
+      "statusMessage" : "element not interactable\n                  (Session info: chrome=90.0.4430.93)\n                    at Object.getErrorFromResponseBody (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriver\\build\\utils.js:189:12)\n                    at WebDriverRequest._request (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriver\\build\\request.js:168:31)\n                    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n                    at async Element.elementErrorHandlerCallbackFn (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriverio\\build\\middlewares.js:23:32)\n                    at async Element.runCommandWithHooks (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:105:25)\n                    at Element.runCommandWithHooks (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:100:24)\n                    at Element.wrapCommandFn (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:67:44)\n                    at Element.elementErrorHandlerCallback (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\webdriverio\\build\\middlewares.js:44:12)\n                    at Context.<anonymous> (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\test\\specs\\Angular_Prezman.js:106:17)\n                    at Context.executeSync (C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\index.js:38:22)\n                    at C:\\Users\\bure\\Desktop\\UTB\\Bakalarka\\Testovani\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\index.js:69:68",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testClass",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testMethod",
+    "value" : "008-Scroll top"
+  }, {
+    "name" : "package",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-90.0.4430.93"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e651d14897eb331d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981057668,
+        "stop" : 1619981059583,
+        "duration" : 1915
+      }
+    }, {
+      "uid" : "d9852c5d3967fd09",
+      "status" : "broken",
+      "statusDetails" : "element not interactable\n                  (Session info: chrome=90.0.4430.93)",
+      "time" : {
+        "start" : 1619980432318,
+        "stop" : 1619980432886,
+        "duration" : 568
+      }
+    }, {
+      "uid" : "5a32e1980dc3d3c2",
+      "status" : "broken",
+      "statusDetails" : "element not interactable\n                  (Session info: chrome=90.0.4430.93)",
+      "time" : {
+        "start" : 1619980333198,
+        "stop" : 1619980333744,
+        "duration" : 546
+      }
+    }, {
+      "uid" : "24d601b74156a137",
+      "status" : "broken",
+      "statusDetails" : "element not interactable\n                  (Session info: chrome=90.0.4430.93)",
+      "time" : {
+        "start" : 1619980276368,
+        "stop" : 1619980277035,
+        "duration" : 667
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d6904aa29b58d51a.json",
+  "parameterValues" : [ "chrome-90.0.4430.93" ]
+}

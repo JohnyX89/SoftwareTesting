@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20200614 11:32:56.959" rpa="false">
+<suite id="s1" name="Test" source="C:\Users\Johny\Desktop\UTB\4. semestr\TSO\SemestralniProject\TS_001-Layout\TS_001_004-RozbaleniPrvkuHlavicky\test.robot">
+<test id="s1-t1" name="Pre-conditions">
+<kw name="Prepare Main Page" library="mainKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${MainPage}</arg>
+<arg>${ProhlizecChrome}</arg>
+</arguments>
+<msg timestamp="20200614 11:32:57.593" level="INFO">Opening browser 'Chrome' to base url 'https://www.nhl.com'.</msg>
+<status status="PASS" starttime="20200614 11:32:57.593" endtime="20200614 11:33:03.180"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200614 11:33:03.181" endtime="20200614 11:33:10.691"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Dialog}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:33:10.691" endtime="20200614 11:33:11.133"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Dialog}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:11.134" level="INFO">Clicking element '//*[@id="languageModal"]/div[2]/div/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20200614 11:33:11.133" endtime="20200614 11:33:11.441"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Privacy}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:11.443" level="INFO">Clicking element '//*[@id="homepage_index"]/section/button/i'.</msg>
+<status status="PASS" starttime="20200614 11:33:11.442" endtime="20200614 11:33:12.128"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:32:57.592" endtime="20200614 11:33:12.129"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:32:57.591" endtime="20200614 11:33:12.130" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC_001_003_001 - Rozbaleni menu &quot;News&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderNews}</arg>
+<arg>News</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:12.144" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--news']'.</msg>
+<status status="PASS" starttime="20200614 11:33:12.142" endtime="20200614 11:33:12.511"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:13.212" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverNews.png"&gt;&lt;img src="../Screenshots/HoverNews.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:12.511" endtime="20200614 11:33:13.212"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:12.141" endtime="20200614 11:33:13.213"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:12.134" endtime="20200614 11:33:13.214" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC_001_003_002 - Rozbaleni menu &quot;Video&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderVideo}</arg>
+<arg>Video</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:13.221" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--video']'.</msg>
+<status status="PASS" starttime="20200614 11:33:13.221" endtime="20200614 11:33:13.555"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:14.288" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverVideo.png"&gt;&lt;img src="../Screenshots/HoverVideo.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:13.556" endtime="20200614 11:33:14.289"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:13.220" endtime="20200614 11:33:14.289"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:13.218" endtime="20200614 11:33:14.291" critical="yes"></status>
+</test>
+<test id="s1-t4" name="TC_001_003_003 - Rozbaleni menu &quot;Standings&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderStandings}</arg>
+<arg>Standings</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:14.295" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--standings']'.</msg>
+<status status="PASS" starttime="20200614 11:33:14.295" endtime="20200614 11:33:14.625"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:15.345" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverStandings.png"&gt;&lt;img src="../Screenshots/HoverStandings.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:14.626" endtime="20200614 11:33:15.345"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:14.294" endtime="20200614 11:33:15.345"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:14.293" endtime="20200614 11:33:15.346" critical="yes"></status>
+</test>
+<test id="s1-t5" name="TC_001_003_004 - Rozbaleni menu &quot;Stats&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderStats}</arg>
+<arg>Stats</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:15.351" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--stats']'.</msg>
+<status status="PASS" starttime="20200614 11:33:15.350" endtime="20200614 11:33:15.670"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:16.337" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverStats.png"&gt;&lt;img src="../Screenshots/HoverStats.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:15.671" endtime="20200614 11:33:16.338"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:15.349" endtime="20200614 11:33:16.338"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:15.348" endtime="20200614 11:33:16.339" critical="yes"></status>
+</test>
+<test id="s1-t6" name="TC_001_003_005 - Rozbaleni menu &quot;Schedule&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderSchedule}</arg>
+<arg>Schedule</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:16.350" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--schedule']'.</msg>
+<status status="PASS" starttime="20200614 11:33:16.349" endtime="20200614 11:33:16.668"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:17.354" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverSchedule.png"&gt;&lt;img src="../Screenshots/HoverSchedule.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:16.669" endtime="20200614 11:33:17.354"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:16.348" endtime="20200614 11:33:17.354"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:16.344" endtime="20200614 11:33:17.355" critical="yes"></status>
+</test>
+<test id="s1-t7" name="TC_001_003_006 - Rozbaleni menu &quot;Players&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderPlayers}</arg>
+<arg>Players</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:17.359" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--players']'.</msg>
+<status status="PASS" starttime="20200614 11:33:17.358" endtime="20200614 11:33:17.657"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:18.290" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverPlayers.png"&gt;&lt;img src="../Screenshots/HoverPlayers.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:17.657" endtime="20200614 11:33:18.290"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:17.357" endtime="20200614 11:33:18.291"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:17.356" endtime="20200614 11:33:18.291" critical="yes"></status>
+</test>
+<test id="s1-t8" name="TC_001_003_007 - Rozbaleni menu &quot;Tickets&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderTickets}</arg>
+<arg>Tickets</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:18.295" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--tickets']'.</msg>
+<status status="PASS" starttime="20200614 11:33:18.295" endtime="20200614 11:33:18.590"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:19.211" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverTickets.png"&gt;&lt;img src="../Screenshots/HoverTickets.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:18.590" endtime="20200614 11:33:19.211"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:18.295" endtime="20200614 11:33:19.211"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:18.294" endtime="20200614 11:33:19.212" critical="yes"></status>
+</test>
+<test id="s1-t9" name="TC_001_003_008 - Rozbaleni menu &quot;Fantasy&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderFantasy}</arg>
+<arg>Fantasy</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:19.216" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--fantasy']'.</msg>
+<status status="PASS" starttime="20200614 11:33:19.216" endtime="20200614 11:33:19.533"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:20.121" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverFantasy.png"&gt;&lt;img src="../Screenshots/HoverFantasy.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:19.534" endtime="20200614 11:33:20.121"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:19.215" endtime="20200614 11:33:20.121"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:19.214" endtime="20200614 11:33:20.122" critical="yes"></status>
+</test>
+<test id="s1-t10" name="TC_001_003_009 - Rozbaleni menu &quot;Shop&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderShop}</arg>
+<arg>Shop</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:20.127" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--shop']'.</msg>
+<status status="PASS" starttime="20200614 11:33:20.126" endtime="20200614 11:33:20.446"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:21.061" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverShop.png"&gt;&lt;img src="../Screenshots/HoverShop.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:20.447" endtime="20200614 11:33:21.061"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:20.125" endtime="20200614 11:33:21.062"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:20.123" endtime="20200614 11:33:21.062" critical="yes"></status>
+</test>
+<test id="s1-t11" name="TC_001_003_010 - Rozbaleni menu &quot;Teams&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderTeams}</arg>
+<arg>Teams</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:21.068" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--teams']'.</msg>
+<status status="PASS" starttime="20200614 11:33:21.067" endtime="20200614 11:33:21.398"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:21.932" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverTeams.png"&gt;&lt;img src="../Screenshots/HoverTeams.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:21.399" endtime="20200614 11:33:21.932"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:21.066" endtime="20200614 11:33:21.933"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:21.066" endtime="20200614 11:33:21.934" critical="yes"></status>
+</test>
+<test id="s1-t12" name="TC_001_003_011 - Rozbaleni menu &quot;NHL.TV&quot;">
+<kw name="Make Screenshot During Hover" library="keywords">
+<arguments>
+<arg>${HeaderNHLTV}</arg>
+<arg>NHLTV</arg>
+</arguments>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:33:21.940" level="INFO">Simulating Mouse Over on element '//a[@class='top-nav__primary__menu__item__link top-nav__primary__menu__item__link--nhltv']'.</msg>
+<status status="PASS" starttime="20200614 11:33:21.939" endtime="20200614 11:33:22.260"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}Hover${Name}.png</arg>
+</arguments>
+<msg timestamp="20200614 11:33:22.883" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/HoverNHLTV.png"&gt;&lt;img src="../Screenshots/HoverNHLTV.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:33:22.261" endtime="20200614 11:33:22.884"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:21.938" endtime="20200614 11:33:22.884"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:21.936" endtime="20200614 11:33:22.885" critical="yes"></status>
+</test>
+<test id="s1-t13" name="Post-conditions">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200614 11:33:22.888" endtime="20200614 11:33:27.225"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:33:22.887" endtime="20200614 11:33:27.226" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200614 11:32:56.962" endtime="20200614 11:33:27.234"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="13" fail="0">Critical Tests</stat>
+<stat pass="13" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="13" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,13 @@
+REACT
+robot -o "TS_001-React/TS_001_001-Facebook/Outputs/TS_101_001-Facebook-Output" -r "TS_001-React/TS_001_001-Facebook/Outputs/TS_001_001-Facebook-Report" -l "TS_001-React/TS_001_001-Facebook/Outputs/TS_001_001-Facebook-Log" "TS_001-React/TS_001_001-Facebook/test.robot"
+robot -o "TS_001-React/TS_001_002-MyApp/Outputs/TS_001_002-MyApp-Output" -r "TS_001-React/TS_001_002-MyApp/Outputs/TS_001_002-MyApp-Report" -l "TS_001-React/TS_001_002-MyApp/Outputs/TS_001_002-MyApp-Log" "TS_001-React/TS_001_002-MyApp/test.robot
+
+ANGULAR
+robot -o "TS_002-Angular/TS_002_001-Gmail/Outputs/TS_002_001-Gmail-Output" -r "TS_002-Angular/TS_002_001-Gmail/Outputs/TS_002_001-Gmail-Report" -l "TS_002-Angular/TS_002_001-Gmail/Outputs/TS_002_001-Gmail-Log" "TS_002-Angular/TS_002_001-Gmail/test.robot"
+robot -o "TS_002-Angular/TS_002_002-Prezman/Outputs/TS_002_002-Prezman-Output" -r "TS_002-Angular/TS_002_002-Prezman/Outputs/TS_002_002-Prezman-Report" -l "TS_002-Angular/TS_002_002-Prezman/Outputs/TS_002_002-Prezman-Log" "TS_002-Angular/TS_002_002-Prezman/test.robot"
+
+VUE
+robot -o "TS_003-Vue/TS_003_001-GitLab/Outputs/TS_003_001-GitLab-Output" -r "TS_003-Vue/TS_003_001-GitLab/Outputs/TS_003_001-GitLab-Report" -l "TS_003-Vue/TS_003_001-GitLab/Outputs/TS_003_001-GitLab-Log" "TS_003-Vue/TS_003_001-GitLab/test.robot"
+robot -o "TS_003-Vue/TS_003_002-Laracasts/Outputs/TS_003_002-Laracasts-Output" -r "TS_003-Vue/TS_003_002-Laracasts/Outputs/TS_003_002-Laracasts-Report" -l "TS_003-Vue/TS_003_002-Laracasts/Outputs/TS_003_002-Laracasts-Log" "TS_003-Vue/TS_003_002-Laracasts/test.robot"
+robot -o "Vue_Wizzair/Outputs/TS_801-Wizzair-Output" -r "Vue_Wizzair/Outputs/TS_801-Wizzair-Report" -l "Vue_Wizzair/Outputs/TS_801-Wizzair-Log" "Vue_Wizzair/TS_801-Wizzair.robot" - taky neprochazi ochranou vuci automatizovanemu testovani
+

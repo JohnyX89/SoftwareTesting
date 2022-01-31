@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20200614 11:35:40.961" rpa="false">
+<suite id="s1" name="Test" source="C:\Users\Johny\Desktop\UTB\4. semestr\TSO\SemestralniProject\TS_003-SpravaUzivatele\TS_003_002-PrihlaseniUzivatele\test.robot">
+<test id="s1-t1" name="Pre-conditions">
+<kw name="Prepare Main Page" library="mainKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${MainPage}</arg>
+<arg>${ProhlizecChrome}</arg>
+</arguments>
+<msg timestamp="20200614 11:35:41.758" level="INFO">Opening browser 'Chrome' to base url 'https://www.nhl.com'.</msg>
+<status status="PASS" starttime="20200614 11:35:41.757" endtime="20200614 11:35:54.473"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200614 11:35:54.473" endtime="20200614 11:35:59.874"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Dialog}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:35:59.875" endtime="20200614 11:36:00.758"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Dialog}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:00.759" level="INFO">Clicking element '//*[@id="languageModal"]/div[2]/div/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20200614 11:36:00.758" endtime="20200614 11:36:01.415"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Privacy}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:01.417" level="INFO">Clicking element '//*[@id="homepage_index"]/section/button/i'.</msg>
+<status status="PASS" starttime="20200614 11:36:01.415" endtime="20200614 11:36:03.559"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:35:41.757" endtime="20200614 11:36:03.559"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:35:41.756" endtime="20200614 11:36:03.560" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC_003_001 - Prihlaseni uzivatele s nekorektnimi udaji">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${PersonIcon}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:03.589" level="INFO">Simulating Mouse Over on element '//i[@class='top-nav__account__icon top-nav__icon top-nav__icon--account']'.</msg>
+<status status="PASS" starttime="20200614 11:36:03.589" endtime="20200614 11:36:04.020"></status>
+</kw>
+<kw name="Check And Click" library="mainKeywords">
+<arguments>
+<arg>${SignIn}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:36:04.025" endtime="20200614 11:36:04.131"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:04.133" level="INFO">Clicking element '//div[@class='top-nav__account-menu-sign-in']'.</msg>
+<status status="PASS" starttime="20200614 11:36:04.132" endtime="20200614 11:36:08.483"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:04.024" endtime="20200614 11:36:08.484"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${URL1}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:08.539" level="INFO">Current location is 'https://account.nhl.com/ui/?client_id=a2nhl&amp;lang=en&amp;redirect_uri=https%3A%2F%2Faccount.nhl.com%2Fui%2Fpub%2Flogin&amp;returnUrl=https%3A%2F%2Fwww.nhl.com%2F'.</msg>
+<status status="PASS" starttime="20200614 11:36:08.486" endtime="20200614 11:36:08.539"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginName}</arg>
+<arg>a@b.cz</arg>
+</arguments>
+<msg timestamp="20200614 11:36:08.584" level="INFO">Typing text 'a@b.cz' into text field '//*[@id="main-content"]/div/div[2]/div[1]/form/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20200614 11:36:08.583" endtime="20200614 11:36:09.420"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPassword}</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20200614 11:36:09.423" level="INFO">Typing password into text field '//*[@id="main-content"]/div/div[2]/div[1]/form/div[2]/input'.</msg>
+<msg timestamp="20200614 11:36:09.594" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200614 11:36:09.891" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200614 11:36:09.422" endtime="20200614 11:36:09.891"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${LoginPassword}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200614 11:36:09.894" level="INFO">Sending key(s) ('ENTER',) to //*[@id="main-content"]/div/div[2]/div[1]/form/div[2]/input element.</msg>
+<msg timestamp="20200614 11:36:10.209" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20200614 11:36:10.210" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20200614 11:36:09.892" endtime="20200614 11:36:11.947"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}LoginPage_Incorrect.png</arg>
+</arguments>
+<msg timestamp="20200614 11:36:13.060" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/LoginPage_Incorrect.png"&gt;&lt;img src="../Screenshots/LoginPage_Incorrect.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:36:11.949" endtime="20200614 11:36:13.061"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URLNHL}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:13.062" level="INFO">Opening url 'https://www.nhl.com/'</msg>
+<status status="PASS" starttime="20200614 11:36:13.062" endtime="20200614 11:36:16.946"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:03.587" endtime="20200614 11:36:16.953" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC_003_002 - Prihlaseni uzivatele s korektnimi udaji">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${PersonIcon}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:16.981" level="INFO">Simulating Mouse Over on element '//i[@class='top-nav__account__icon top-nav__icon top-nav__icon--account']'.</msg>
+<status status="PASS" starttime="20200614 11:36:16.981" endtime="20200614 11:36:20.933"></status>
+</kw>
+<kw name="Check And Click" library="mainKeywords">
+<arguments>
+<arg>${SignIn}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:36:20.935" endtime="20200614 11:36:21.536"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:21.537" level="INFO">Clicking element '//div[@class='top-nav__account-menu-sign-in']'.</msg>
+<status status="PASS" starttime="20200614 11:36:21.536" endtime="20200614 11:36:23.987"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:20.934" endtime="20200614 11:36:23.987"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${URL1}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:24.039" level="INFO">Current location is 'https://account.nhl.com/ui/?client_id=a2nhl&amp;lang=en&amp;redirect_uri=https%3A%2F%2Faccount.nhl.com%2Fui%2Fpub%2Flogin&amp;returnUrl=https%3A%2F%2Fwww.nhl.com%2F'.</msg>
+<status status="PASS" starttime="20200614 11:36:23.988" endtime="20200614 11:36:24.039"></status>
+</kw>
+<kw name="${Element} IN [ @{LoginItems} ]" type="for">
+<kw name="${Element} = //*[@id=&quot;main-content&quot;]/div/div[2]/div[1]/form/div[1]/div/input" type="foritem">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Element}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:36:24.041" endtime="20200614 11:36:24.111"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:24.041" endtime="20200614 11:36:24.111"></status>
+</kw>
+<kw name="${Element} = //*[@id=&quot;main-content&quot;]/div/div[2]/div[1]/form/div[2]/input" type="foritem">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Element}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:36:24.111" endtime="20200614 11:36:24.159"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:24.111" endtime="20200614 11:36:24.159"></status>
+</kw>
+<kw name="${Element} = //*[@id=&quot;main-content&quot;]/div/div[2]/div[1]/form/input" type="foritem">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Element}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:36:24.159" endtime="20200614 11:36:24.201"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:24.159" endtime="20200614 11:36:24.201"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:24.041" endtime="20200614 11:36:24.201"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginName}</arg>
+<arg>aaa@bbb.cz</arg>
+</arguments>
+<msg timestamp="20200614 11:36:24.203" level="INFO">Typing text 'aaa@bbb.cz' into text field '//*[@id="main-content"]/div/div[2]/div[1]/form/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20200614 11:36:24.203" endtime="20200614 11:36:24.523"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPassword}</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20200614 11:36:24.525" level="INFO">Typing password into text field '//*[@id="main-content"]/div/div[2]/div[1]/form/div[2]/input'.</msg>
+<msg timestamp="20200614 11:36:24.607" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200614 11:36:24.896" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200614 11:36:24.525" endtime="20200614 11:36:24.897"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${LoginButton}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200614 11:36:24.900" level="INFO">Sending key(s) ('ENTER',) to //*[@id="main-content"]/div/div[2]/div[1]/form/input element.</msg>
+<msg timestamp="20200614 11:36:26.259" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20200614 11:36:26.260" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20200614 11:36:24.899" endtime="20200614 11:36:26.322"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200614 11:36:31.326" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200614 11:36:26.324" endtime="20200614 11:36:31.326"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${URLNHL}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:33.786" level="INFO">Current location is 'https://www.nhl.com/'.</msg>
+<status status="PASS" starttime="20200614 11:36:31.330" endtime="20200614 11:36:33.786"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${PersonIcon}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:33.795" level="INFO">Simulating Mouse Over on element '//i[@class='top-nav__account__icon top-nav__icon top-nav__icon--account']'.</msg>
+<status status="PASS" starttime="20200614 11:36:33.794" endtime="20200614 11:36:34.340"></status>
+</kw>
+<kw name="Check And Click" library="mainKeywords">
+<arguments>
+<arg>${MyProfile}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:36:34.342" endtime="20200614 11:36:34.472"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:34.473" level="INFO">Clicking element '//*[@id="homepage_index"]/div[1]/div/div/nav/div[2]/div[2]/div/a/div'.</msg>
+<status status="PASS" starttime="20200614 11:36:34.472" endtime="20200614 11:36:36.223"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:34.341" endtime="20200614 11:36:36.223"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${URLMyProfile}</arg>
+</arguments>
+<msg timestamp="20200614 11:36:36.239" level="INFO">Current location is 'https://account.nhl.com/ui/?lang=en&amp;returnLabel=NHL.com&amp;returnUrl=https%3A%2F%2Fwww.nhl.com%2F'.</msg>
+<status status="PASS" starttime="20200614 11:36:36.224" endtime="20200614 11:36:36.240"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${MyEmail}</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:36:36.241" endtime="20200614 11:36:38.301"></status>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${MyEmail}</arg>
+</arguments>
+<assign>
+<var>${LoggedAs}</var>
+</assign>
+<msg timestamp="20200614 11:36:38.333" level="INFO">${LoggedAs} = aaa@bbb.cz</msg>
+<status status="PASS" starttime="20200614 11:36:38.303" endtime="20200614 11:36:38.333"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${LoggedAs}</arg>
+<arg>aaa@bbb.cz</arg>
+</arguments>
+<status status="PASS" starttime="20200614 11:36:38.334" endtime="20200614 11:36:38.335"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${SaveTo}LoginPage_Correct.png</arg>
+</arguments>
+<msg timestamp="20200614 11:36:39.061" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/LoginPage_Correct.png"&gt;&lt;img src="../Screenshots/LoginPage_Correct.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200614 11:36:38.336" endtime="20200614 11:36:39.061"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:16.979" endtime="20200614 11:36:39.062" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Post-conditions">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200614 11:36:39.064" endtime="20200614 11:36:42.669"></status>
+</kw>
+<status status="PASS" starttime="20200614 11:36:39.063" endtime="20200614 11:36:42.670" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200614 11:35:40.965" endtime="20200614 11:36:42.673"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

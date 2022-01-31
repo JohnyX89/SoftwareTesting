@@ -1,0 +1,2480 @@
+﻿<repository
+id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+name="BakalarkaRepository">
+	<codegen
+	classname="BakalarkaRepository"
+	namespace="Bakalarka">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="285f9760-f04d-431c-8e6c-90c9d30911fe"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/dom[@domain='www.ranorex.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="f2a9f9b2-344d-47b8-9a9b-65ea462cdc8d"
+		isrooted="True"
+		name="ReactApp"
+		refimgid="6ea56fab-bb57-4a07-a9d4-442512d858e6"
+		refpath="/dom[@domain='localhost:3000']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			capname="divtag"
+			id="bb8cde93-748d-43ee-b7d1-75c25a0d15b6"
+			isrooted="True"
+			name="Root"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="8f5410e6-a25c-4dc3-a6db-c68250f0aec8"
+				name="About"
+				refimgid="f09844ed-ff62-4342-ad0c-6d7f0c4d4d84"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']//ul/?/?/a[@innertext=$navbarAbout]
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="0c67b1fa-fb47-4766-a269-9c6903e9866f"
+				name="Home"
+				refimgid="b3b65eb5-b198-4769-8501-b677a3c0291e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/?/?/nav//a[@innertext=$navbarHome]
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="5b0c095c-e8f9-401f-a056-d9d9059e2bd3"
+				name="MiniApps"
+				refimgid="7dd66fd5-468a-461a-938d-2156e0725805"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/?/?/nav//a[@innertext=$navbarDropdown]
+				</item>
+				<item
+				addcaps="unknown,webelement,h1tag"
+				capname="h1tag"
+				id="713843ad-72e5-4969-894a-885f32d62373"
+				name="H1TagNHL"
+				refimgid="66cd47ff-69f7-4fa3-b1cb-2ee205e8a42f"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div/h1[@innertext=' NHL ']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/?/?/h1[@innertext=' NHL ']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="2b3f5209-52c8-48b3-8697-aee3ef3eb660"
+				name="TheNationalHockeyLeagueNHLFrench"
+				refimgid="03131ba2-9d98-48f6-b704-3597c61fbbb5"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div/p[@innertext>'The National Hockey League']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/?/?/p[@innertext&gt;'The National Hockey League']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="def06e91-b65f-488b-966f-7817304796ca"
+				name="EmojiPageDropdown"
+				refimgid="ea0d120f-a8a5-4794-8c5a-d7f731e63e1e"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/nav/ul/li[2]/ul/li[1]/a[@innertext='Emoji searching']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/?/?/nav/ul//a[@innertext='Emoji searching']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="262cdaf7-6b7b-4997-b6fe-565e3971e78b"
+				name="EmojiFinder"
+				refimgid="5c141e1b-a91e-48b4-b5dd-a8ef43a37c15"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div[1]/div/input[@type='text']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]//input[@type='text']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="cedde6aa-752a-490f-a031-60dc17851960"
+				name="Carousel"
+				refimgid="e2aad00a-e2a2-48eb-be04-08121096ec0f"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/nav/ul/li[2]/ul/li[2]/a[@innertext='Carousel']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/?/?/nav/ul//a[@innertext='Carousel']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="a346b253-0c56-4128-adc5-840b14f2375d"
+				name="CarouselNextItem"
+				refimgid="da2785e6-b1f2-4033-99f7-83d8207b2b58"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div/div[1]/button[@innertext='❯']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]//button[@innertext='❯']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="75836fd3-2986-40a5-82cd-3b2d0216340e"
+				name="Carousel4thItem"
+				refimgid="814fa9db-ee1c-4443-9110-975cd793ca68"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div/div[2]/button[4]"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div/div[2]/button[4]
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="148a3062-a17c-480b-b966-0481542fbd0a"
+				name="ToDo"
+				refimgid="e21a99bc-4a21-4e9e-80ed-d91d4c14d496"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/nav/ul/li[2]/ul/li[3]/a[@innertext='To-do']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/?/?/nav/ul//a[@innertext='To-do']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="e82e09f3-3265-4061-8017-5e076e32cc83"
+				name="Name"
+				refimgid="be3183b8-80aa-4e01-8573-6772430ae74d"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/input[@name='name']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']//input[@name='name']
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="17bee815-ac38-4850-813a-e0c78d051682"
+				name="Description"
+				refimgid="2e8356eb-f077-4bcf-a64f-666e7bd5907b"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/textarea[@placeholder='Description']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']//textarea[@placeholder='Description']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="d90e3f2c-f7b4-48d5-9acf-0114e5889539"
+				name="AddItem"
+				refimgid="1c9a5b67-7f1c-4f4c-8e31-40c66e0a04bf"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/button[@innertext='Add item']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']//button[@innertext='Add item']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="bde546ac-4997-416a-86cb-80f9a88aa2d6"
+				name="BackFrame"
+				refimgid="6e928e14-e377-4cbe-8125-0554527c87f1"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="2d6f34d2-24a2-4f36-9fab-b7120f836d77"
+				name="REACT"
+				refimgid="a02a3cf9-8e75-48bb-8e3c-170688bb730b"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/nav/a[@innertext='REACT']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']//a[@innertext='REACT']
+				</item>
+				<item
+				addcaps="unknown,webelement,litag"
+				capname="litag"
+				id="ec7fc6b0-a324-4bc3-9584-0a49c46b62c8"
+				name="NavItem"
+				refimgid="e81aaed7-ba2f-48d7-9eee-faca086360c9"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/nav/ul/li[2]"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/?/?/nav/ul/li[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="02fbd31f-11e1-46cc-b1c0-4b5ea9da8482"
+				name="ComponentEmojiResultRowCopyToClipb"
+				refimgid="677a090b-a74a-4fcc-b00f-b58b052c5b88"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div[2]/div[6]"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div[2]/div[6]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="7207e9b0-5a4d-40eb-9fb5-4134277eaab0"
+				name="ComponentEmojiResultRowCopyToClipb1"
+				refimgid="07c06f84-1e00-4401-bd6c-668e7f7227ae"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div[2]/div[5]"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div[2]/div[5]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="29761fce-9a62-40df-93db-9cd049df77b0"
+				name="Footer"
+				refimgid="ed7ff5fa-f3e7-40be-99a9-949180b10912"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[2]"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="f8adbced-3e32-49e7-ad7b-274f35b63a9d"
+				name="EditButton"
+				refimgid="e06b4389-2b72-47a8-a8fd-d2ba6c7e2153"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div/div/div/span[@innertext=' Edit']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]//span[@innertext=' Edit']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="e556e9ee-b147-408e-919a-ae139302bd33"
+				name="ItemName"
+				refimgid="2a768fa3-ae32-496f-8bba-4c8e9c05a7c5"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div/input[@type='text']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]//input[@type='text']
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="e48d89b1-62d7-4556-b6b0-ea662a8078e2"
+				name="ItemDescription"
+				refimgid="c3fc37dc-c8e4-4795-843e-0dbaa6211144"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div/textarea[@innertext='Important']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]//textarea[@innertext='Important']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="22e03c9c-2733-4915-aa1d-c731c8fa4a2f"
+				name="DeleteButton"
+				refimgid="2a87e0d8-e301-4223-8c7e-4ff39c47d12a"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[2]/div/div/div/span[@innertext=' Delete']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[2]//span[@innertext=' Delete']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="e64ff8e6-dccd-4e7f-9bef-77f632fd6511"
+				name="SomeSpanTag"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div/div/div/span"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div/div/?/?/span
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="896b26a9-dae1-4280-b2f6-114d22ed59f8"
+				name="Cancel"
+				refimgid="585e4700-4d40-4e25-a142-07f8f5b1d1ab"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div/button[@innertext='Cancel']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]//button[@innertext='Cancel']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="62330106-b623-43ea-85b2-660a8d7933ad"
+				name="CarouselPreviousItem"
+				refimgid="267887c1-3649-4295-8c48-d68a4eac87ef"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/div/div[1]/button[@innertext='❮']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]//button[@innertext='❮']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="58af0884-debf-4364-bab8-83c1fb3cff4e"
+				name="SaveChange"
+				refimgid="d67110fb-0131-4134-8464-c301ff1483fb"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div/button[@innertext='Save change']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]//button[@innertext='Save change']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="8155405c-eb98-48f9-ac25-8b6989e1bb1b"
+				name="CheckboxFirst"
+				refimgid="2a46284d-9ec8-4e2c-9ff6-dd63613e860b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]/div/div/div/input
+				</item>
+				<item
+				capname="inputtag"
+				id="606d898c-72fc-4607-b8d9-dece9fd995a9"
+				name="CheckboxThird"
+				robustPath="/dom[@domain='localhost:3000']//div[#'root']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[3]/div/div/div/input
+				</item>
+				<item
+				addcaps="unknown,webelement,h1tag"
+				capname="h1tag"
+				id="02fe36d7-0154-478d-b93c-d2d6b353d9d2"
+				name="AuthorJanBures"
+				refimgid="a4d932af-41a8-4e11-9ca4-dea8aacafb63"
+				refpath="/dom[@domain='localhost:3000']//div[#'root']/div/div[1]/h1[@innertext='Author: Jan Bures']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']//h1[@innertext='Author: Jan Bures']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="f346919e-a6da-4ffb-a845-5202d027622a"
+				name="SomeSpanTag1"
+				refpath="/dom[@domain='localhost:3000' and @caption='React App' and @page='todo']//div[#'root']/div/div[2]/div[1]/div/div/div/span"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]/div[1]//span
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="cb19e174-a2a3-445c-a804-558df1753690"
+				name="Item"
+				refimgid="3b4542af-a00b-4578-a25d-57151e87f502"
+				refpath="/dom[@domain='localhost:3000' and @caption='React App' and @page='todo']//div[#'root']/div/div[2]/div[1]/div/textarea[@innertext='item']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]//textarea[@innertext='item']
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="8fea324f-63a1-47cf-9725-07c0c00451bb"
+				name="TextAreaTagBBB"
+				refimgid="0e8c79e5-7dcb-4fdf-9062-32b043638433"
+				refpath="/dom[@domain='localhost:3000' and @caption='React App' and @page='todo']//div[#'root']/div/div[2]/div[1]/div/textarea[@innertext='BBB']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[2]//textarea[@innertext='BBB']
+				</item>
+				<basepath>
+					/dom[@domain='localhost:3000']//div[#'root']
+				</basepath>
+			</folder>
+			<folder
+			capname="webdocument"
+			id="71ca7dda-e81a-461a-89f4-306dd68d8dbb"
+			isrooted="True"
+			name="Manual"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="divtag"
+				id="46da93ba-d3ba-4c58-a0f9-39ccfe69cce2"
+				name="YumEmoji"
+				robustPath="/dom[@domain='localhost:3000']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:3000']//div[@safeclass~'\bcomponent-emoji-results\b']/div[17]
+				</item>
+				<basepath>
+					/dom[@domain='localhost:3000']
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain='localhost:3000']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="eba90ad1-cc17-4a6f-9bf6-e93594c5c97c"
+		isrooted="True"
+		name="ReactAppGoogleChrome"
+		refpath="/form[@title='React App - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="c153d950-7cc2-4533-9af6-6601611d99b9"
+			name="Element319895216"
+			refimgid="c8f08ff8-13e0-4fff-9a98-bab0bfd74038"
+			refpath="/form[@title='React App - Google Chrome']/element[@controlid='319895216']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='React App - Google Chrome']/element[@controlid='319895216']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="c941fa41-b0eb-4492-9dd1-6f02ee8236b5"
+			name="AdresniAVyhledavaciŘadek"
+			refimgid="360ce564-2cf1-4add-becd-b3339852af38"
+			refpath="/form[@title='React App - Google Chrome']/container/container/container[2]/container[1]/toolbar[1]/container[@accessiblerole='Grouping']/text[@accessiblename>'Adresní a vyhledávací řád']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='React App - Google Chrome']/container[@accessiblename&gt;'React App - Google Chrome']/container[@accessiblename='Google Chrome']/container[2]/container[1]/toolbar[1]/?/?/text[@accessiblename&gt;'Adresn&#237; a vyhled&#225;vac&#237; &#345;&#225;d']
+			</item>
+			<basepath>
+				/form[@title='React App - Google Chrome']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJxSURBVDhPtZJNTNNgHId38ETiDDC6LxgoGsUw
+FSK4OTYZWyftGHPqSByifOjBkbh4MEGNQdGDCBf0IBLZB4hAMEI8GCUww8Fo/CDGRA+yoYmJ4SDo
+gINe/Nn3tWVLlnjznzxpm/Z53rdNZf9lrFoFHz+0H3EPi7jbhlitFS9rbQvi7X/P/GEOVD7oWAvE
+3VWIuayI1ezDLFe5JD6aPnEvh7UAkVMDwi5IIMZbMMebISrJeVxdgQ8H7EKgOhkQrqVXkHYQc1oQ
+48zoLdsxLqoyWYY+n9s0dBIvnGZ8dAuSIM9dakMikVjj86ABX0eNWBzfi5+TFfg1bUruouDuCRAu
+NjvwrsaC+Y7zaBtegat7leLsWsXi9wR+v2KBWZE3NpTr1xtoIH+wBRJPWCNdkYg1gkhk/vpfEp8m
+xIBdCFQh2lfylAZ0g82QYLuO0ACRCZLMda5i+jSHRy4GX/p20sDyjHmZBnIHmiCRJ0AC0spE9J8K
+Ycymgle5AeYsOZy52ZiqU2HgStEQDSh76hY0kePQRhop5Jy8sxToNygxzGpQliFHa6EK3fZiNBYw
+iPq0yQ+pFiSCKnyMogw34N77KMaaeNwxMRiyq3Bmmw4jnmK8vuDAiM+ESW9KgLlZt0QkCUbkVimD
+3j0q3K5Uo2P3VvgUOrQwajwLsHjoTgmQYUINyAkdhSJUT4/ZwXrwfhN6dilxo1yNa2V6XNVvx/OA
+C2/bPXjA56X/kfJWywQJZAV9NFAV9KKzWIFzhTnw63Ro37gF923liLA6BK2aH6KWPusKM43ys7aZ
+b1OmlfDlouGAJhOBzRo0atXoc5Si31MiyDLZH0NSuCTboDazAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="31645487-fec0-4df4-9e74-4fe7cb739cea"
+		isrooted="True"
+		name="IterateFasterInnovateTogetherGitL"
+		refpath="/dom[@domain='about.gitlab.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="eb08ace4-535a-47c1-a9bc-16c03c2e62e9"
+			name="ATagSignIn"
+			refimgid="da741b70-6dd6-4787-a819-7d9802de3cf2"
+			refpath="/dom[@domain='about.gitlab.com']/body/header/div[2]/ul/li[9]/a[@innertext='Sign in']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='about.gitlab.com']/?/?/header/?/?/ul/?/?/a[@innertext='Sign in']
+			</item>
+			<item
+			capname="atag"
+			id="7571840d-a32d-4a10-8f22-173a09744bb9"
+			name="NavbarSignIn"
+			robustPath="/dom[@domain='about.gitlab.com']/element"
+			searchtimeout="30000ms">
+				/dom[@domain='about.gitlab.com']//header/div[2]/ul[1]/li[9]/a[1]
+			</item>
+			<basepath>
+				/dom[@domain='about.gitlab.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="ba5587bb-3506-4cb4-8aa0-a9e431324409"
+		isrooted="True"
+		name="SignInGitLab"
+		refimgid="154fa7bf-1984-461c-a798-c4eedb9d7b56"
+		refpath="/dom[@domain='gitlab.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="3172e401-06ac-450d-99b4-9ea08802f995"
+			name="UserPassword"
+			refimgid="43a050d8-1c86-4486-8a94-045fdce85ed4"
+			refpath="/dom[@domain='gitlab.com']//input[#'user_password']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='gitlab.com']//input[#'user_password']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="a9a35fd1-f42d-4eaf-ad79-8646b0fd3c4e"
+			name="Commit"
+			refimgid="33ef53b6-61ca-47cc-bfa6-2d8c9bc588db"
+			refpath="/dom[@domain='gitlab.com']//form[#'new_user']/div[5]/input[@name='commit']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='gitlab.com']//form[#'new_user']/?/?/input[@name='commit']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="3adb5031-ba86-45e2-a329-16905bdf9a4f"
+			name="UserLogin"
+			refimgid="bb2bcc65-4b61-47df-9a41-460a4bdc0335"
+			refpath="/dom[@domain='gitlab.com']//input[#'user_login']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='gitlab.com']//input[#'user_login']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="cc54edfc-0327-41f5-b537-dcce38b7316e"
+			name="FormGroup"
+			refimgid="b022bf2b-d8f7-478b-90f9-1c6eb5f32722"
+			refpath="/dom[@domain='gitlab.com']//form[#'new_user']/div[1]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='gitlab.com']//form[#'new_user']/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="4e914aaa-d821-4438-a760-8f033db9cb05"
+			name="HttpsGitlabComBurdy8910"
+			refimgid="fa2bd29e-796b-4fc0-88df-4965f3f75991"
+			refpath="/dom[@domain='gitlab.com']/body/header/div/div/div[2]/ul/li[8]/a[@href>'https://gitlab.com/burdy8']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='gitlab.com']/?/?/header/div/div/div[2]/ul/li[8]/a[@href&gt;'https://gitlab.com/burdy8']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="6d9784fc-cbeb-4271-b8c1-5155b4f2cd53"
+			name="ATagAtburdy8910"
+			refimgid="29125442-00d2-4ba7-98cd-f3c8e30ddce6"
+			refpath="/dom[@domain='gitlab.com']/body/header/div/div/div[2]/ul/li[8]/div/ul/li[1]/a[@innertext='@burdy8910']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='gitlab.com']/?/?/header/div/div/div[2]/ul/li[8]/?/?/ul/li[1]/a[@innertext='@burdy8910']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="imgtag"
+			id="676d6b80-3aac-4f6d-bb5b-6d256bb35c9e"
+			name="Avatar"
+			refimgid="29125442-00d2-4ba7-98cd-f3c8e30ddce6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='gitlab.com']//*[@id='content-body']/div[2]/div[1]/div[2]/div[1]/a/img
+			</item>
+			<basepath>
+				/dom[@domain='gitlab.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="1c11715c-1588-44f6-9af2-8836217373b8"
+		isrooted="True"
+		name="GmailEMailOdGooglu"
+		refpath="/dom[@domain='www.google.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="0d52e732-5f56-4fe8-8035-9b745ac76445"
+			name="ATagPřihlasitSe"
+			refimgid="5ca193ed-eaac-44f8-99c7-d776497b4cdb"
+			refpath="/dom[@domain='www.google.com']/body/div[2]/div[1]/div[4]/ul[1]/li[2]/a[@innertext>'            Přihlásit se']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.google.com']/body/div[2]/div[1]/div[4]/ul[1]/?/?/a[@innertext&gt;'            P&#345;ihl&#225;sit se']
+			</item>
+			<basepath>
+				/dom[@domain='www.google.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="2a8d335f-482f-496c-a966-cebd0fb4ef81"
+		isrooted="True"
+		name="Gmail"
+		refimgid="550886b7-a75c-4001-82d0-4d1e10f02c29"
+		refpath="/dom[@domain='accounts.google.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="43211d51-2e39-4da5-97e5-cc1ffdbd6075"
+			name="VfPpkdRLmnJb"
+			refimgid="a42e3d83-e82b-4e74-a199-f40f62571785"
+			refpath="/dom[@domain='accounts.google.com']//div[#'identifierNext']/div/button/div[2]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'identifierNext']/?/?/button/div[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="cc596f25-0910-4a32-a976-d11b006d8899"
+			name="Password"
+			refimgid="5c09f38b-27ae-4b6a-8e61-a404a206dab5"
+			refpath="/dom[@domain='accounts.google.com']//div[#'password']/div[1]/div/div[1]/input[@name='password']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'password']/div[1]/div/div[1]/input[@name='password']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="87b8a6a9-a306-44ed-98ba-2bb740b42c2e"
+			name="VmOpGe"
+			refimgid="1de5ddba-2ee5-47a7-bdd9-b6c986afd1c6"
+			refpath="/dom[@domain='accounts.google.com']//body[#'yDmH0d']/div[1]/div[2]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//body[#'yDmH0d']/div[1]/div[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="1f81fafc-1f05-4fd6-b552-b4aa32626b37"
+			name="Password1"
+			refimgid="6cae98f4-72b2-4f83-8c34-a0dbe501c186"
+			refpath="/dom[@domain='accounts.google.com']//div[#'password']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'password']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="993f8f5f-be53-4d1f-8e50-f534fb6c016c"
+			name="IdentifierId"
+			refimgid="6ba028b8-f267-4302-94bf-42cb3d093abf"
+			refpath="/dom[@domain='accounts.google.com']//input[#'identifierId']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//input[#'identifierId']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="4bc7371b-684e-4ec3-90d9-f6da1cf1c75e"
+			name="VfPpkdRLmnJb1"
+			refimgid="fee76f89-e313-48f4-b7b1-04d1b56daf3f"
+			refpath="/dom[@domain='accounts.google.com']//div[#'passwordNext']/div/button/div[2]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'passwordNext']/?/?/button/div[2]
+			</item>
+			<basepath>
+				/dom[@domain='accounts.google.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="8217dfb7-a801-4c83-aa51-3542ba5b915a"
+		isrooted="True"
+		name="DoručenaPošta134Burdy8910Atgmail"
+		refpath="/form[@title='Doručená pošta (134) - burdy8910@gmail.com - Gmail - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="b6ce0d06-9c8e-4dd8-a2f2-2eee6e533af5"
+			name="AdresniAVyhledavaciŘadek"
+			refimgid="3797f638-eb7f-455b-9d74-a75dec45fddc"
+			refpath="/form[@title>'Doručená pošta (134) - burdy8910@gmail.com']/container/container/container[2]/container[1]/toolbar[1]/container[@accessiblerole='Grouping']/text[@accessiblename>'Adresní a vyhledávací řád']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Doru&#269;en&#225; po&#353;ta (134) - burdy8910@gmail.com']/container[@accessiblename&gt;'Doru&#269;en&#225; po&#353;ta (134) - burdy8910@gmail.com']/container[@accessiblename='Google Chrome']/container[2]/container[1]/toolbar[1]/?/?/text[@accessiblename&gt;'Adresn&#237; a vyhled&#225;vac&#237; &#345;&#225;d']
+			</item>
+			<basepath>
+				/form[@title&gt;'Doru&#269;en&#225; po&#353;ta (134) - burdy8910@gmail.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJxSURBVDhPtZJNTNNgHId38ETiDDC6LxgoGsUw
+FSK4OTYZWyftGHPqSByifOjBkbh4MEGNQdGDCBf0IBLZB4hAMEI8GCUww8Fo/CDGRA+yoYmJ4SDo
+gINe/Nn3tWVLlnjznzxpm/Z53rdNZf9lrFoFHz+0H3EPi7jbhlitFS9rbQvi7X/P/GEOVD7oWAvE
+3VWIuayI1ezDLFe5JD6aPnEvh7UAkVMDwi5IIMZbMMebISrJeVxdgQ8H7EKgOhkQrqVXkHYQc1oQ
+48zoLdsxLqoyWYY+n9s0dBIvnGZ8dAuSIM9dakMikVjj86ABX0eNWBzfi5+TFfg1bUruouDuCRAu
+NjvwrsaC+Y7zaBtegat7leLsWsXi9wR+v2KBWZE3NpTr1xtoIH+wBRJPWCNdkYg1gkhk/vpfEp8m
+xIBdCFQh2lfylAZ0g82QYLuO0ACRCZLMda5i+jSHRy4GX/p20sDyjHmZBnIHmiCRJ0AC0spE9J8K
+Ycymgle5AeYsOZy52ZiqU2HgStEQDSh76hY0kePQRhop5Jy8sxToNygxzGpQliFHa6EK3fZiNBYw
+iPq0yQ+pFiSCKnyMogw34N77KMaaeNwxMRiyq3Bmmw4jnmK8vuDAiM+ESW9KgLlZt0QkCUbkVimD
+3j0q3K5Uo2P3VvgUOrQwajwLsHjoTgmQYUINyAkdhSJUT4/ZwXrwfhN6dilxo1yNa2V6XNVvx/OA
+C2/bPXjA56X/kfJWywQJZAV9NFAV9KKzWIFzhTnw63Ro37gF923liLA6BK2aH6KWPusKM43ys7aZ
+b1OmlfDlouGAJhOBzRo0atXoc5Si31MiyDLZH0NSuCTboDazAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="dbddef19-38b9-41eb-bc5a-a66ecb67a58d"
+		isrooted="True"
+		name="DoručenaPošta134Burdy8910Atgmail1"
+		refpath="/dom[@domain='mail.google.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="57d8d9f8-ea3d-4b22-a35a-84b7b814e33d"
+			name="AioUKr6le"
+			refimgid="0fb688cb-29c1-468a-a7f2-cb62ae4589c2"
+			refpath="/dom[@domain='mail.google.com']//div[#':ml']/div/div[2]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='mail.google.com']//div[#':ml']/div/div[2]
+			</item>
+			<item
+			capname="divtag"
+			id="b0c954bc-6eee-4015-b4a6-f3b03ec08516"
+			name="NewMessage"
+			robustPath="/dom[@domain='mail.google.com']/element"
+			searchtimeout="30000ms">
+				/dom[@domain='mail.google.com']//*[@id=':m5']/div/div
+			</item>
+			<basepath>
+				/dom[@domain='mail.google.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="3ea6d62a-4c90-44b3-a7b7-608dff7d902a"
+		isrooted="True"
+		name="Laracasts"
+		refimgid="e6af0571-5cb5-4a53-a04c-4b17cfefe30a"
+		refpath="/dom[@domain='laracasts.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement"
+			capname="webelement"
+			id="2df50c2b-abe9-4207-afa0-dd45e54741fd"
+			name="WebElementSvg"
+			refimgid="dda544cb-a1f6-447d-a172-13fd35ab0bcf"
+			refpath="/dom[@domain='laracasts.com']//div[#'root']/div[2]/div/div[2]/section/button/tag[@tagname='svg']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='laracasts.com']//div[#'root']/div[2]//section/?/?/tag[@tagname='svg']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="2312754b-e057-4d8f-b9ea-a97132839415"
+			name="VModalBackgroundClick"
+			refimgid="c2bc8672-20c8-4a8e-98ad-ce69ced4d997"
+			refpath="/dom[@domain='laracasts.com']//div[#'root']/div[3]/div"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='laracasts.com']//div[#'root']/div[3]/div
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="4063f9c1-3059-45b3-a1ca-b00a9ff456fc"
+			name="PauseIcon"
+			refimgid="ff5c115b-eba6-43c0-985a-3220c651cdd4"
+			refpath="/dom[@domain='laracasts.com']//div[#'laracasts-video']/div/iframe//div[#'player']/div[7]/div[3]/button/div[3]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='laracasts.com']//div[#'laracasts-video']/?/?/iframe[@src='https://player.vimeo.com/video/546950976?color=00b1b3&amp;autoplay=1&amp;app_id=122963']//div[#'player']/div[7]/div[3]/button/div[3]
+			</item>
+			<item
+			addcaps="unknown,webelement"
+			capname="webelement"
+			id="50ba6aff-2289-46a5-9f03-f79f38097290"
+			name="WebElementSvg1"
+			refimgid="e843ba69-4463-4a19-99fe-dd4fcd1f1017"
+			refpath="/dom[@domain='laracasts.com']//button[#'search-trigger']/tag[@tagname='svg']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='laracasts.com']//button[#'search-trigger']/tag[@tagname='svg']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="cf41191d-db7e-45cc-8319-d072aaf54bb0"
+			name="Explore"
+			refimgid="3c22a30e-56c8-46dd-bf49-4c8085ac4988"
+			refpath="/dom[1]//section[#'home-skills']/div/div[3]/div[1]/div[2]/a/span[@innertext='Explore ']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='laracasts.com']//section[#'home-skills']/div/div[3]/div[1]/div[2]/a[@href&gt;'https://laracasts.com/bro']/span[@innertext='Explore ']
+			</item>
+			<item
+			addcaps="unknown,webelement"
+			capname="webelement"
+			id="cc894d17-5587-4905-a786-174edc160899"
+			name="LogoWhiteAnimated"
+			refimgid="aa91cec4-69f1-44e7-acb3-f96037ab9899"
+			refpath="/dom[1]//tag[#'logo-white-animated']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='laracasts.com']//tag[#'logo-white-animated']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="3e0c7528-fe05-4a25-97c4-fb1f14f62f4f"
+			name="SearchButton"
+			refimgid="5cf4f73c-c1a7-4d1b-8d98-888cbc4af31f"
+			refpath="/dom[1]//input[#'search-button']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='laracasts.com']//input[#'search-button']
+			</item>
+			<folder
+			capname="divtag"
+			id="9244ef13-b300-4381-bd39-2f925154387d"
+			isrooted="True"
+			name="SomeDivTag"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement"
+				capname="webelement"
+				id="9f345c5e-c13f-411c-abb6-a5214a5369d2"
+				name="WebElementSvg2"
+				refimgid="0bbb84a5-56a0-4d2b-9eea-658dbf317b34"
+				refpath="/dom[1]/body/div/div/div/nav/div/div/a/div/tag"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/?/?/nav//tag
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="0fd6fa64-94ea-41b6-8b60-feb625f3c4fe"
+				name="SomeInputTag"
+				refpath="/dom[1]/body/div/div/div/div/div/div/div/form/div/span/input"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/div//form//input
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="ff22e93e-4252-4eda-9114-dd01d6a88d3f"
+				name="SomeSpanTag"
+				refimgid="f73b3b28-12dd-490f-b850-e0b564fd2605"
+				refpath="/dom[1]/body/div/div/section/div/div/div/div/a/span"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/section//span
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="b4c87165-4a13-4329-b5c0-4dc76c06a2e2"
+				name="ViewMore"
+				refimgid="72794766-a97b-48e0-b9a3-dc77be092573"
+				refpath="/dom[1]//div[#'root']/div[1]/section/div/div/div[1]/div[2]/div[1]/ul/li[5]/div[2]/a/span[@innertext='view more']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/section/div/div/div[1]/div[2]/div[1]/ul/li[5]//span[@innertext='view more']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="8b271bde-eea1-4eb4-94c8-def3e3cb594d"
+				name="BuildAClientAppUsing"
+				refimgid="6f8c44bb-662b-40d6-a71c-3efc05c637a6"
+				refpath="/dom[1]//div[#'root']/div[1]/section/div/div/div[1]/div[2]/div[2]/div/div/div[3]/div/div[2]/h5/a/span[@innertext='Build a Client App Using ']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/section/div/div/div[1]/div[2]/div[2]/div/div/div[3]//h5/a[@href&gt;'https://laracasts.com/ser']/span[@innertext='Build a Client App Using ']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="481cd8ee-a063-4190-a97b-ee8a5a09f4dc"
+				name="LgTwFlexLgTwItemsCenter"
+				refimgid="93cb1478-acf4-4d3f-b19f-6f992bf690eb"
+				refpath="/dom[@domain='laracasts.com']//div[#'root']/div[1]/div[2]/section/div/div/div/div"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/div[2]/section/div/div/div/div
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="31a1b222-16f1-4fb8-86e7-aa63c85b18b0"
+				name="WhatchaWorkingOn"
+				refimgid="2d932d53-9cb1-4d03-99c0-56d3766e8563"
+				refpath="/dom[@domain='laracasts.com']//div[#'root']/div[1]/section/div/div/div[1]/div[2]/div[1]/ul/li[5]/div/div[12]/label/span[@innertext='Whatcha Working On']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/section//ul/li[5]/div/div[12]/?/?/span[@innertext='Whatcha Working On']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="bd166c62-b914-4455-8e43-8e85469e67b4"
+				name="ATagSignIn"
+				refimgid="ff065fcb-a67d-4dbd-abeb-da3842cff4dd"
+				refpath="/dom[@domain='laracasts.com']//div[#'root']/div[1]/div[1]/div/nav/div/div[3]/div/a[@innertext='Sign In']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/div[1]/?/?/nav//a[@innertext='Sign In']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="e845d564-2909-481f-9924-19c24d585614"
+				name="MdTwPx4MdTwPy3TwAbsoluteTwBg"
+				refimgid="d4157b6c-e5e9-4125-ba26-b16ed3cd6134"
+				refpath="/dom[@domain='laracasts.com']//div[#'root']/div[2]/div/div[2]/section/button"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/div/div[2]/section/button
+				</item>
+				<item
+				addcaps="unknown,webelement"
+				capname="webelement"
+				id="8d6c861d-73ed-4bf9-9b76-220ab0d8e755"
+				name="WebElementSvg"
+				refimgid="4906b612-722e-4b49-9eae-f43e750e87e3"
+				refpath="/dom[@domain='laracasts.com']//div[#'root']/div[1]/div[3]/section[2]/footer/div[1]/div[1]/div[2]/a[@href>'https://twitter.com/larac']/tag[@tagname='svg']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body/div/div/div[3]/section[2]//a[@href&gt;'https://twitter.com/larac']/tag[@tagname='svg']
+				</item>
+				<basepath>
+					/dom[@domain='laracasts.com']/body/div/div
+				</basepath>
+			</folder>
+			<folder
+			capname="webdocument"
+			id="57db83bd-c038-4c1d-ba85-ce9ac613c292"
+			isrooted="True"
+			name="Manual"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="unknown"
+				id="218c65ed-4c4a-4e3f-86fe-f360600dea44"
+				name="Logo"
+				refimgid="21c010e2-c055-4370-9492-626667b7dbac"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//*[@id='logo-white-animated']
+				</item>
+				<item
+				capname="inputtag"
+				id="5a2480b5-328d-495b-9139-9a01c8c6fff4"
+				name="SignInInput"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//input[@id='email']
+				</item>
+				<item
+				capname="h1tag"
+				id="5592050b-b70b-4031-8274-eb4d8b519581"
+				name="MainHeader"
+				refimgid="7e5ea6e4-a379-4e4b-95bc-d65d205191b8"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']///h1[@innertext='Screencasts for the']
+				</item>
+				<item
+				capname="divtag"
+				id="9da4a3d3-6d3a-42d8-b1c0-46c791d19fad"
+				name="FinderInput"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//div[#'header-logo-arrow']/?/?/div
+				</item>
+				<item
+				capname="unknown"
+				id="5210549f-9d2c-4f2a-81b5-7eb3426ba4cf"
+				name="NavbarFinder"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//body/div[@id='root']/div[1]/div[1]/div[1]/nav[1]/div[1]/div[3]/div[1]/button[1]/*[1]
+				</item>
+				<item
+				capname="atag"
+				id="3ec782af-26b1-4a93-94bb-ed13abb1c2a5"
+				name="NavbargetStarted"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']///a[@innertext='Get Started']
+				</item>
+				<item
+				capname="spantag"
+				id="85874add-5c84-4420-9c1d-3ce00ea94e15"
+				name="SearchPageViewMore"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//li[5]/div[@safeclass~'\bais-refinement-list-view-more\b']/a[@safeclass~'\btw-flex\b.*\btw-font-bold\b.*\btw-items-center\b']/span[@innertext='view more']
+				</item>
+				<item
+				capname="bodytag"
+				id="b0e523d7-6a9b-4fa7-8fbc-9432ddd6b3a3"
+				name="HeaderUnderStats"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']/body[@safeclass~'\bguest\b.*\bhome\b']
+				</item>
+				<item
+				capname="spantag"
+				id="d18f2b14-e9b2-449e-81c3-cb552c416d5c"
+				name="FWSerNumber"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//a[@pathname='/browse/frameworks']/span[@innertext='53']
+				</item>
+				<item
+				capname="spantag"
+				id="3a037e83-e826-4816-8168-dcf018be7b5e"
+				name="FWVidNumber"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//*[@id='home-skills']/div/div[3]/div[1]/div[2]/div/div[3]/span[1]
+				</item>
+				<item
+				capname="spantag"
+				id="37a4d1d5-a9da-4d03-a091-a9f4347ec129"
+				name="LangSerNumber"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//a[@pathname='/browse/languages']/span[@innertext='16']
+				</item>
+				<item
+				capname="spantag"
+				id="085090b0-5ee8-4cbc-b39c-2d68a2cf5fed"
+				name="LangVidNumber"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']///span[@innertext='138']
+				</item>
+				<item
+				capname="spantag"
+				id="8693a221-3593-4eb5-bca5-3e701c2fb615"
+				name="TechSerNumber"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//a[@pathname='/browse/techniques']/span[@innertext='31']
+				</item>
+				<item
+				capname="spantag"
+				id="f66a98df-e4da-4517-8082-ad659cf54c6f"
+				name="TechVidNumber"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']///span[@innertext='323']
+				</item>
+				<item
+				capname="atag"
+				id="d3df107a-e73b-4ffc-93fa-2d03a5151640"
+				name="LaravelCourseGoto"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//body/div[@id='root']/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/a[1]
+				</item>
+				<item
+				capname="divtag"
+				id="2d3e45d1-b6e5-4473-9a46-7b8eac6fffe2"
+				name="LaravelPageMenu"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//body/div[@id='root']/div[1]/div[2]/section[2]/div[1]/div[1]
+				</item>
+				<item
+				capname="atag"
+				id="bd633b70-7022-44b3-9355-d581b401ea7b"
+				name="LaravelCoursePlay"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//*[@id='root']/div[1]/div[2]/section[2]/div/div[1]/div/div[2]/div[2]/a
+				</item>
+				<item
+				capname="atag"
+				id="d92d1ca5-77aa-4047-bca5-74205c832275"
+				name="LaravelCourseVideo"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//body/div[@id='root']/div[1]/div[1]/nav[1]/div[1]/div[4]/div[1]/a[2]
+				</item>
+				<item
+				capname="spantag"
+				id="ec091321-cf06-463f-899a-f24f1cb1129c"
+				name="BuildAClientCourse"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//a[@pathname='/series/playing-with-php/episodes/2']/span[@innertext='Build a Client App Using ']
+				</item>
+				<item
+				capname="unknown"
+				id="fa6c3c35-69ca-47a8-91a3-6c9d0bc02f4b"
+				name="Twitter"
+				robustPath="/dom[@domain='laracasts.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//a[2]/svg[@safeclass~'\btw-text-white\b.*\btw-transition-all\b']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="c8c47c01-67c6-49da-aceb-434682b9dccd"
+				name="SearchTrigger"
+				refimgid="5f228d96-1f95-4748-9a69-0705e7bf0e63"
+				refpath="/dom[@domain='laracasts.com']//button[#'search-trigger']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//button[#'search-trigger']
+				</item>
+				<item
+				addcaps="container,webdocument"
+				capname="webdocument"
+				id="f0f42d6d-38a1-4647-9ab7-b8e7d2530428"
+				name="Laracasts"
+				refimgid="3720bace-5e64-4c8f-b3cf-9684a1ed87ff"
+				refpath="/dom[@domain='laracasts.com']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="036659f5-de11-49f4-847b-b1cca7dd5fb7"
+				name="SomeDivTag"
+				refimgid="29011148-2b76-443f-b59e-05e7232b6d17"
+				refpath="/dom[@domain='laracasts.com']//div[#'root']/div[1]"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='laracasts.com']//div[#'root']/div[1]
+				</item>
+				<basepath>
+					/dom[@domain='laracasts.com']
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain='laracasts.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="43a83917-ea15-4637-9be3-f73a7ec65f4d"
+		isrooted="True"
+		name="Google"
+		refpath="/dom[@domain='www.google.cz']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/dom[@domain='www.google.cz']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="6f6d1454-828b-4e9b-987c-a9b2669bb68c"
+		isrooted="True"
+		name="Prezman"
+		refimgid="a78efb73-ee3f-4bb5-9aca-c13832f43c7d"
+		refpath="/dom[@domain='www.prezman.fr']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement"
+			capname="webelement"
+			id="f4c0b6c9-8eb8-4972-8743-2c262beb2759"
+			name="WebElementSvg"
+			refimgid="8a61cd46-f4cc-472c-84b5-97cb18f67f69"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/tag[@tagname='app-main-nav']/div[1]/div/div[1]/div[2]/a/tag[@tagname='logo-prezman-white']/tag[@tagname='svg']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']/body//tag[@tagname='app-main-nav']/div[1]/div/div[1]/div[2]/a[@href='https://www.prezman.fr/']/?/?/tag[@tagname='svg']
+			</item>
+			<folder
+			capname="unknown"
+			id="2a4ab2ca-ef31-49b3-b896-cd0875fa2f41"
+			isrooted="False"
+			name="Manual"
+			searchtimeout="0ms">
+				<item
+				capname="atag"
+				id="f52f5b9a-c234-4b7b-8ab8-ed64a6a53d68"
+				name="navbarLogo"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body/app-root[1]/div[1]/app-main-nav[1]/div[1]/div[1]/div[1]/div[2]/a[1]
+				</item>
+				<item
+				capname="imgtag"
+				id="46d4a867-6ee1-4bf4-984e-6896e631a00f"
+				name="mainImage"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body/app-root[1]/div[1]/main[1]/app-home[1]/div[1]/div[1]/div[1]/a[1]/span[1]/span[1]/img[1]
+				</item>
+				<item
+				capname="atag"
+				id="d5052a48-96df-4bae-b0ee-c20411a67367"
+				name="NavbarRelations"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body[1]/app-root[1]/div[1]/app-main-nav[1]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]
+				</item>
+				<item
+				capname="litag"
+				id="6b07dc09-24aa-4560-9cce-da000763902b"
+				name="NavbarAgence"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body/app-root[1]/div[1]/app-main-nav[1]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[2]
+				</item>
+				<item
+				capname="atag"
+				id="4e1d5d57-3aaf-4be9-9893-e10753fac30f"
+				name="NavbarOffers"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body[1]/app-root[1]/div[1]/app-main-nav[1]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[3]/a[1]
+				</item>
+				<item
+				capname="atag"
+				id="8f76f8a0-9766-4e0f-84a5-ccb09998fbf4"
+				name="NavbarReferences"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body[1]/app-root[1]/div[1]/app-main-nav[1]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[4]/a[1]
+				</item>
+				<item
+				capname="divtag"
+				id="88dff5ef-61df-4e0f-aa2b-686ad4bde573"
+				name="NavbarPlus"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body/app-root[1]/div[1]/app-main-nav[1]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[5]/div[1]
+				</item>
+				<item
+				capname="spantag"
+				id="32edfc72-00d6-4986-9285-99b5fd56b138"
+				name="CarouselThirdItem"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body/app-root[1]/div[1]/main[1]/app-use-case[1]/div[1]/div[1]/div[2]/div[1]/div[1]/slider-usecases[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/a[1]/span[3]
+				</item>
+				<item
+				capname="divtag"
+				id="b06881b6-b7ee-44bb-ad04-e841bd1c12ef"
+				name="Video"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body/app-root[1]/div[1]/main[1]/app-google[1]/use-case-view[1]/div[1]/section[1]/div[1]/div[4]/div[2]/div[1]/div[1]
+				</item>
+				<item
+				capname="ptag"
+				id="d522944d-902d-49b1-b45e-45864c753d86"
+				name="ContentStrategyPar"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body[1]/app-root[1]/div[1]/main[1]/app-agence[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/p[1]
+				</item>
+				<item
+				capname="ptag"
+				id="040d70c4-5dbe-4d9b-a68d-129378c5a125"
+				name="xxx"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body[1]/app-root[1]/div[1]/main[1]/app-agence[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/p[1]
+				</item>
+				<item
+				capname="itag"
+				id="7ee0ad55-57c0-4ff7-9e30-c19800465afa"
+				name="BlogFinder"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//*[@id='masthead']/nav/div[1]/div/div/div[3]/button/i
+				</item>
+				<item
+				capname="inputtag"
+				id="06540688-713e-4d22-8574-e198f3a4c364"
+				name="BlogFinderInput"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//*[@id='search']/div/div/div/form/div/input
+				</item>
+				<item
+				capname="litag"
+				id="71647c65-771a-4074-b51d-504d7eca9de3"
+				name="LinkedIn"
+				robustPath="/dom[@domain='www.prezman.fr']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.prezman.fr']//body/app-root[1]/div[1]/main[1]/app-offres[1]/div[1]/div[1]/prez-main-footer[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/ul[1]/li[1]
+				</item>
+			</folder>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="c452effc-7a9a-4d61-afa8-8564c2a8bbf6"
+			name="VignetteUseCase"
+			refimgid="bbd8682f-1bbb-4090-91ae-f62713e2acd3"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag[@tagname='app-home']/div/div[1]/div/a/span[1]/span/img[@alt='Vignette Use Case']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']/body//main/tag[@tagname='app-home']/div/div[1]/div/a[@href&gt;'https://www.prezman.fr/re']//img[@alt='Vignette Use Case']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="7f95cf85-678e-4481-bf86-8b8a3d803591"
+			name="SomeImgTag"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag/div/div/div/a/span/span/img"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag//img
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="e1309834-1820-4366-8698-968c0e98731d"
+			name="Realisations"
+			refimgid="8168c9ec-7199-4f85-b914-df55e6c1d27e"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/tag[@tagname='app-main-nav']/div[1]/div/div[2]/nav/ul/li[1]/a[@innertext='Réalisations']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']//tag[@tagname='app-main-nav']/div[1]/div/div[2]/nav/ul/li[1]/a[@innertext='Réalisations']
+			</item>
+			<item
+			addcaps="unknown,webelement"
+			capname="webelement"
+			id="1d208af6-4d83-4219-9f92-8c0bba80ca28"
+			name="Path"
+			refimgid="cadb1e6d-2da5-48f9-baa3-41af5f316e36"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/tag[@tagname='app-main-nav']/div[1]/div/div[1]/div[2]/a/tag[@tagname='logo-prezman-white']/tag/tag[@tagname='path']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']/body//tag[@tagname='app-main-nav']/div[1]/div/div[1]/div[2]/a[@href='https://www.prezman.fr/']//tag[@tagname='path']
+			</item>
+			<item
+			addcaps="unknown,webelement,h2tag"
+			capname="h2tag"
+			id="b96c4ece-fc74-4401-8d1f-667c315520e9"
+			name="Realisations1"
+			refimgid="6a68b6fa-64c2-4983-ba7f-f1c995c87640"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag[@tagname='app-use-case']/div/div[1]/div[1]/div/div/div/div/h2[@innertext='Réalisations']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag[@tagname='app-use-case']/div/div[1]/div[1]//h2[@innertext='Réalisations']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="4fcb1cbc-ff44-4ae7-b5b6-05602720cdbe"
+			name="SliderButtonSliderButtonNext"
+			refimgid="296e4bc0-b053-4991-8643-adb074a4eb1d"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag[@tagname='app-use-case']/div/div[1]/div[2]/div/div/tag/div/div/div/div[2]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag[@tagname='app-use-case']/div/div[1]/div[2]//tag[@tagname='slider-usecases']/div/div/div/div[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="d9271931-6183-413c-9548-536527c1acbb"
+			name="SliderButtonSliderButtonPrev"
+			refimgid="8d1196cf-a80c-476d-bd7c-6b90310cacc7"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag[@tagname='app-use-case']/div/div[1]/div[2]/div/div/tag/div/div/div/div[3]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag[@tagname='app-use-case']/div/div[1]/div[2]//tag[@tagname='slider-usecases']/div/div/div/div[3]
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="dc0b5833-2104-4a98-b27d-3fdd4919f9e9"
+			name="PrezThumbSlideInnerThumb"
+			refimgid="b60c73a2-d50b-4bf2-b0bb-ac0879242893"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag[@tagname='app-use-case']/div/div[1]/div[2]/div/div/tag/div/div/div/div[1]/div[6]/div[2]/div/a/span[3]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']/body//main/tag[@tagname='app-use-case']/div/div[1]/div[2]/div/?/?/tag[@tagname='slider-usecases']/div/div/div/div[1]/div[6]/div[2]/?/?/a[@href&gt;'https://www.prezman.fr/re']/span[3]
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="3a815a52-fa95-47e2-a1f7-7375153b957b"
+			name="SpanTagRetourRealisations"
+			refimgid="a7c4df97-e207-40b3-8f6f-e3af8dbb4216"
+			refpath="/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main/tag[@tagname='app-google']/tag/div/tag[@tagname='button-usecase-back']/a/span/span[@innertext=' retour réalisations ']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']/body/tag[@tagname='app-root']/div/main//a[@href&gt;'https://www.prezman.fr/re']/?/?/span[@innertext=' retour r&#233;alisations ']
+			</item>
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="b1129b5d-ef88-42db-b42e-4155cadab1d8"
+			name="ParagraphToLog"
+			refimgid="9c5c1c85-8177-4069-ae88-c93d88517fb7"
+			refpath="/dom[@domain='www.prezman.fr']//section[#'section-expertise']/div[1]/div/div[2]/div[2]/div/div[2]/div/p[@innertext>'L’objectif d’une présentation,']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']//section[#'section-expertise']/div[1]/div/div[2]/div[2]//p[@innertext&gt;'L&#8217;objectif d&#8217;une pr&#233;sentation,']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="d59f66be-9f92-4f19-8d0f-638ef1696504"
+			name="CsIconCsIconSearch"
+			refimgid="bbeb8f16-2b0f-483d-a1ec-d11f28b64237"
+			refpath="/dom[@domain='www.prezman.fr']//header[#'masthead']/nav/div[1]/div/div/div[3]/button/i"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']//header[#'masthead']/nav/div[1]/div/div/div[3]/?/?/i
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="fb3bbc1f-75d2-4225-8c5d-e6682926c97b"
+			name="DivTagQuiNaJamaisEntenduDire"
+			refimgid="d44aabc5-dbda-4062-9b1f-b95ea4daa892"
+			refpath="/dom[@domain='www.prezman.fr']//main[#'main']/div/div/div/article/div/div[2]/div[2]/div[@innertext>'Qui n’a jamais entendu']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']//main[#'main']//article/div/div[2]/div[2]/div[@innertext&gt;'Qui n&#8217;a jamais entendu']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="3c7e40ea-bb58-416d-8947-a6457190a69c"
+			name="PrezmanLagencePowerpoint"
+			refimgid="a49616dc-3720-4064-b8f1-2e01179f2ced"
+			refpath="/dom[@domain='www.prezman.fr']//header[#'masthead']/div[1]/div/a/img[@alt>'Prezman - L''agence Powerp']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.prezman.fr']//header[#'masthead']/div[1]//img[@alt&gt;'Prezman - L''agence Powerp']
+			</item>
+			<basepath>
+				/dom[@domain='www.prezman.fr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="30f19d8d-f987-4a26-9dd3-b2b48ebff5ca"
+		isrooted="True"
+		name="PullaArtMeetsScience"
+		refpath="/dom[@domain='pulla.tv']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="1517e3ad-649a-48bb-bbc0-768499357edc"
+			name="RotateLogo"
+			refimgid="61e9fd47-9838-49cc-b945-f40d024f382f"
+			refpath="/dom[@domain='pulla.tv']//a[#'rotate-logo']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='pulla.tv']//a[#'rotate-logo']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="4366103c-52b6-4b65-a09f-808776918a12"
+			name="MenuTransformNgTnsC551ToggleMenu"
+			refimgid="40707ac0-441c-4dc6-94eb-62b73bda1fe2"
+			refpath="/dom[@domain='pulla.tv']/body/tag[@tagname='app-root']/div[1]/tag[@tagname='app-header']/div[1]/div[1]/div[4]/button"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='pulla.tv']/body/tag[@tagname='app-root']/?/?/tag[@tagname='app-header']/div[1]/div[1]/div[4]/button
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="dc7598a3-d773-41c4-87e7-ebb56d3cdaf3"
+			name="NgTnsC551TopToggle"
+			refimgid="b8ee0e6c-a94e-4d4c-bfd2-386e7245bc7e"
+			refpath="/dom[@domain='pulla.tv']/body/tag[@tagname='app-root']/div[1]/tag[@tagname='app-header']/div[1]/div[1]/div[4]/button/span[1]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='pulla.tv']/body/tag[@tagname='app-root']/div[1]/tag[@tagname='app-header']/div[1]/div[1]/div[4]/button/span[1]
+			</item>
+			<folder
+			addcaps="unknown,webelement,maintag"
+			capname="maintag"
+			id="61942587-b61f-4a5b-afa4-81a65e1c85fc"
+			isrooted="True"
+			name="MainContainerWrapper"
+			refpath="/dom[@domain='pulla.tv']//main[#'main-container-wrapper']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="a50cc0df-ce95-4925-b70a-d3442c18e232"
+				name="WatchReels"
+				refimgid="e7fbaff0-cb1f-4850-b6a1-1dbd7b68613c"
+				refpath="/dom[@domain='pulla.tv']//main[#'main-container-wrapper']/tag[@tagname='app-company']/section/div[1]/div[2]/tag/div/div[1]/div/div/div/div/div[3]/div/div/a[@innertext='Watch Reels']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='pulla.tv']//main[#'main-container-wrapper']/?/?/section/div[1]/div[2]/tag/div/div[1]/div/div/div/div/div[3]/?/?/div/a[@innertext='Watch Reels']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="a4e6cba6-20b3-4c86-8c9d-a88d41b58bdb"
+				name="AnytimeAnywhere"
+				refimgid="ebc23af4-9c4d-48b3-87c4-312334e29c8d"
+				refpath="/dom[@domain='pulla.tv']//main[#'main-container-wrapper']/tag[@tagname='app-company']/section/div[1]/div[2]/tag/div/div[1]/div/div/div/div/div[3]/div/h1/p/span[@innertext='Anytime, anywhere.']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='pulla.tv']//main[#'main-container-wrapper']/?/?/section/div[1]/div[2]/tag/div/div[1]/div/div/div/div/div[3]/?/?/h1/?/?/span[@innertext='Anytime, anywhere.']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="d860910a-3262-41ea-9521-880c8a3dbcd5"
+				name="SomeATag"
+				refpath="/dom[@domain='pulla.tv']//main[#'main-container-wrapper']/tag/section/div/div/tag/div/div/div/div/div/div/div/div/div/a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='pulla.tv']//main[#'main-container-wrapper']/tag/section/div/div/?/?/div/div//a
+				</item>
+				<basepath>
+					/dom[@domain='pulla.tv']//main[#'main-container-wrapper']
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain='pulla.tv']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="826c4c30-997e-461a-b5a3-e8c55dee3b1f"
+		isrooted="True"
+		name="AgencePowerpointAmeliorerVosPresen1"
+		refpath="/form[@title='Agence powerpoint : Améliorer vos présentations - Prezman - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="9847ee82-c864-443a-9810-ae0570591fdf"
+			name="ReelsPulla"
+			refimgid="07597ac5-c042-4ab4-9e2a-7155cbb46971"
+			refpath="/form[@title>'Agence powerpoint : Améliorer']/container/container/container[2]/container[1]/tabpagelist/container[1]/tabpage[@accessiblename='Reels - Pulla']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Agence powerpoint : Am&#233;liorer']/container[@accessiblename&gt;'Agence powerpoint : Am&#233;liorer']/container[@accessiblename='Google Chrome']//tabpagelist[@accessiblerole='PageTabList']/?/?/tabpage[@accessiblename='Reels - Pulla']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="79f07537-4c2d-43e2-a828-0b9bce10366e"
+			name="ReelsPulla1"
+			refimgid="7edb1b8d-75b3-4200-9abc-dc5b2565dd40"
+			refpath="/form[@title>'Reels - Pulla - Google Ch']/container/container/container[2]/container[1]/tabpagelist/container[1]/tabpage[@accessiblename='Reels - Pulla']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Agence powerpoint : Am&#233;liorer']/container[@accessiblename&gt;'Reels - Pulla - Google Chrome']/container[@accessiblename='Google Chrome']//tabpagelist[@accessiblerole='PageTabList']/?/?/tabpage[@accessiblename='Reels - Pulla']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="21ed0a8e-0c24-4f55-b45c-22a196ccb25f"
+			name="ReelsPullaPřehravaSeZvuk"
+			refimgid="4afc8c36-c690-4bf2-9860-bd878fe70860"
+			refpath="/form[@title>'Reels - Pulla - Google Ch']/container/container/container[2]/container[1]/tabpagelist/container[1]/tabpage[@accessiblename>'Reels - Pulla – přehrává se']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Agence powerpoint : Am&#233;liorer']/container[@accessiblename&gt;'Reels - Pulla &#8211; p&#345;ehr&#225;v&#225; se']/container[@accessiblename='Google Chrome']//tabpagelist[@accessiblerole='PageTabList']/?/?/tabpage[@accessiblename&gt;'Reels - Pulla &#8211; p&#345;ehr&#225;v&#225; se']
+			</item>
+			<basepath>
+				/form[@title&gt;'Agence powerpoint : Am&#233;liorer']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJxSURBVDhPtZJNTNNgHId38ETiDDC6LxgoGsUw
+FSK4OTYZWyftGHPqSByifOjBkbh4MEGNQdGDCBf0IBLZB4hAMEI8GCUww8Fo/CDGRA+yoYmJ4SDo
+gINe/Nn3tWVLlnjznzxpm/Z53rdNZf9lrFoFHz+0H3EPi7jbhlitFS9rbQvi7X/P/GEOVD7oWAvE
+3VWIuayI1ezDLFe5JD6aPnEvh7UAkVMDwi5IIMZbMMebISrJeVxdgQ8H7EKgOhkQrqVXkHYQc1oQ
+48zoLdsxLqoyWYY+n9s0dBIvnGZ8dAuSIM9dakMikVjj86ABX0eNWBzfi5+TFfg1bUruouDuCRAu
+NjvwrsaC+Y7zaBtegat7leLsWsXi9wR+v2KBWZE3NpTr1xtoIH+wBRJPWCNdkYg1gkhk/vpfEp8m
+xIBdCFQh2lfylAZ0g82QYLuO0ACRCZLMda5i+jSHRy4GX/p20sDyjHmZBnIHmiCRJ0AC0spE9J8K
+Ycymgle5AeYsOZy52ZiqU2HgStEQDSh76hY0kePQRhop5Jy8sxToNygxzGpQliFHa6EK3fZiNBYw
+iPq0yQ+pFiSCKnyMogw34N77KMaaeNwxMRiyq3Bmmw4jnmK8vuDAiM+ESW9KgLlZt0QkCUbkVimD
+3j0q3K5Uo2P3VvgUOrQwajwLsHjoTgmQYUINyAkdhSJUT4/ZwXrwfhN6dilxo1yNa2V6XNVvx/OA
+C2/bPXjA56X/kfJWywQJZAV9NFAV9KKzWIFzhTnw63Ro37gF923liLA6BK2aH6KWPusKM43ys7aZ
+b1OmlfDlouGAJhOBzRo0atXoc5Si31MiyDLZH0NSuCTboDazAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="93272f59-f3bd-4eec-ac9e-8a908d1d449b"
+		isrooted="True"
+		name="SingleBarrelBourbonBakersRKentuc"
+		refpath="/dom[@domain='www.bakersbourbon.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="49537454-5ff6-4a31-bbda-884f7a738405"
+			name="DivTagBuy"
+			refimgid="58fbe6f5-5635-4812-bc05-87730f553344"
+			refpath="/dom[@domain='www.bakersbourbon.com']/body/tag[@tagname='app-root']/tag[@tagname='the-header']/header/a[1]/div[@innertext='Buy']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.bakersbourbon.com']/?/?/tag[@tagname='app-root']/?/?/header/a[1]/div[@innertext='Buy']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="d1f83589-2f8a-4700-8122-e130d013dc3c"
+			name="Bakers13YearOldBourbonBottleImage"
+			refimgid="357421c0-0602-4b05-af27-fccbb6c2b61a"
+			refpath="/dom[@domain='www.bakersbourbon.com']//tag[#'product-locator']/tag[@tagname='bsi-products']/div/div[2]/div[2]/div[1]/img[@alt>'Baker’s 13 Year Old Bourbon']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.bakersbourbon.com']//tag[#'product-locator']/tag[@tagname='bsi-products']/div/div[2]/div[2]/?/?/img[@alt&gt;'Baker&#8217;s 13 Year Old Bourbon']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="9ff45f4b-145a-42af-b5d8-c8fa98071d47"
+			name="SomeImgTag"
+			refpath="/dom[@domain='www.bakersbourbon.com']//tag[#'product-locator']/tag/div/div/div/div/img"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.bakersbourbon.com']//tag[#'product-locator']/tag/div//img
+			</item>
+			<basepath>
+				/dom[@domain='www.bakersbourbon.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="a2ececdf-ebb8-44c0-a3e9-e085cf04b0ec"
+		isrooted="True"
+		name="LaracastsGoogleChrome"
+		refpath="/form[@title='Laracasts - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="c6d3efeb-dc44-4b44-a5da-796d8395a094"
+			name="ThomasShelbyPullMeFromTheDark"
+			refimgid="b462a91e-2887-4e60-8b67-032f73c88c52"
+			refpath="/form[@title='Laracasts - Google Chrome']/container/container/container[2]/container[1]/toolbar[@accessiblename='Záložky']/button[@accessiblename>'Thomas Shelby | Pull me from']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Laracasts - Google Chrome']/container[@accessiblename&gt;'Laracasts - Google Chrome']//toolbar[@accessiblename='Z&#225;lo&#382;ky']/button[@accessiblename&gt;'Thomas Shelby | Pull me from']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="0c8e79d8-3e71-4514-88e0-b13aaaa3fb9b"
+			name="AdresniAVyhledavaciŘadek"
+			refimgid="1adfa799-3dd8-456e-922c-e3d9cc8ed5b4"
+			refpath="/form[@title='Laracasts - Google Chrome']/container/container/container[2]/container[1]/toolbar[1]/container[@accessiblerole='Grouping']/text[@accessiblename>'Adresní a vyhledávací řád']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Laracasts - Google Chrome']/container[@accessiblename&gt;'Laracasts - Google Chrome']/container[@accessiblename='Google Chrome']/container[2]/container[1]/toolbar[1]/?/?/text[@accessiblename&gt;'Adresn&#237; a vyhled&#225;vac&#237; &#345;&#225;d']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="35c95dca-ae83-431f-b789-00887d2d3edf"
+			name="AdresniAVyhledavaciŘadek1"
+			refimgid="4d69b4f5-4923-411f-aa32-f3f68419fab1"
+			refpath="/form[@title>'Laracasts Search: vue - Google']/container/container/container[2]/container[1]/toolbar[1]/container[@accessiblerole='Grouping']/text[@accessiblename>'Adresní a vyhledávací řád']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Laracasts - Google Chrome']/container[@accessiblename&gt;'Laracasts Search: vue - Google']/container[@accessiblename='Google Chrome']/container[2]/container[1]/toolbar[1]/?/?/text[@accessiblename&gt;'Adresn&#237; a vyhled&#225;vac&#237; &#345;&#225;d']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="59116276-150e-40c6-b221-17bbf4c19e2e"
+			name="AdresniAVyhledavaciŘadek2"
+			refimgid="deefde67-5525-48b5-a497-513643a4200f"
+			refpath="/form[@title>'Laracasts: Laravel 8 From']/container/container/container[2]/container[1]/toolbar[1]/container[@accessiblerole='Grouping']/text[@accessiblename>'Adresní a vyhledávací řád']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Laracasts - Google Chrome']/container[@accessiblename&gt;'Laracasts: Laravel 8 From']/container[@accessiblename='Google Chrome']/container[2]/container[1]/toolbar[1]/?/?/text[@accessiblename&gt;'Adresn&#237; a vyhled&#225;vac&#237; &#345;&#225;d']
+			</item>
+			<basepath>
+				/form[@title='Laracasts - Google Chrome']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJxSURBVDhPtZJNTNNgHId38ETiDDC6LxgoGsUw
+FSK4OTYZWyftGHPqSByifOjBkbh4MEGNQdGDCBf0IBLZB4hAMEI8GCUww8Fo/CDGRA+yoYmJ4SDo
+gINe/Nn3tWVLlnjznzxpm/Z53rdNZf9lrFoFHz+0H3EPi7jbhlitFS9rbQvi7X/P/GEOVD7oWAvE
+3VWIuayI1ezDLFe5JD6aPnEvh7UAkVMDwi5IIMZbMMebISrJeVxdgQ8H7EKgOhkQrqVXkHYQc1oQ
+48zoLdsxLqoyWYY+n9s0dBIvnGZ8dAuSIM9dakMikVjj86ABX0eNWBzfi5+TFfg1bUruouDuCRAu
+NjvwrsaC+Y7zaBtegat7leLsWsXi9wR+v2KBWZE3NpTr1xtoIH+wBRJPWCNdkYg1gkhk/vpfEp8m
+xIBdCFQh2lfylAZ0g82QYLuO0ACRCZLMda5i+jSHRy4GX/p20sDyjHmZBnIHmiCRJ0AC0spE9J8K
+Ycymgle5AeYsOZy52ZiqU2HgStEQDSh76hY0kePQRhop5Jy8sxToNygxzGpQliFHa6EK3fZiNBYw
+iPq0yQ+pFiSCKnyMogw34N77KMaaeNwxMRiyq3Bmmw4jnmK8vuDAiM+ESW9KgLlZt0QkCUbkVimD
+3j0q3K5Uo2P3VvgUOrQwajwLsHjoTgmQYUINyAkdhSJUT4/ZwXrwfhN6dilxo1yNa2V6XNVvx/OA
+C2/bPXjA56X/kfJWywQJZAV9NFAV9KKzWIFzhTnw63Ro37gF923liLA6BK2aH6KWPusKM43ys7aZ
+b1OmlfDlouGAJhOBzRo0atXoc5Si31MiyDLZH0NSuCTboDazAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="f6fc1697-9edd-497f-af6a-d566778d8d58"
+		isrooted="True"
+		name="FacebookPřihlasteSeNeboSeZaregist"
+		refimgid="ad67ab6f-3e2f-4494-9ebf-bb589a166fa0"
+		refpath="/dom[@domain='www.facebook.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="49873491-3f73-42e5-b208-6033ccedd6d7"
+			name="DivTag4bl9Ihf"
+			refimgid="9de89296-78d6-40d1-bef6-c6b5db610365"
+			refpath="/dom[@domain='www.facebook.com']//div[#'content']/div/div/div/div[1]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.facebook.com']//div[#'content']/div/div/div/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="9b67ddaf-1190-4eaa-9856-39be48f944d9"
+			name="PřihlasitSe"
+			refimgid="f8e7613c-470b-4638-88b7-0ef13dfd71f1"
+			refpath="/dom[@domain='www.facebook.com']//div[#'content']/div/div/div/div[2]/div/div[1]/form/div[2]/button[@innertext='Přihlásit se']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.facebook.com']//div[#'content']/div/div/div/div[2]//form[@action='https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjIwOTAyMzkzLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D']/div[2]/button[@innertext='Přihlásit se']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="4e856f15-f9b5-4c41-8aa8-9d7760b09eb1"
+			name="DivTag8esn"
+			refimgid="552d78ec-c918-491b-a871-d14d5702087f"
+			refpath="/dom[@domain='www.facebook.com']//div[#'content']/div/div/div/div[2]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.facebook.com']//div[#'content']/div/div/div/div[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c0fd102b-153e-4a0d-b4e7-79634db8bb59"
+			name="Email"
+			refimgid="df5bba6f-faa6-40a7-a891-08266e8041ee"
+			refpath="/dom[@domain='www.facebook.com']//input[#'email']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.facebook.com']//input[#'email']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="2f1af50b-4f20-4c2c-ad23-8ecce79a77bf"
+			name="PřijmoutVše"
+			refimgid="f3c88a54-c1f8-454a-abd8-39b7fc48d770"
+			refpath="/dom[@domain='www.facebook.com']/body/div[3]/div[2]/div/div/div/div/div[3]/button[@title='Přijmout vše']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.facebook.com']/body/div[3]/div[2]/div/div/div/div/div[3]/button[@title='Přijmout vše']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="7a57d87e-0882-483a-8319-1c664461f709"
+			name="DivTag30ny4U5"
+			refimgid="cd5abe88-3f5c-4162-9a75-0a10c99d352a"
+			refpath="/dom[@domain='www.facebook.com']//div[#'content']/div"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.facebook.com']//div[#'content']/div
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="1ced442f-d11b-4355-9480-6c4f607aed91"
+			name="SomeInputTag"
+			refpath="/dom[@domain='www.facebook.com']/body/div/div/div/div/div/div/form/div/div/input"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.facebook.com']/body/div/div/div//form//input
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="2bab5f85-0f34-47e5-b2dc-ccd09873e00a"
+			name="Pass"
+			refimgid="0da3be9d-e0be-4866-90f8-e3220f48ebc5"
+			refpath="/dom[@domain='www.facebook.com']//input[#'pass']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.facebook.com']//input[#'pass']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="24f0a51d-4c62-40b3-8039-8cb3bdd87f9a"
+			name="SomeInputTag1"
+			refpath="/dom[@domain='www.facebook.com']/body/div/div/div/div/div/div/form/div/div/div/div/input"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.facebook.com']/body/div/div/div/div//form//input
+			</item>
+			<basepath>
+				/dom[@domain='www.facebook.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="4285be14-8dca-4fa8-ba3f-29442ad6dace"
+		isrooted="True"
+		name="WebDocument256RanorexStudioTracking"
+		refpath="/dom[@domain='www.youtube.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,videotag"
+			capname="videotag"
+			id="af8ca9ae-a4fa-4abc-869d-d564a0bfc248"
+			name="BlobHttpsWwwYoutubeComDa0a382b99"
+			refimgid="b82d8be4-4334-4992-b359-fdbf5eb44f43"
+			refpath="/dom[@domain='www.youtube.com']//div[#'movie_player']/div[1]/video[@src='blob:https://www.youtube.com/da0a382b-9907-4ae2-9a46-b86a02b41839']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.youtube.com']//div[#'movie_player']/?/?/video[@src='blob:https://www.youtube.com/da0a382b-9907-4ae2-9a46-b86a02b41839']
+			</item>
+			<basepath>
+				/dom[@domain='www.youtube.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<item
+		capname="divtag"
+		id="b36fe727-b453-488d-9ac9-bfffedc6ea37"
+		name="LaravelCourse"
+		robustPath="/dom[@domain='laracasts.com']/element"
+		searchtimeout="30000ms">
+			/dom[@domain='laracasts.com']//body/div[@id='root']/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]
+		</item>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="62ff1428-4bb3-483c-bf82-277c7c719351"
+		isrooted="True"
+		name="PlayingWithPHPBuildAClientAppUsi"
+		refpath="/form[@title='Playing With PHP: Build a Client App Using Vue - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="0251f068-1967-4abd-b3e7-79fdfb126c6e"
+			name="AdresniAVyhledavaciŘadek"
+			refimgid="8c59e282-52fb-4684-bcba-1f527b38d0cb"
+			refpath="/form[@title>'Playing With PHP: Build a']/container/container/container[2]/container[1]/toolbar[1]/container[@accessiblerole='Grouping']/text[@accessiblename>'Adresní a vyhledávací řád']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Playing With PHP: Build a']/container[@accessiblename&gt;'Playing With PHP: Build a']/container[@accessiblename='Google Chrome']/container[2]/container[1]/toolbar[1]/?/?/text[@accessiblename&gt;'Adresn&#237; a vyhled&#225;vac&#237; &#345;&#225;d']
+			</item>
+			<basepath>
+				/form[@title&gt;'Playing With PHP: Build a']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJxSURBVDhPtZJNTNNgHId38ETiDDC6LxgoGsUw
+FSK4OTYZWyftGHPqSByifOjBkbh4MEGNQdGDCBf0IBLZB4hAMEI8GCUww8Fo/CDGRA+yoYmJ4SDo
+gINe/Nn3tWVLlnjznzxpm/Z53rdNZf9lrFoFHz+0H3EPi7jbhlitFS9rbQvi7X/P/GEOVD7oWAvE
+3VWIuayI1ezDLFe5JD6aPnEvh7UAkVMDwi5IIMZbMMebISrJeVxdgQ8H7EKgOhkQrqVXkHYQc1oQ
+48zoLdsxLqoyWYY+n9s0dBIvnGZ8dAuSIM9dakMikVjj86ABX0eNWBzfi5+TFfg1bUruouDuCRAu
+NjvwrsaC+Y7zaBtegat7leLsWsXi9wR+v2KBWZE3NpTr1xtoIH+wBRJPWCNdkYg1gkhk/vpfEp8m
+xIBdCFQh2lfylAZ0g82QYLuO0ACRCZLMda5i+jSHRy4GX/p20sDyjHmZBnIHmiCRJ0AC0spE9J8K
+Ycymgle5AeYsOZy52ZiqU2HgStEQDSh76hY0kePQRhop5Jy8sxToNygxzGpQliFHa6EK3fZiNBYw
+iPq0yQ+pFiSCKnyMogw34N77KMaaeNwxMRiyq3Bmmw4jnmK8vuDAiM+ESW9KgLlZt0QkCUbkVimD
+3j0q3K5Uo2P3VvgUOrQwajwLsHjoTgmQYUINyAkdhSJUT4/ZwXrwfhN6dilxo1yNa2V6XNVvx/OA
+C2/bPXjA56X/kfJWywQJZAV9NFAV9KKzWIFzhTnw63Ro37gF923liLA6BK2aH6KWPusKM43ys7aZ
+b1OmlfDlouGAJhOBzRo0atXoc5Si31MiyDLZH0NSuCTboDazAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="88bd0694-212b-4b13-a839-afbaf066c192"
+		isrooted="True"
+		name="LaracastsAtlaracastsTwitter"
+		refpath="/dom[@domain='twitter.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="d0556e49-ccc7-423a-b3ef-df19d7973a82"
+			name="Css1dbjc4nR1d2f490R1mi75quR1ny4l3"
+			refimgid="5982f759-c3cb-48ce-a7bd-89dfb509e31b"
+			refpath="/dom[@domain='twitter.com']//div[#'react-root']/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div/div[1]/div/div[1]/a/div[2]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='twitter.com']//div[#'react-root']/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div/div[1]/div/div[1]/a[@href&gt;'https://twitter.com/larac']/div[2]
+			</item>
+			<basepath>
+				/dom[@domain='twitter.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="20570a18-3cca-4b59-9bd9-2129871f216c"
+		isrooted="True"
+		name="PresentationPowerpointGoogleEtEtude"
+		refpath="/form[@title='Présentation Powerpoint Google et étude de cas - Prezman - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="e76cc92f-8e05-4412-b8ed-20f6d7d10627"
+			name="PresentationPowerpointGoogleEtEtude"
+			refimgid="90d6bd2d-c1bf-4563-92bb-0e3562006445"
+			refpath="/form[@title>'Présentation Powerpoint Google']/container/container/container[2]/container[1]/tabpagelist/container[1]/tabpage[@accessiblename>'Présentation Powerpoint Google']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Pr&#233;sentation Powerpoint Google']/container[@accessiblename&gt;'Pr&#233;sentation Powerpoint Google']/container[@accessiblename='Google Chrome']//tabpagelist[@accessiblerole='PageTabList']/?/?/tabpage[@accessiblename&gt;'Pr&#233;sentation Powerpoint Google']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="469c335e-511c-44d0-8bfc-ef057e228806"
+			name="AdresniAVyhledavaciŘadek"
+			refimgid="7c1d53d2-b1cb-47f1-b51f-5157f67b2a40"
+			refpath="/form[@title>'Prezman Blog - The PowerPoint']/container/container/container[2]/container[1]/toolbar[1]/container[@accessiblerole='Grouping']/text[@accessiblename>'Adresní a vyhledávací řád']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Pr&#233;sentation Powerpoint Google']/container[@accessiblename&gt;'Prezman Blog - The PowerPoint']/container[@accessiblename='Google Chrome']/container[2]/container[1]/toolbar[1]/?/?/text[@accessiblename&gt;'Adresn&#237; a vyhled&#225;vac&#237; &#345;&#225;d']
+			</item>
+			<basepath>
+				/form[@title&gt;'Pr&#233;sentation Powerpoint Google']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJxSURBVDhPtZJNTNNgHId38ETiDDC6LxgoGsUw
+FSK4OTYZWyftGHPqSByifOjBkbh4MEGNQdGDCBf0IBLZB4hAMEI8GCUww8Fo/CDGRA+yoYmJ4SDo
+gINe/Nn3tWVLlnjznzxpm/Z53rdNZf9lrFoFHz+0H3EPi7jbhlitFS9rbQvi7X/P/GEOVD7oWAvE
+3VWIuayI1ezDLFe5JD6aPnEvh7UAkVMDwi5IIMZbMMebISrJeVxdgQ8H7EKgOhkQrqVXkHYQc1oQ
+48zoLdsxLqoyWYY+n9s0dBIvnGZ8dAuSIM9dakMikVjj86ABX0eNWBzfi5+TFfg1bUruouDuCRAu
+NjvwrsaC+Y7zaBtegat7leLsWsXi9wR+v2KBWZE3NpTr1xtoIH+wBRJPWCNdkYg1gkhk/vpfEp8m
+xIBdCFQh2lfylAZ0g82QYLuO0ACRCZLMda5i+jSHRy4GX/p20sDyjHmZBnIHmiCRJ0AC0spE9J8K
+Ycymgle5AeYsOZy52ZiqU2HgStEQDSh76hY0kePQRhop5Jy8sxToNygxzGpQliFHa6EK3fZiNBYw
+iPq0yQ+pFiSCKnyMogw34N77KMaaeNwxMRiyq3Bmmw4jnmK8vuDAiM+ESW9KgLlZt0QkCUbkVimD
+3j0q3K5Uo2P3VvgUOrQwajwLsHjoTgmQYUINyAkdhSJUT4/ZwXrwfhN6dilxo1yNa2V6XNVvx/OA
+C2/bPXjA56X/kfJWywQJZAV9NFAV9KKzWIFzhTnw63Ro37gF923liLA6BK2aH6KWPusKM43ys7aZ
+b1OmlfDlouGAJhOBzRo0atXoc5Si31MiyDLZH0NSuCTboDazAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<item
+		addcaps="unknown,webelement,spantag"
+		capname="spantag"
+		id="02aa9458-45ba-4886-b424-3c5c2aca3c47"
+		name="IconWrapCircle"
+		refimgid="a012e8cd-c9f7-4974-811c-f88edbf37cc3"
+		refpath="/dom[@domain='www.prezman.fr']//tag[#'bt-scroll-top']/div/span/span/span"
+		robustPath=""
+		searchtimeout="30000ms">
+			/dom[@domain='www.prezman.fr']//tag[#'bt-scroll-top']/div/span/span/span
+		</item>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="45f6bd9a-e747-4d83-9cf6-c3e679c98541"
+		isrooted="True"
+		name="Facebook"
+		refimgid="fee972b7-3a5c-4a26-9f0c-8bea5dfbf064"
+		refpath="/form[@title='Facebook – přihlaste se, nebo se zaregistrujte - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="08c1e271-061e-458a-b46d-45121edd853e"
+			name="Element358829184"
+			refimgid="f4f7f800-5496-4be8-8b8a-90c505f6a0d6"
+			refpath="/form[@title>'Facebook – přihlaste se, nebo']/element[@controlid='358829184']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']/element[@controlid='358829184']
+			</item>
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="fe462dc1-5d11-44d7-91ba-bf431e359b53"
+			name="Element40082816"
+			refimgid="6c629dbf-f8a5-4226-93bf-8f1034eab147"
+			refpath="/form[@title>'Facebook – přihlaste se, nebo']/element[@controlid='40082816']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']/element[@controlid='40082816']
+			</item>
+			<folder
+			capname="unknown"
+			id="97bfdfe6-303a-4cb8-aa32-dd1fd8e8ebfe"
+			isrooted="False"
+			name="Manual"
+			searchtimeout="0ms">
+				<item
+				capname="atag"
+				id="a0192ac4-7edb-470f-a290-ea4b07a7a5d4"
+				name="NavbarHome"
+				robustPath="/form[@title>'Facebook – přihlaste se, nebo']/element"
+				searchtimeout="30000ms">
+					/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']//*[@id='mount_0_0_Yw']/div/div[1]/div/div[2]/div[3]/div/div[1]/div[1]/ul/li[1]/span/div/a
+				</item>
+				<item
+				capname="imgtag"
+				id="a53dc810-2465-43ad-9b27-b67ddb919ad6"
+				name="NavbarProfile"
+				robustPath="/form[@title>'Facebook – přihlaste se, nebo']/element"
+				searchtimeout="30000ms">
+					/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']//*[@id='mount_0_0_Yw']/div/div[1]/div/div[2]/div[4]/div[1]/span/div/div[1]/img
+				</item>
+				<item
+				capname="unknown"
+				id="48f140cb-dca9-4f24-aabe-94d2746e0cae"
+				name="_"
+				refimgid="8436e08d-2bfe-4774-90c7-4028fc32eff2"
+				robustPath="/form[@title>'Facebook – přihlaste se, nebo']/element"
+				searchtimeout="30000ms">
+					/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']/element
+				</item>
+				<item
+				capname="unknown"
+				id="88c6bab3-2a9c-4499-83e7-dcb1fef5b9b3"
+				name="ProfilePhoto"
+				refimgid="8436e08d-2bfe-4774-90c7-4028fc32eff2"
+				robustPath="/form[@title>'Facebook – přihlaste se, nebo']/element"
+				searchtimeout="30000ms">
+					/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']//*[@id='mount_0_0_5G']/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[1]/div[2]/div/div/div[1]/div/div/div/div/div/svg/g/image
+				</item>
+				<item
+				capname="unknown"
+				id="a5c0b54a-0932-4286-92c6-ddd71d9002e1"
+				name="Cookies"
+				refimgid="8436e08d-2bfe-4774-90c7-4028fc32eff2"
+				robustPath="/form[@title>'Facebook – přihlaste se, nebo']/element"
+				searchtimeout="30000ms">
+					/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']//*[@id='u_0_p_BR']
+				</item>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="40a74623-db18-4932-8e08-206f6e476fd8"
+			name="Založky"
+			refimgid="4e2ea819-c5e8-48e5-bdf6-8b68869ee9e7"
+			refpath="/form[@title>'Facebook – přihlaste se, nebo']/container/container/container[2]/container[1]/toolbar[@accessiblename='Záložky']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']/container[@accessiblename&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']/container[@accessiblename='Google Chrome']//toolbar[@accessiblename='Z&#225;lo&#382;ky']
+			</item>
+			<basepath>
+				/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJxSURBVDhPtZJNTNNgHId38ETiDDC6LxgoGsUw
+FSK4OTYZWyftGHPqSByifOjBkbh4MEGNQdGDCBf0IBLZB4hAMEI8GCUww8Fo/CDGRA+yoYmJ4SDo
+gINe/Nn3tWVLlnjznzxpm/Z53rdNZf9lrFoFHz+0H3EPi7jbhlitFS9rbQvi7X/P/GEOVD7oWAvE
+3VWIuayI1ezDLFe5JD6aPnEvh7UAkVMDwi5IIMZbMMebISrJeVxdgQ8H7EKgOhkQrqVXkHYQc1oQ
+48zoLdsxLqoyWYY+n9s0dBIvnGZ8dAuSIM9dakMikVjj86ABX0eNWBzfi5+TFfg1bUruouDuCRAu
+NjvwrsaC+Y7zaBtegat7leLsWsXi9wR+v2KBWZE3NpTr1xtoIH+wBRJPWCNdkYg1gkhk/vpfEp8m
+xIBdCFQh2lfylAZ0g82QYLuO0ACRCZLMda5i+jSHRy4GX/p20sDyjHmZBnIHmiCRJ0AC0spE9J8K
+Ycymgle5AeYsOZy52ZiqU2HgStEQDSh76hY0kePQRhop5Jy8sxToNygxzGpQliFHa6EK3fZiNBYw
+iPq0yQ+pFiSCKnyMogw34N77KMaaeNwxMRiyq3Bmmw4jnmK8vuDAiM+ESW9KgLlZt0QkCUbkVimD
+3j0q3K5Uo2P3VvgUOrQwajwLsHjoTgmQYUINyAkdhSJUT4/ZwXrwfhN6dilxo1yNa2V6XNVvx/OA
+C2/bPXjA56X/kfJWywQJZAV9NFAV9KKzWIFzhTnw63Ro37gF923liLA6BK2aH6KWPusKM43ys7aZ
+b1OmlfDlouGAJhOBzRo0atXoc5Si31MiyDLZH0NSuCTboDazAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="c3daea3a-b6d4-44d3-86f8-6a79d1a93afa"
+		isrooted="True"
+		name="FacebookGoogleChrome"
+		refpath="/form[@title='Facebook - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="7eee690d-916e-4760-8c84-25371f2afca5"
+			name="ProfileSide"
+			refimgid="f19feab0-839e-4d9c-b29d-27fb75d5d533"
+			refpath="/form[@title='Facebook - Google Chrome']/element[@controlid='50780384']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Facebook - Google Chrome']/element[@controlid='50780384']
+			</item>
+			<basepath>
+				/form[@title='Facebook - Google Chrome']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJxSURBVDhPtZJNTNNgHId38ETiDDC6LxgoGsUw
+FSK4OTYZWyftGHPqSByifOjBkbh4MEGNQdGDCBf0IBLZB4hAMEI8GCUww8Fo/CDGRA+yoYmJ4SDo
+gINe/Nn3tWVLlnjznzxpm/Z53rdNZf9lrFoFHz+0H3EPi7jbhlitFS9rbQvi7X/P/GEOVD7oWAvE
+3VWIuayI1ezDLFe5JD6aPnEvh7UAkVMDwi5IIMZbMMebISrJeVxdgQ8H7EKgOhkQrqVXkHYQc1oQ
+48zoLdsxLqoyWYY+n9s0dBIvnGZ8dAuSIM9dakMikVjj86ABX0eNWBzfi5+TFfg1bUruouDuCRAu
+NjvwrsaC+Y7zaBtegat7leLsWsXi9wR+v2KBWZE3NpTr1xtoIH+wBRJPWCNdkYg1gkhk/vpfEp8m
+xIBdCFQh2lfylAZ0g82QYLuO0ACRCZLMda5i+jSHRy4GX/p20sDyjHmZBnIHmiCRJ0AC0spE9J8K
+Ycymgle5AeYsOZy52ZiqU2HgStEQDSh76hY0kePQRhop5Jy8sxToNygxzGpQliFHa6EK3fZiNBYw
+iPq0yQ+pFiSCKnyMogw34N77KMaaeNwxMRiyq3Bmmw4jnmK8vuDAiM+ESW9KgLlZt0QkCUbkVimD
+3j0q3K5Uo2P3VvgUOrQwajwLsHjoTgmQYUINyAkdhSJUT4/ZwXrwfhN6dilxo1yNa2V6XNVvx/OA
+C2/bPXjA56X/kfJWywQJZAV9NFAV9KKzWIFzhTnw63Ro37gF923liLA6BK2aH6KWPusKM43ys7aZ
+b1OmlfDlouGAJhOBzRo0atXoc5Si31MiyDLZH0NSuCTboDazAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="0a346f17-631a-4f25-86b0-9bc44423bc4a"
+		isrooted="True"
+		name="Chrome"
+		refpath="/dom[@browsername='Chrome']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="8d1757e8-de2b-4dec-a2f8-1dcf861f2fa7"
+			name="SomeInputTag"
+			refpath="/dom/body/div/div/div/div/div/div/form/div/div/div/div/input"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@browsername='Chrome']/body/div/div/div/div//form//input
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="a77d403f-1b78-4915-8452-7453b60af338"
+			name="Prezman"
+			refimgid="81c267ad-bdb6-4bee-8d29-308b210f28db"
+			refpath="/dom[@domain='www.linkedin.com']//main[#'main-content']/section[1]/section[1]/div/div[1]/img[@alt='Prezman']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@browsername='Chrome']//main[#'main-content']/section[1]/section[1]//img[@alt='Prezman']
+			</item>
+			<basepath>
+				/dom[@browsername='Chrome']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="b806f73b-8211-41fe-87cb-0406a97b2d14"
+		name="navbarHome">
+			Home
+		</var>
+		<var
+		id="4f2a6af9-4918-4347-a681-5b01db437e28"
+		name="navbarDropdown">
+			Mini apps&#32;
+		</var>
+		<var
+		id="3fec96a2-1d60-4423-b73e-0521875373d9"
+		name="navbarAbout">
+			About
+		</var>
+	</variables>
+</repository>

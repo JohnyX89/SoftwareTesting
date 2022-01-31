@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="Bakalarka"
+      id="40c917df-4291-4ba0-b4b5-a0b366043bc3"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="Bakalarka"
+      id="40c917df-4291-4ba0-b4b5-a0b366043bc3"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

@@ -1,0 +1,165 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Angular_Prezman",
+    "children" : [ {
+      "name" : "000-Prepare main page",
+      "uid" : "d0be06fb0970dac9",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981507728,
+        "stop" : 1619981509968,
+        "duration" : 2240
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "001-Layout",
+      "uid" : "b010694a055660d0",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981509971,
+        "stop" : 1619981513933,
+        "duration" : 3962
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "002-Navbar",
+      "uid" : "47a750630f4a8b0d",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981513934,
+        "stop" : 1619981518661,
+        "duration" : 4727
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "003-Main page",
+      "uid" : "28685b8b637ba3a8",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981518662,
+        "stop" : 1619981519586,
+        "duration" : 924
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "004-Carousel",
+      "uid" : "7b7e350ac7272261",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981519586,
+        "stop" : 1619981524834,
+        "duration" : 5248
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "005-CarouselItemPage",
+      "uid" : "b3b2d7e7d0ea172d",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981524834,
+        "stop" : 1619981534050,
+        "duration" : 9216
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "006-Back button",
+      "uid" : "5b09ed87d9f96046",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981534050,
+        "stop" : 1619981534636,
+        "duration" : 586
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "007-Log text",
+      "uid" : "4777535404e047fa",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981534636,
+        "stop" : 1619981536917,
+        "duration" : 2281
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "008-Scroll top",
+      "uid" : "d6904aa29b58d51a",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "broken",
+      "time" : {
+        "start" : 1619981536917,
+        "stop" : 1619981537496,
+        "duration" : 579
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "009-Search",
+      "uid" : "2dac115bb72b4b16",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981537496,
+        "stop" : 1619981540374,
+        "duration" : 2878
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "010-Redirect by logo",
+      "uid" : "22f4c88fb967b74f",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981540374,
+        "stop" : 1619981544723,
+        "duration" : 4349
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    }, {
+      "name" : "011-Redirect to LinkedIn",
+      "uid" : "f097fc93478ec949",
+      "parentUid" : "8971436fdb07f0c7ad2ce98bdc9f2beb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981544723,
+        "stop" : 1619981550511,
+        "duration" : 5788
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-90.0.4430.93" ]
+    } ],
+    "uid" : "8971436fdb07f0c7ad2ce98bdc9f2beb"
+  } ]
+}

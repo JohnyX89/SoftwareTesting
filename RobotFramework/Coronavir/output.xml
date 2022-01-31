@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20200323 11:55:40.321" rpa="false">
+<suite id="s1" name="Test" source="C:\Users\Johny\PycharmProjects\CoronaVirus\TS_002-CoronaVirusStats\test.robot">
+<test id="s1-t1" name="Pre-conditions">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.2</arg>
+</arguments>
+<status status="PASS" starttime="20200323 11:55:41.072" endtime="20200323 11:55:41.073"></status>
+</kw>
+<status status="PASS" starttime="20200323 11:55:41.071" endtime="20200323 11:55:41.073" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC_001 - Zkontroluj načtení stránky">
+<kw name="Otevri Prohlizec Na Dane URL A Zkontroluj" library="keywords">
+<arguments>
+<arg>${MainPage}</arg>
+<arg>${ProhlizecChrome}</arg>
+<arg>${LastDiv}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200323 11:55:41.076" level="INFO">Opening browser 'Chrome' to base url 'https://www.worldometers.info/'.</msg>
+<status status="PASS" starttime="20200323 11:55:41.076" endtime="20200323 11:55:48.714"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${KontrolovanaXPath}</arg>
+</arguments>
+<status status="PASS" starttime="20200323 11:55:48.714" endtime="20200323 11:56:09.039"></status>
+</kw>
+<status status="PASS" starttime="20200323 11:55:41.075" endtime="20200323 11:56:09.040"></status>
+</kw>
+<status status="PASS" starttime="20200323 11:55:41.074" endtime="20200323 11:56:09.040" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC_002 - Najdi počet nakažených Coronavirusem v zemi">
+<kw name="Zaloguj Počet Nakazenych V Zemi" library="keywords">
+<arguments>
+<arg>Italy</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${CoronavirusSite}</arg>
+</arguments>
+<status status="PASS" starttime="20200323 11:56:09.049" endtime="20200323 11:56:09.905"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CoronavirusSite}</arg>
+</arguments>
+<msg timestamp="20200323 11:56:09.906" level="INFO">Clicking element '//*[@id="navbar-main"]/ul/li[1]/a/span'.</msg>
+<status status="PASS" starttime="20200323 11:56:09.905" endtime="20200323 11:56:12.520"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${ItalyDetail}</arg>
+</arguments>
+<msg timestamp="20200323 11:56:17.876" level="FAIL">Text '//*[@id="main_table_countries_today"]/tbody[1]/tr[2]/td[1]/a' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200323 11:56:12.520" endtime="20200323 11:56:17.876"></status>
+</kw>
+<status status="FAIL" starttime="20200323 11:56:09.047" endtime="20200323 11:56:17.877"></status>
+</kw>
+<status status="FAIL" starttime="20200323 11:56:09.046" endtime="20200323 11:56:17.932" critical="yes">Text '//*[@id="main_table_countries_today"]/tbody[1]/tr[2]/td[1]/a' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t4" name="TC_003 - Najdi počet nakažených Coronavirusem v zemi X">
+<kw name="Zaloguj Počet Nakazenych V ZemiX" library="keywords">
+<arguments>
+<arg>US</arg>
+</arguments>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.worldometers.info/coronavirus/country/${ZemeX}</arg>
+</arguments>
+<msg timestamp="20200323 11:56:18.010" level="INFO">Opening url 'https://www.worldometers.info/coronavirus/country/US'</msg>
+<status status="PASS" starttime="20200323 11:56:18.009" endtime="20200323 11:56:19.505"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CasesCountry}</arg>
+</arguments>
+<assign>
+<var>${CasesInCountryX}</var>
+</assign>
+<msg timestamp="20200323 11:56:23.006" level="INFO">${CasesInCountryX} = 35,070</msg>
+<status status="PASS" starttime="20200323 11:56:19.505" endtime="20200323 11:56:23.006"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${CasesInCountryX}</arg>
+</arguments>
+<status status="PASS" starttime="20200323 11:56:23.007" endtime="20200323 11:56:23.019"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${CasesInCountryX}</arg>
+</arguments>
+<msg timestamp="20200323 11:56:23.021" level="INFO">35,070</msg>
+<status status="PASS" starttime="20200323 11:56:23.020" endtime="20200323 11:56:23.021"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.body.style.zoom="50%"</arg>
+</arguments>
+<msg timestamp="20200323 11:56:23.023" level="INFO">Executing JavaScript:
+document.body.style.zoom="50%"
+Without any arguments.</msg>
+<status status="PASS" starttime="20200323 11:56:23.021" endtime="20200323 11:56:24.937"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${ZemeX}_statistics.png</arg>
+</arguments>
+<msg timestamp="20200323 11:56:25.758" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="US_statistics.png"&gt;&lt;img src="US_statistics.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200323 11:56:24.937" endtime="20200323 11:56:25.758"></status>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<assign>
+<var>${Datum}</var>
+</assign>
+<msg timestamp="20200323 11:56:25.761" level="INFO">${Datum} = 2020-03-23 11:56:25.761</msg>
+<status status="PASS" starttime="20200323 11:56:25.760" endtime="20200323 11:56:25.761"></status>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<doc>Converts between supported `date formats`.</doc>
+<arguments>
+<arg>${Datum}</arg>
+<arg>result_format=${ZemeX}_%Y-%m-%d_%H-%M-%S_statistics</arg>
+</arguments>
+<assign>
+<var>${ScreenFormat}</var>
+</assign>
+<msg timestamp="20200323 11:56:25.773" level="INFO">${ScreenFormat} = US_2020-03-23_11-56-25_statistics</msg>
+<status status="PASS" starttime="20200323 11:56:25.762" endtime="20200323 11:56:25.773"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${ScreenFormat}.png</arg>
+</arguments>
+<msg timestamp="20200323 11:56:26.291" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="US_2020-03-23_11-56-25_statistics.png"&gt;&lt;img src="US_2020-03-23_11-56-25_statistics.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200323 11:56:25.774" endtime="20200323 11:56:26.292"></status>
+</kw>
+<status status="PASS" starttime="20200323 11:56:18.008" endtime="20200323 11:56:26.292"></status>
+</kw>
+<status status="PASS" starttime="20200323 11:56:17.982" endtime="20200323 11:56:26.293" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Post-conditions">
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${TestCoronavirus}</var>
+</assign>
+<msg timestamp="20200323 11:56:26.508" level="INFO">${TestCoronavirus} = https://www.worldometers.info/coronavirus/country/US</msg>
+<status status="PASS" starttime="20200323 11:56:26.295" endtime="20200323 11:56:26.509"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${TestCoronavirus}</arg>
+</arguments>
+<msg timestamp="20200323 11:56:26.511" level="INFO">https://www.worldometers.info/coronavirus/country/US</msg>
+<status status="PASS" starttime="20200323 11:56:26.510" endtime="20200323 11:56:26.512"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200323 11:56:28.514" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200323 11:56:26.512" endtime="20200323 11:56:28.514"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200323 11:56:28.514" endtime="20200323 11:56:30.893"></status>
+</kw>
+<status status="PASS" starttime="20200323 11:56:26.294" endtime="20200323 11:56:30.894" critical="yes"></status>
+</test>
+<status status="FAIL" starttime="20200323 11:55:40.325" endtime="20200323 11:56:30.897"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1">Critical Tests</stat>
+<stat pass="4" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="1" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

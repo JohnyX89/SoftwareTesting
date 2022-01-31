@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c887b3cc-30cc-438f-a39d-53e2f0a40429"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="FB_CloseFacebook"
+	namespace="Bakalarka.React.Facebook">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="73810d47-9356-49cf-8bdd-a8a3a21b461f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="45f6bd9a-e747-4d83-9cf6-c3e679c98541"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="11"
+				prefcap="form"
+				rect="-9,-9,1938,1048"
+				role="form"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="active"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="appicon"
+					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						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
+AABJRU5ErkJggg==
+					</attribute>
+					<attribute
+					name="state"
+					type="System.Windows.Forms.FormWindowState, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Maximized
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						Facebook – přihlaste se, nebo se zaregistrujte - Google Chrome
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Chrome_WidgetWin_1
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						10816492
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						3
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						12848
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						chrome
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						RightScrollBar, Left, WindowEdge
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, TiledWindow, Maximize, ClipChildren, ClipSiblings, Visible
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						Facebook – přihlaste se, nebo se zaregistrujte - Google Chrome
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		FB_CloseFacebook.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

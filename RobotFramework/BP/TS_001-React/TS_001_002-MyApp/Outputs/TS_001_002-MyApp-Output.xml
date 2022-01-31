@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on win32)" generated="20210511 18:10:49.119" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\Users\bure\Desktop\UTB\Bakalarka\Testovani\RobotFW\BP\TS_001-React\TS_001_002-MyApp\test.robot">
+<test id="s1-t1" name="Pre-conditions">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.05</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210511 18:10:49.443" endtime="20210511 18:10:49.443"/>
+</kw>
+<kw name="Prepare Main Page" library="globalKeywords">
+<arg>${MainPage}</arg>
+<arg>Chrome</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${MainPage}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210511 18:10:49.445" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20210511 18:10:49.445" endtime="20210511 18:10:51.874"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210511 18:10:51.874" endtime="20210511 18:10:52.076"/>
+</kw>
+<status status="PASS" starttime="20210511 18:10:49.444" endtime="20210511 18:10:52.076"/>
+</kw>
+<status status="PASS" starttime="20210511 18:10:49.442" endtime="20210511 18:10:52.089"/>
+</test>
+<test id="s1-t2" name="TC_001_002_001-Check logo, main parapraph and footer">
+<for flavor="IN">
+<var>${Element}</var>
+<value>@{MainElements}</value>
+<iter>
+<var name="${Element}">//body/div[@id='root']/div[1]/nav[1]/a[1]</var>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210511 18:10:52.098" endtime="20210511 18:10:52.308"/>
+</kw>
+<status status="PASS" starttime="20210511 18:10:52.098" endtime="20210511 18:10:52.308"/>
+</iter>
+<iter>
+<var name="${Element}">//*[@id="root"]/div/div[1]/div/h1</var>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210511 18:10:52.308" endtime="20210511 18:10:52.509"/>
+</kw>
+<status status="PASS" starttime="20210511 18:10:52.308" endtime="20210511 18:10:52.509"/>
+</iter>
+<iter>
+<var name="${Element}">//body/div[@id='root']/div[1]/div[2]</var>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210511 18:10:52.509" endtime="20210511 18:10:52.724"/>
+</kw>
+<status status="PASS" starttime="20210511 18:10:52.509" endtime="20210511 18:10:52.725"/>
+</iter>
+<status status="PASS" starttime="20210511 18:10:52.097" endtime="20210511 18:10:52.725"/>
+</for>
+<status status="PASS" starttime="20210511 18:10:52.096" endtime="20210511 18:10:52.727"/>
+</test>
+<test id="s1-t3" name="TC_001_002_002-Check navbar items">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/BeforeHoverStart.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:10:54.090" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/BeforeHoverStart.png"&gt;&lt;img src="Screenshots/BeforeHoverStart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:10:52.733" endtime="20210511 18:10:54.091"/>
+</kw>
+<kw name="Screenshot During Hover" library="globalKeywords">
+<arg>${HeaderHome}</arg>
+<arg>Home</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 18:10:54.092" endtime="20210511 18:10:54.238"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210511 18:10:54.239" level="INFO">Simulating Mouse Over on element '//body[1]/div[1]/div[1]/nav[1]/ul[1]/li[1]/a[1]'.</msg>
+<status status="PASS" starttime="20210511 18:10:54.238" endtime="20210511 18:10:54.625"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/Hover${Name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:10:55.982" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/HoverHome.png"&gt;&lt;img src="Screenshots/HoverHome.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:10:54.625" endtime="20210511 18:10:55.982"/>
+</kw>
+<status status="PASS" starttime="20210511 18:10:54.091" endtime="20210511 18:10:55.982"/>
+</kw>
+<kw name="Screenshot During Hover" library="globalKeywords">
+<arg>${HeaderDropDown}</arg>
+<arg>DropDown</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 18:10:55.983" endtime="20210511 18:10:56.138"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210511 18:10:56.139" level="INFO">Simulating Mouse Over on element '//body/div[@id='root']/div[1]/nav[1]/ul[1]/li[2]/a[1]'.</msg>
+<status status="PASS" starttime="20210511 18:10:56.138" endtime="20210511 18:10:56.567"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/Hover${Name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:10:58.231" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/HoverDropDown.png"&gt;&lt;img src="Screenshots/HoverDropDown.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:10:56.567" endtime="20210511 18:10:58.231"/>
+</kw>
+<status status="PASS" starttime="20210511 18:10:55.983" endtime="20210511 18:10:58.231"/>
+</kw>
+<kw name="Screenshot During Hover" library="globalKeywords">
+<arg>${HeaderAbout}</arg>
+<arg>About</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 18:10:58.232" endtime="20210511 18:10:58.372"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210511 18:10:58.372" level="INFO">Simulating Mouse Over on element '//body[1]/div[1]/div[1]/nav[1]/ul[1]/li[3]/a[1]'.</msg>
+<status status="PASS" starttime="20210511 18:10:58.372" endtime="20210511 18:10:58.772"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/Hover${Name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:00.356" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/HoverAbout.png"&gt;&lt;img src="Screenshots/HoverAbout.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:10:58.772" endtime="20210511 18:11:00.356"/>
+</kw>
+<status status="PASS" starttime="20210511 18:10:58.232" endtime="20210511 18:11:00.356"/>
+</kw>
+<status status="PASS" starttime="20210511 18:10:52.732" endtime="20210511 18:11:00.357"/>
+</test>
+<test id="s1-t4" name="TC_001_002_003-Log main paragraph">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Head}</var>
+<arg>${MainHead}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:00.510" level="INFO">${Head} = NHL</msg>
+<status status="PASS" starttime="20210511 18:11:00.360" endtime="20210511 18:11:00.510"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Head}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210511 18:11:00.511" endtime="20210511 18:11:00.512"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Paragraph}</var>
+<arg>${MainParagraph}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:00.666" level="INFO">${Paragraph} = The National Hockey League (NHL; French: Ligue nationale de hockey—LNH) is a professional ice hockey league in North America, currently comprising 31 teams: 24 in the United States and 7 in Canada. Th...</msg>
+<status status="PASS" starttime="20210511 18:11:00.512" endtime="20210511 18:11:00.666"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Paragraph}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210511 18:11:00.668" endtime="20210511 18:11:00.670"/>
+</kw>
+<kw name="Log Text From" library="globalKeywords">
+<arg>${MainHead}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${SearchingText}</var>
+<arg>${Item}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:00.821" level="INFO">${SearchingText} = NHL</msg>
+<status status="PASS" starttime="20210511 18:11:00.672" endtime="20210511 18:11:00.821"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${SearchingText}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210511 18:11:00.822" level="INFO">NHL</msg>
+<status status="PASS" starttime="20210511 18:11:00.822" endtime="20210511 18:11:00.822"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:00.671" endtime="20210511 18:11:00.823"/>
+</kw>
+<kw name="Log Text From" library="globalKeywords">
+<arg>${MainParagraph}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${SearchingText}</var>
+<arg>${Item}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:00.961" level="INFO">${SearchingText} = The National Hockey League (NHL; French: Ligue nationale de hockey—LNH) is a professional ice hockey league in North America, currently comprising 31 teams: 24 in the United States and 7 in Canada. Th...</msg>
+<status status="PASS" starttime="20210511 18:11:00.825" endtime="20210511 18:11:00.961"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${SearchingText}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210511 18:11:00.962" level="INFO">The National Hockey League (NHL; French: Ligue nationale de hockey—LNH) is a professional ice hockey league in North America, currently comprising 31 teams: 24 in the United States and 7 in Canada. The NHL is considered to be the premier professional ice hockey league in the world, and is one of the major professional sports leagues in the United States and Canada. The Stanley Cup, the oldest professional sports trophy in North America, is awarded annually to the league playoff champion at the end of each season.
+
+The National Hockey League was organized on November 26, 1917, at the Windsor Hotel in Montreal, after the suspension of operations of its predecessor organization, the National Hockey Association (NHA), which had been founded in 1909 in Renfrew, Ontario. The NHL immediately took the NHA's place as one of the leagues that contested for the Stanley Cup in an annual interleague competition before a series of league mergers and foldings left the NHL as the only league left competing for the Stanley Cup in 1926.
+
+At its inception, the NHL had four teams—all in Canada, thus the adjective "National" in the league's name. The league expanded to the United States in 1924, when the Boston Bruins joined, and has since consisted of American and Canadian teams. From 1942 to 1967, the league had only six teams, collectively (if not contemporaneously) nicknamed the "Original Six". The NHL added six new teams to double its size at the 1967 NHL expansion. The league then increased to 18 teams by 1974 and 21 teams in 1979. Between 1991 and 2000, the NHL further expanded to 30 teams. It added its 31st team in 2017 and has approved the addition of a 32nd team in 2021.
+
+The league's headquarters have been in Midtown Manhattan since 1989, when the head office moved from Montreal. There have been four league-wide work stoppages in NHL history, all occurring after 1992. The International Ice Hockey Federation (IIHF) considers the Stanley Cup to be one of the "most important championships available to the sport". The NHL draws many highly skilled players from all over the world and currently has players from approximately 20 countries. Canadians have historically constituted the majority of the players in the league, with an increasing percentage of American and European players in recent seasons.
+
+The NHL is the fifth-wealthiest professional sport league in the world by revenue, after the National Football League (NFL), Major League Baseball (MLB), the National Basketball Association (NBA), and the Premier League.</msg>
+<status status="PASS" starttime="20210511 18:11:00.962" endtime="20210511 18:11:00.962"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:00.824" endtime="20210511 18:11:00.963"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:00.359" endtime="20210511 18:11:00.964"/>
+</test>
+<test id="s1-t5" name="TC_001_002_005-Emoji filter">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost:3000/emoji</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210511 18:11:00.968" level="INFO">Opening url 'http://localhost:3000/emoji'</msg>
+<status status="PASS" starttime="20210511 18:11:00.968" endtime="20210511 18:11:01.345"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${EmojiSearch}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 18:11:01.350" endtime="20210511 18:11:01.518"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/EmojiPageBegin.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:01.749" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/EmojiPageBegin.png"&gt;&lt;img src="Screenshots/EmojiPageBegin.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:01.522" endtime="20210511 18:11:01.750"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EmojiSearch}</arg>
+<arg>happy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:01.751" level="INFO">Typing text 'happy' into text field '//body/div[@id='root']/div[1]/div[1]/div[1]/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:01.751" endtime="20210511 18:11:02.072"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/EmojiPageSearchHappy.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:02.356" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/EmojiPageSearchHappy.png"&gt;&lt;img src="Screenshots/EmojiPageSearchHappy.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:02.075" endtime="20210511 18:11:02.356"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:00.967" endtime="20210511 18:11:02.358"/>
+</test>
+<test id="s1-t6" name="TC_001_002_006-Emoji copy by click">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='root']/div[1]/div[1]/div[2]/div[6]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:02.367" level="INFO">Clicking element '//body/div[@id='root']/div[1]/div[1]/div[2]/div[6]'.</msg>
+<status status="PASS" starttime="20210511 18:11:02.365" endtime="20210511 18:11:02.567"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${EmojiSearch}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:02.570" level="INFO">Clicking element '//body/div[@id='root']/div[1]/div[1]/div[1]/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:02.569" endtime="20210511 18:11:02.722"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${EmojiSearch}</arg>
+<arg>CTRL+v</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210511 18:11:02.724" level="INFO">Sending key(s) ('CTRL+v',) to //body/div[@id='root']/div[1]/div[1]/div[1]/div[1]/input[1] element.</msg>
+<msg timestamp="20210511 18:11:03.110" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20210511 18:11:03.111" level="INFO">Sending key v</msg>
+<msg timestamp="20210511 18:11:03.111" level="INFO">Releasing special key CONTROL.</msg>
+<status status="PASS" starttime="20210511 18:11:02.723" endtime="20210511 18:11:03.204"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/PastedFromClipboard.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:03.423" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/PastedFromClipboard.png"&gt;&lt;img src="Screenshots/PastedFromClipboard.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:03.205" endtime="20210511 18:11:03.423"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:02.363" endtime="20210511 18:11:03.424"/>
+</test>
+<test id="s1-t7" name="TC_001_002_007-Redirect to Carousel page by URL">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost:3000/carousel</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210511 18:11:03.428" level="INFO">Opening url 'http://localhost:3000/carousel'</msg>
+<status status="PASS" starttime="20210511 18:11:03.427" endtime="20210511 18:11:03.883"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CarouselNext}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 18:11:03.883" endtime="20210511 18:11:04.052"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:03.426" endtime="20210511 18:11:04.055"/>
+</test>
+<test id="s1-t8" name="TC_001_002_008-Carousel switch to next by button">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/CarouselPageBegin.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:04.439" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/CarouselPageBegin.png"&gt;&lt;img src="Screenshots/CarouselPageBegin.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:04.062" endtime="20210511 18:11:04.439"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CarouselNext}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:04.441" level="INFO">Clicking element '//button[contains(text(),'❯')]'.</msg>
+<status status="PASS" starttime="20210511 18:11:04.440" endtime="20210511 18:11:04.623"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210511 18:11:05.135" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20210511 18:11:04.624" endtime="20210511 18:11:05.135"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/CarouselPageFirstNext.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:05.616" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/CarouselPageFirstNext.png"&gt;&lt;img src="Screenshots/CarouselPageFirstNext.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:05.135" endtime="20210511 18:11:05.617"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CarouselNext}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:05.618" level="INFO">Clicking element '//button[contains(text(),'❯')]'.</msg>
+<status status="PASS" starttime="20210511 18:11:05.617" endtime="20210511 18:11:05.794"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210511 18:11:06.309" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20210511 18:11:05.795" endtime="20210511 18:11:06.309"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/CarouselPageSecondNext.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:06.760" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/CarouselPageSecondNext.png"&gt;&lt;img src="Screenshots/CarouselPageSecondNext.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:06.310" endtime="20210511 18:11:06.760"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:04.060" endtime="20210511 18:11:06.761"/>
+</test>
+<test id="s1-t9" name="TC_001_002_009-Carousel switch to previous by button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CarouselPrevious}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:06.764" level="INFO">Clicking element '//*[@id="root"]/div/div[1]/div/div[1]/button[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:06.763" endtime="20210511 18:11:06.958"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210511 18:11:07.471" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20210511 18:11:06.962" endtime="20210511 18:11:07.471"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/CarouselPageprevious.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:07.941" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/CarouselPageprevious.png"&gt;&lt;img src="Screenshots/CarouselPageprevious.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:07.473" endtime="20210511 18:11:07.941"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:06.762" endtime="20210511 18:11:07.942"/>
+</test>
+<test id="s1-t10" name="TC_001_002_010-Carousel switch to exact item">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CarouselFour}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:07.945" level="INFO">Clicking element '//body/div[@id='root']/div[1]/div[1]/div[1]/div[2]/button[4]'.</msg>
+<status status="PASS" starttime="20210511 18:11:07.945" endtime="20210511 18:11:08.119"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210511 18:11:08.631" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20210511 18:11:08.122" endtime="20210511 18:11:08.631"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/CarouselPageExactPosition.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:09.085" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/CarouselPageExactPosition.png"&gt;&lt;img src="Screenshots/CarouselPageExactPosition.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:08.633" endtime="20210511 18:11:09.085"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:07.944" endtime="20210511 18:11:09.086"/>
+</test>
+<test id="s1-t11" name="TC_001_002_011-Create new item">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost:3000/todo</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210511 18:11:09.088" level="INFO">Opening url 'http://localhost:3000/todo'</msg>
+<status status="PASS" starttime="20210511 18:11:09.088" endtime="20210511 18:11:09.595"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/TodoPageBegin.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:09.848" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/TodoPageBegin.png"&gt;&lt;img src="Screenshots/TodoPageBegin.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:09.596" endtime="20210511 18:11:09.848"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TodoInputName}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 18:11:09.849" endtime="20210511 18:11:09.998"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TodoInputDes}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 18:11:09.999" endtime="20210511 18:11:10.155"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TodoInputName}</arg>
+<arg>Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:10.157" level="INFO">Typing text 'Test' into text field '//body/div[@id='root']/div[1]/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:10.156" endtime="20210511 18:11:10.448"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TodoInputDes}</arg>
+<arg>New item</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:10.450" level="INFO">Typing text 'New item' into text field '//body/div[@id='root']/div[1]/div[1]/textarea[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:10.449" endtime="20210511 18:11:10.743"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${TodoAddButton}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210511 18:11:10.744" endtime="20210511 18:11:10.945"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TodoAddButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:10.947" level="INFO">Clicking element '//body[1]/div[1]/div[1]/div[1]/button[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:10.946" endtime="20210511 18:11:11.116"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Test: New item</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210511 18:11:11.117" endtime="20210511 18:11:11.195"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/TodoAdded.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:11.412" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/TodoAdded.png"&gt;&lt;img src="Screenshots/TodoAdded.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:11.195" endtime="20210511 18:11:11.412"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:09.087" endtime="20210511 18:11:11.413"/>
+</test>
+<test id="s1-t12" name="TC_001_002_012-Make item completed">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TodoCheckBoxFirst}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:11.417" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[1]/div/div/div/input'.</msg>
+<status status="PASS" starttime="20210511 18:11:11.417" endtime="20210511 18:11:11.596"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TodoCheckBoxThird}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:11.597" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[3]/div/div/div/input'.</msg>
+<status status="PASS" starttime="20210511 18:11:11.597" endtime="20210511 18:11:11.753"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/CheckedTodo.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:11.985" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/CheckedTodo.png"&gt;&lt;img src="Screenshots/CheckedTodo.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:11.754" endtime="20210511 18:11:11.985"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:11.416" endtime="20210511 18:11:11.987"/>
+</test>
+<test id="s1-t13" name="TC_001_002_013-Make item not completed">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TodoCheckBoxThird}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:11.990" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[3]/div/div/div/input'.</msg>
+<status status="PASS" starttime="20210511 18:11:11.990" endtime="20210511 18:11:12.171"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/UncheckedTodo.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:12.393" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/UncheckedTodo.png"&gt;&lt;img src="Screenshots/UncheckedTodo.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:12.173" endtime="20210511 18:11:12.394"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:11.989" endtime="20210511 18:11:12.396"/>
+</test>
+<test id="s1-t14" name="TC_001_002_014-Edit item">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TodoEdit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:12.409" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[1]/div/div/div/span[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:12.407" endtime="20210511 18:11:12.591"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TodoEditName}</arg>
+<arg>AAA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:12.593" level="INFO">Typing text 'AAA' into text field '//*[@id="root"]/div/div[2]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210511 18:11:12.592" endtime="20210511 18:11:12.903"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TodoEditDes}</arg>
+<arg>BBB</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:12.905" level="INFO">Typing text 'BBB' into text field '//*[@id="root"]/div/div[2]/div[1]/div/textarea'.</msg>
+<status status="PASS" starttime="20210511 18:11:12.904" endtime="20210511 18:11:13.197"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TodoEditSave}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:13.199" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[1]/div/button[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:13.198" endtime="20210511 18:11:13.386"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/TodoEditedItem.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:13.619" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/TodoEditedItem.png"&gt;&lt;img src="Screenshots/TodoEditedItem.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:13.387" endtime="20210511 18:11:13.619"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:12.403" endtime="20210511 18:11:13.620"/>
+</test>
+<test id="s1-t15" name="TC_001_002_015-Cancel during edit item">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TodoEdit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:13.622" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[1]/div/div/div/span[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:13.622" endtime="20210511 18:11:13.802"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TodoEditName}</arg>
+<arg>XXX</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:13.803" level="INFO">Typing text 'XXX' into text field '//*[@id="root"]/div/div[2]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210511 18:11:13.803" endtime="20210511 18:11:14.113"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TodoEditDes}</arg>
+<arg>YYY</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:14.114" level="INFO">Typing text 'YYY' into text field '//*[@id="root"]/div/div[2]/div[1]/div/textarea'.</msg>
+<status status="PASS" starttime="20210511 18:11:14.114" endtime="20210511 18:11:14.394"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TodoEditCancel}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:14.396" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[1]/div/button[2]'.</msg>
+<status status="PASS" starttime="20210511 18:11:14.395" endtime="20210511 18:11:14.581"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/TodoEditedCancel.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:14.800" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/TodoEditedCancel.png"&gt;&lt;img src="Screenshots/TodoEditedCancel.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:14.582" endtime="20210511 18:11:14.800"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:13.621" endtime="20210511 18:11:14.801"/>
+</test>
+<test id="s1-t16" name="TC_001_002_016-Delete item">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TodoDelete}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:14.803" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[1]/div/div/div/span[2]'.</msg>
+<status status="PASS" starttime="20210511 18:11:14.803" endtime="20210511 18:11:14.969"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/TodoDeletedItem.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:15.203" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/TodoDeletedItem.png"&gt;&lt;img src="Screenshots/TodoDeletedItem.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:14.970" endtime="20210511 18:11:15.204"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:14.802" endtime="20210511 18:11:15.204"/>
+</test>
+<test id="s1-t17" name="TC_001_002_017-Redirect to About by navbar item">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AboutPage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:15.207" level="INFO">Clicking element '//a[contains(text(),'About')]'.</msg>
+<status status="PASS" starttime="20210511 18:11:15.207" endtime="20210511 18:11:15.418"/>
+</kw>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>about</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20210511 18:11:15.632" level="INFO">Current location contains 'about'.</msg>
+<status status="PASS" starttime="20210511 18:11:15.419" endtime="20210511 18:11:15.632"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/AboutPage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 18:11:16.655" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/AboutPage.png"&gt;&lt;img src="Screenshots/AboutPage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 18:11:15.633" endtime="20210511 18:11:16.655"/>
+</kw>
+<kw name="Log Location" library="SeleniumLibrary">
+<doc>Logs and returns the current browser window URL.</doc>
+<msg timestamp="20210511 18:11:16.726" level="INFO">http://localhost:3000/about</msg>
+<status status="PASS" starttime="20210511 18:11:16.656" endtime="20210511 18:11:16.726"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:15.206" endtime="20210511 18:11:16.727"/>
+</test>
+<test id="s1-t18" name="TC_001_002_018-Redirect to Main page by logo">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 18:11:16.730" level="INFO">Clicking element '//body/div[@id='root']/div[1]/nav[1]/a[1]'.</msg>
+<status status="PASS" starttime="20210511 18:11:16.730" endtime="20210511 18:11:16.912"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>http://localhost:3000/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20210511 18:11:16.974" level="INFO">Current location is 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20210511 18:11:16.913" endtime="20210511 18:11:16.974"/>
+</kw>
+<kw name="Log Location" library="SeleniumLibrary">
+<doc>Logs and returns the current browser window URL.</doc>
+<msg timestamp="20210511 18:11:17.037" level="INFO">http://localhost:3000/</msg>
+<status status="PASS" starttime="20210511 18:11:16.976" endtime="20210511 18:11:17.037"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:16.729" endtime="20210511 18:11:17.039"/>
+</test>
+<test id="s1-t19" name="Post-conditions">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210511 18:11:17.043" endtime="20210511 18:11:19.302"/>
+</kw>
+<status status="PASS" starttime="20210511 18:11:17.042" endtime="20210511 18:11:19.303"/>
+</test>
+<status status="PASS" starttime="20210511 18:10:49.123" endtime="20210511 18:11:19.307"/>
+</suite>
+<statistics>
+<total>
+<stat pass="19" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="19" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

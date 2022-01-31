@@ -1,0 +1,56 @@
+{
+  "uid" : "4bcb393929c60ff5",
+  "name" : "005-CarouselItemPage",
+  "fullName" : "Angular_Prezman.005-CarouselItemPage",
+  "historyId" : "b77b5c01fe5002c04ad89c764e490c4c",
+  "time" : {
+    "start" : 1619980321220,
+    "stop" : 1619980330253,
+    "duration" : 9033
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testClass",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testMethod",
+    "value" : "005-CarouselItemPage"
+  }, {
+    "name" : "package",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-90.0.4430.93"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4bcb393929c60ff5.json",
+  "parameterValues" : [ "chrome-90.0.4430.93" ]
+}

@@ -1,0 +1,1512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{29A939EB-B699-4BE0-93B8-4C06F10C8441}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Bakalarka</RootNamespace>
+    <AssemblyName>Bakalarka</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>66e478c5-5c24-4357-808d-d0484a1d6054</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Angular\Gmail\Close_Gmail.cs">
+      <DependentUpon>Close_Gmail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>62e4c845-152d-488f-b29b-7fe379b73584</id>
+      <BoundTo>33ce865f-cffa-4602-839a-2361069495a7</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Gmail\Close_Gmail.UserCode.cs">
+      <DependentUpon>Close_Gmail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd70bcd2-e7dd-47e8-8c4a-1a6e1d7f3516</id>
+      <BoundTo>33ce865f-cffa-4602-839a-2361069495a7</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Gmail\Gmail_go_to_login.cs">
+      <BoundTo>1b087f3e-9824-49f4-851d-465242302c2c</BoundTo>
+      <DependentUpon>Gmail_go_to_login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b820e778-6821-44eb-b6b0-0363b9a2de43</id>
+    </Compile>
+    <Compile Include="Angular\Gmail\Gmail_go_to_login.UserCode.cs">
+      <BoundTo>1b087f3e-9824-49f4-851d-465242302c2c</BoundTo>
+      <DependentUpon>Gmail_go_to_login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b7f90538-ce74-450e-b1b0-bb5ac85fbf6d</id>
+    </Compile>
+    <Compile Include="Angular\Gmail\Gmail_open_new_message.cs">
+      <BoundTo>f763afaf-29ca-4814-80b0-746acb6434b9</BoundTo>
+      <DependentUpon>Gmail_open_new_message.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>77f410e9-fdb0-4a7e-bc81-0964563c89d4</id>
+    </Compile>
+    <Compile Include="Angular\Gmail\Gmail_open_new_message.UserCode.cs">
+      <BoundTo>f763afaf-29ca-4814-80b0-746acb6434b9</BoundTo>
+      <DependentUpon>Gmail_open_new_message.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3151fed5-3ab4-4c78-9c1f-228160d5ac29</id>
+    </Compile>
+    <Compile Include="Angular\Gmail\Open_Gmail.cs">
+      <DependentUpon>Open_Gmail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>482b5002-0c0e-4ec3-b52a-2af8d954c365</id>
+      <BoundTo>3f262a65-97ff-4e96-8901-e9bfd5ff3974</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Gmail\Open_Gmail.UserCode.cs">
+      <DependentUpon>Open_Gmail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>14eb7b78-5b8f-4358-bfe4-6b69cf061695</id>
+      <BoundTo>3f262a65-97ff-4e96-8901-e9bfd5ff3974</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Gmail\Recording_Gmail.cs">
+      <DependentUpon>Recording_Gmail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eeae7355-6125-4e70-b08d-ee1c9cee9c38</id>
+      <BoundTo>4be70068-8e74-4539-bff7-bad4883a6be5</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Gmail\Recording_Gmail.UserCode.cs">
+      <DependentUpon>Recording_Gmail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f05831aa-6af8-485c-a0ea-735549770a27</id>
+      <BoundTo>4be70068-8e74-4539-bff7-bad4883a6be5</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prazman_goto_next.cs">
+      <BoundTo>ee033c9c-dcde-4334-a716-920c1fe194d8</BoundTo>
+      <DependentUpon>Prazman_goto_next.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1368054d-f9bc-41fc-876b-145caaa9a2e9</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prazman_goto_next.UserCode.cs">
+      <BoundTo>ee033c9c-dcde-4334-a716-920c1fe194d8</BoundTo>
+      <DependentUpon>Prazman_goto_next.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a46fdc8-b883-40e0-a827-8bf0cb716912</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_check_main_elements.cs">
+      <BoundTo>daf81449-5d48-4eb7-ab17-d2977223823a</BoundTo>
+      <DependentUpon>Prezman_check_main_elements.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c09d57d-a870-4087-82cc-be3a17858c1a</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_check_main_elements.UserCode.cs">
+      <BoundTo>daf81449-5d48-4eb7-ab17-d2977223823a</BoundTo>
+      <DependentUpon>Prezman_check_main_elements.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e18a96e8-6ff7-4d8a-bd09-6523aee209ea</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_click_logo.cs">
+      <BoundTo>3c2f35f0-201e-44fa-b682-9e2dc58b4518</BoundTo>
+      <DependentUpon>Prezman_click_logo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4a509512-edd7-4b49-a224-601eb8700d41</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_click_logo.UserCode.cs">
+      <BoundTo>3c2f35f0-201e-44fa-b682-9e2dc58b4518</BoundTo>
+      <DependentUpon>Prezman_click_logo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bc81e243-35b6-45b0-84e2-5069932b1098</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_CloseBrowser.cs">
+      <DependentUpon>Prezman_CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ed325c84-59c7-4f67-b84a-d3fbfec35ffb</id>
+      <BoundTo>eb5748dd-a553-4c8e-90aa-efbb363ed422</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_CloseBrowser.UserCode.cs">
+      <DependentUpon>Prezman_CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31c43235-a7c3-4534-9797-1e0e327d85b7</id>
+      <BoundTo>eb5748dd-a553-4c8e-90aa-efbb363ed422</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_gotop.cs">
+      <BoundTo>d675a15d-1bd3-4679-9415-9364841397c3</BoundTo>
+      <DependentUpon>Prezman_gotop.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9e9fe58e-924d-461f-9627-1bf1b16c784e</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_gotop.UserCode.cs">
+      <BoundTo>d675a15d-1bd3-4679-9415-9364841397c3</BoundTo>
+      <DependentUpon>Prezman_gotop.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0c1b2b12-3f12-4302-9d45-7fd5e879ab86</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_goto_agence.cs">
+      <BoundTo>d3268f93-7558-434b-8baa-d1cb2b2e9ec7</BoundTo>
+      <DependentUpon>Prezman_goto_agence.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0b208871-d004-45f0-b703-66f03d608a76</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_goto_agence.UserCode.cs">
+      <BoundTo>d3268f93-7558-434b-8baa-d1cb2b2e9ec7</BoundTo>
+      <DependentUpon>Prezman_goto_agence.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>000d44ea-f5c2-4f41-a894-7a40c1efcf29</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_goto_linkedIn.cs">
+      <BoundTo>a3830c62-324a-49bd-a452-69053e629d6b</BoundTo>
+      <DependentUpon>Prezman_goto_linkedIn.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f1d79f9-2c96-44b0-893e-abd566139731</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_goto_linkedIn.UserCode.cs">
+      <BoundTo>a3830c62-324a-49bd-a452-69053e629d6b</BoundTo>
+      <DependentUpon>Prezman_goto_linkedIn.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7943b116-dac3-4384-86be-bbd9b4b89617</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_goto_previous.cs">
+      <BoundTo>86348777-6e34-438b-b00f-c2891a3422df</BoundTo>
+      <DependentUpon>Prezman_goto_previous.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e6cad09c-6267-4380-ad8b-c01b603741a9</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_goto_previous.UserCode.cs">
+      <BoundTo>86348777-6e34-438b-b00f-c2891a3422df</BoundTo>
+      <DependentUpon>Prezman_goto_previous.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5f3e3965-2596-4697-a019-1d22f0d49efe</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_go_back.cs">
+      <BoundTo>89d3d752-08fa-4ec5-bc67-94392e89ba07</BoundTo>
+      <DependentUpon>Prezman_go_back.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>14c0466e-900b-435f-9bdc-45ff0201a9ce</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_go_back.UserCode.cs">
+      <BoundTo>89d3d752-08fa-4ec5-bc67-94392e89ba07</BoundTo>
+      <DependentUpon>Prezman_go_back.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>208ca49d-bc49-47d9-9790-45fa0ac91c1d</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_hoverOver_mainImage.cs">
+      <BoundTo>d21775dd-0ab5-4e81-86b6-765e85baa526</BoundTo>
+      <DependentUpon>Prezman_hoverOver_mainImage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7bccc7e4-29d8-4057-af7f-d7a568a5311f</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_hoverOver_mainImage.UserCode.cs">
+      <BoundTo>d21775dd-0ab5-4e81-86b6-765e85baa526</BoundTo>
+      <DependentUpon>Prezman_hoverOver_mainImage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9b9bd77-8910-4ab7-8b97-7de7c548714a</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_log_paragraph.cs">
+      <BoundTo>a63c12d7-382b-49b6-a4d9-e1945c8f17cc</BoundTo>
+      <DependentUpon>Prezman_log_paragraph.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>217ec8aa-8a3e-40d7-bf4b-32873593b3d5</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_log_paragraph.UserCode.cs">
+      <BoundTo>a63c12d7-382b-49b6-a4d9-e1945c8f17cc</BoundTo>
+      <DependentUpon>Prezman_log_paragraph.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b3c65af4-0249-4d0d-8a56-043ea4276b02</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_OpenBrowser.cs">
+      <DependentUpon>Prezman_OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>84b8f95e-55e5-4bcd-992d-e694f50e85f8</id>
+      <BoundTo>0d950cf2-42ff-4e5f-afdb-0c2989d1be49</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_OpenBrowser.UserCode.cs">
+      <DependentUpon>Prezman_OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0a5299a6-79d9-4f27-a590-aeab725020ed</id>
+      <BoundTo>0d950cf2-42ff-4e5f-afdb-0c2989d1be49</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_open_Carousel.cs">
+      <BoundTo>16ae075f-0282-4b4e-a7ff-4dcff768b0f3</BoundTo>
+      <DependentUpon>Prezman_open_Carousel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e725fedb-34a3-47c0-a45a-8de2cf421390</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_open_Carousel.UserCode.cs">
+      <BoundTo>16ae075f-0282-4b4e-a7ff-4dcff768b0f3</BoundTo>
+      <DependentUpon>Prezman_open_Carousel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>009f47d2-7f97-4958-843e-0bc9da98bd7b</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_play_video.cs">
+      <BoundTo>0b8db59e-7a4e-4c4d-9934-bbc5a109313b</BoundTo>
+      <DependentUpon>Prezman_play_video.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>887d44fb-543a-4ba1-be7d-b95f7b19e865</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_play_video.UserCode.cs">
+      <BoundTo>0b8db59e-7a4e-4c4d-9934-bbc5a109313b</BoundTo>
+      <DependentUpon>Prezman_play_video.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2af1606b-abff-4f37-94f0-c4e45b3e308e</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_redirect_to_item.cs">
+      <BoundTo>2d5e094e-44d6-4416-9da5-4ed9d57b1014</BoundTo>
+      <DependentUpon>Prezman_redirect_to_item.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f8162cb-80c5-43b6-b236-ea38cd0046b6</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_redirect_to_item.UserCode.cs">
+      <BoundTo>2d5e094e-44d6-4416-9da5-4ed9d57b1014</BoundTo>
+      <DependentUpon>Prezman_redirect_to_item.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69ac2646-9824-40a2-9b4f-0c8c85458aa6</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_screenshot_duringHover_navbar.cs">
+      <BoundTo>028c7533-b66f-4667-8cd4-c547d3acfc87</BoundTo>
+      <DependentUpon>Prezman_screenshot_duringHover_navbar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>901ed3ac-f115-4cd1-8dbe-fa382e6e1ee0</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_screenshot_duringHover_navbar.UserCode.cs">
+      <BoundTo>028c7533-b66f-4667-8cd4-c547d3acfc87</BoundTo>
+      <DependentUpon>Prezman_screenshot_duringHover_navbar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>edd2a6f8-5732-4c47-9aa6-07dc015443ce</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_search_in_blog.cs">
+      <BoundTo>0d73c1a5-d828-46ec-b486-39faed85095d</BoundTo>
+      <DependentUpon>Prezman_search_in_blog.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1dcd00bc-1c16-4ce5-b8d7-809cb68a5147</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Prezman_search_in_blog.UserCode.cs">
+      <BoundTo>0d73c1a5-d828-46ec-b486-39faed85095d</BoundTo>
+      <DependentUpon>Prezman_search_in_blog.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>067e87f1-7fa2-495c-89e2-61b824245564</id>
+    </Compile>
+    <Compile Include="Angular\Prezman\Recording_Prezman.cs">
+      <DependentUpon>Recording_Prezman.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2af24bba-d509-4922-9739-80b1a0a4191d</id>
+      <BoundTo>c745fc3d-dbc7-43e1-90e2-72ca709aa1b7</BoundTo>
+    </Compile>
+    <Compile Include="Angular\Prezman\Recording_Prezman.UserCode.cs">
+      <DependentUpon>Recording_Prezman.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b4080015-120a-4241-99c3-4794741eb93c</id>
+      <BoundTo>c745fc3d-dbc7-43e1-90e2-72ca709aa1b7</BoundTo>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>a182d2c8-5885-4577-b59f-6b5b9b79e5b3</id>
+    </Compile>
+    <Compile Include="BakalarkaRepository.cs">
+      <DependentUpon>BakalarkaRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>dc39e7a8-fbc8-4af0-85bd-cfb37569543a</id>
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>69e630e0-f36a-44c6-a2ca-e8765b0bfa97</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_allow_cookies.cs">
+      <BoundTo>a10ec192-67d9-443e-9340-1cf8490dd8d5</BoundTo>
+      <DependentUpon>FB_allow_cookies.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8fbe6596-1b0f-445c-9446-17f950a30919</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_allow_cookies.UserCode.cs">
+      <BoundTo>a10ec192-67d9-443e-9340-1cf8490dd8d5</BoundTo>
+      <DependentUpon>FB_allow_cookies.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7bb6e9fc-d3aa-4698-8db2-440cec4b5e8f</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_check_navbar.cs">
+      <BoundTo>6235c7a6-fad2-4049-824f-33ef05443e7c</BoundTo>
+      <DependentUpon>FB_check_navbar.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65fbf962-3f39-4770-8ae8-5e942a3a4209</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_check_navbar.UserCode.cs">
+      <BoundTo>6235c7a6-fad2-4049-824f-33ef05443e7c</BoundTo>
+      <DependentUpon>FB_check_navbar.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d56224a9-ad44-4736-9444-b0b0ba253958</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_CloseFacebook.cs">
+      <BoundTo>31dae73d-acc0-459b-a3da-53c37509ea81</BoundTo>
+      <DependentUpon>FB_CloseFacebook.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8a04bc31-c722-4b93-8ee5-3468006c9534</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_CloseFacebook.UserCode.cs">
+      <BoundTo>31dae73d-acc0-459b-a3da-53c37509ea81</BoundTo>
+      <DependentUpon>FB_CloseFacebook.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>742dc13b-ae6c-4c1a-8a8b-3ee700d30b05</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_goto_profile.cs">
+      <BoundTo>b02bf1e0-b287-4704-b5fb-80fbe6395c08</BoundTo>
+      <DependentUpon>FB_goto_profile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>582c9ad9-38d2-4aed-9625-fc26473ed645</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_goto_profile.UserCode.cs">
+      <BoundTo>b02bf1e0-b287-4704-b5fb-80fbe6395c08</BoundTo>
+      <DependentUpon>FB_goto_profile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d777ae58-25dc-4d6d-8ab2-f2e73eb10a80</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_login.cs">
+      <BoundTo>e36986bf-34aa-431a-88dd-8db0afa77d44</BoundTo>
+      <DependentUpon>FB_login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5c9fe059-da07-48a6-93bd-585baf44770c</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_login.UserCode.cs">
+      <BoundTo>e36986bf-34aa-431a-88dd-8db0afa77d44</BoundTo>
+      <DependentUpon>FB_login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>721813a2-5efd-4525-b8ff-bd66a725313a</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_OpenFacebook.cs">
+      <BoundTo>1b71c539-8d0d-4bfe-bd89-78ce0c136302</BoundTo>
+      <DependentUpon>FB_OpenFacebook.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6c50b940-39fa-414d-85c4-73a012dabe03</id>
+    </Compile>
+    <Compile Include="React\Facebook\FB_OpenFacebook.UserCode.cs">
+      <BoundTo>1b71c539-8d0d-4bfe-bd89-78ce0c136302</BoundTo>
+      <DependentUpon>FB_OpenFacebook.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c52aa350-475d-47cb-bcea-ca31188b816b</id>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Check_task.cs">
+      <DependentUpon>myapp_Check_task.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>decb17bf-bfd3-4631-a3ad-9e17a107bd8c</id>
+      <BoundTo>39719584-6285-455d-a598-721803e3ff15</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Check_task.UserCode.cs">
+      <DependentUpon>myapp_Check_task.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e7b6bf13-391d-41a1-90d7-bc095af2923a</id>
+      <BoundTo>39719584-6285-455d-a598-721803e3ff15</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_About_redirect.cs">
+      <DependentUpon>myapp_About_redirect.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9137d630-7275-46ac-93eb-8f50ad44b313</id>
+      <BoundTo>10e4c775-b0bb-431e-a333-905bf7530c9d</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_About_redirect.UserCode.cs">
+      <DependentUpon>myapp_About_redirect.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4c82cb15-8fa6-425c-a8ee-0285767a504e</id>
+      <BoundTo>10e4c775-b0bb-431e-a333-905bf7530c9d</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Add_new_item.cs">
+      <DependentUpon>myapp_Add_new_item.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e53bef8a-b11b-4e62-934e-02b5d00d8162</id>
+      <BoundTo>c7f93116-9851-41e1-b64c-58a23debd594</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Add_new_item.UserCode.cs">
+      <DependentUpon>myapp_Add_new_item.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b88923cd-3eaf-4673-881b-93632f8e5d03</id>
+      <BoundTo>c7f93116-9851-41e1-b64c-58a23debd594</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Carousel_switch_to_4th.cs">
+      <DependentUpon>myapp_Carousel_switch_to_4th.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6eee56e3-da76-44ea-8ef8-00bea336dbd9</id>
+      <BoundTo>d4c73b07-b260-42ce-a838-587bf7b12f58</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Carousel_switch_to_4th.UserCode.cs">
+      <DependentUpon>myapp_Carousel_switch_to_4th.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9d918316-08ad-43f2-9f04-184162187e57</id>
+      <BoundTo>d4c73b07-b260-42ce-a838-587bf7b12f58</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Check_main_elements.cs">
+      <DependentUpon>myapp_Check_main_elements.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b0f85a91-a742-43ac-bebd-8724301f00f6</id>
+      <BoundTo>c911066a-e346-49ca-a50f-d423d6faa79b</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Check_main_elements.UserCode.cs">
+      <DependentUpon>myapp_Check_main_elements.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76397967-5051-4bcb-9cf1-14eb63d5a566</id>
+      <BoundTo>c911066a-e346-49ca-a50f-d423d6faa79b</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_CloseBrowser.cs">
+      <DependentUpon>myapp_CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9efbd66a-9852-4a8f-b49c-51dd096d6a4b</id>
+      <BoundTo>a999c862-5300-409a-b541-28d3503e0bfe</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_CloseBrowser.UserCode.cs">
+      <DependentUpon>myapp_CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f6eb4c06-6d90-425f-8eea-e6f2722517b8</id>
+      <BoundTo>a999c862-5300-409a-b541-28d3503e0bfe</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Delete_item.cs">
+      <DependentUpon>myapp_Delete_item.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ab30f572-a787-4fdd-adf9-eaf9073914ac</id>
+      <BoundTo>7c79e57d-ce38-4457-af6e-5d9ec7e241c0</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Delete_item.UserCode.cs">
+      <DependentUpon>myapp_Delete_item.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b0982e7a-78fe-4cc1-ba6b-b2cdb78a3e75</id>
+      <BoundTo>7c79e57d-ce38-4457-af6e-5d9ec7e241c0</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Edit_item.cs">
+      <DependentUpon>myapp_Edit_item.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aae07397-e349-4c88-b2c6-bd385f759d8b</id>
+      <BoundTo>0d7f5813-6233-4eca-9a70-ab1e0a6c7715</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Edit_item.UserCode.cs">
+      <DependentUpon>myapp_Edit_item.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>394098dd-1aab-4d68-a3d3-2f569b08b3fb</id>
+      <BoundTo>0d7f5813-6233-4eca-9a70-ab1e0a6c7715</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Edit_item_cancel.cs">
+      <DependentUpon>myapp_Edit_item_cancel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e647221a-4f44-40b1-90cb-aa97b2e0e11a</id>
+      <BoundTo>74a4ffe4-5487-45af-a9c5-b516c982a91f</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Edit_item_cancel.UserCode.cs">
+      <DependentUpon>myapp_Edit_item_cancel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>44db019e-62b7-4eb5-960e-c89f9ac64781</id>
+      <BoundTo>74a4ffe4-5487-45af-a9c5-b516c982a91f</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Edit_item_confirm.cs">
+      <DependentUpon>myapp_Edit_item_confirm.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>85ab3515-8c9d-4f00-bfff-5c663a9ee7a1</id>
+      <BoundTo>87b756cc-10a8-43ab-ac2b-3021ab2a363a</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Edit_item_confirm.UserCode.cs">
+      <DependentUpon>myapp_Edit_item_confirm.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>22bc9a04-0c27-4258-b773-5f6c9320a5f5</id>
+      <BoundTo>87b756cc-10a8-43ab-ac2b-3021ab2a363a</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Emoji_clipboard_by_click.cs">
+      <DependentUpon>myapp_Emoji_clipboard_by_click.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f949d7f-35eb-4193-8823-29c4f8dbf248</id>
+      <BoundTo>e24e066c-4d63-4562-9741-384e2ba768d8</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Emoji_clipboard_by_click.UserCode.cs">
+      <DependentUpon>myapp_Emoji_clipboard_by_click.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1e07c64b-4ea0-4549-8938-dfb699d94692</id>
+      <BoundTo>e24e066c-4d63-4562-9741-384e2ba768d8</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Get_text_of_the_main_paragraph.cs">
+      <DependentUpon>myapp_Get_text_of_the_main_paragraph.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f1703c2-4bff-48f1-ab7f-b49cbc52809a</id>
+      <BoundTo>90bb3b23-1b44-4be1-91c0-b9ff12106c09</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Get_text_of_the_main_paragraph.UserCode.cs">
+      <DependentUpon>myapp_Get_text_of_the_main_paragraph.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>35e689cd-6f14-4497-96b6-399725179e67</id>
+      <BoundTo>90bb3b23-1b44-4be1-91c0-b9ff12106c09</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Go_to_carouselPage.cs">
+      <DependentUpon>myapp_Go_to_carouselPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fac01e23-2ba3-4cb6-81b0-e02d0449b211</id>
+      <BoundTo>21f4d3b7-29e1-4f1d-8edb-39340a6b5255</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Go_to_carouselPage.UserCode.cs">
+      <DependentUpon>myapp_Go_to_carouselPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a085880-9898-4a5e-b511-ec3bc3a7696f</id>
+      <BoundTo>21f4d3b7-29e1-4f1d-8edb-39340a6b5255</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Hover_over_navbarItems_and_screen.cs">
+      <DependentUpon>myapp_Hover_over_navbarItems_and_screen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>71de0dc9-4c59-4b36-9ba7-cc1bfeda0299</id>
+      <BoundTo>b85fc8d1-e205-4dbe-adac-f80aa867c3e2</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Hover_over_navbarItems_and_screen.UserCode.cs">
+      <DependentUpon>myapp_Hover_over_navbarItems_and_screen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0d6453b8-eccf-489b-9e9b-ac9cb8ab5e06</id>
+      <BoundTo>b85fc8d1-e205-4dbe-adac-f80aa867c3e2</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Insert_from_clipboard.cs">
+      <DependentUpon>myapp_Insert_from_clipboard.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d6cd118-013a-465c-8440-cb3565026c43</id>
+      <BoundTo>701edf24-a07a-40a2-93b0-ce4dacd1356d</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Insert_from_clipboard.UserCode.cs">
+      <DependentUpon>myapp_Insert_from_clipboard.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>470d39a8-11f2-4741-aa8e-b39b646e4513</id>
+      <BoundTo>701edf24-a07a-40a2-93b0-ce4dacd1356d</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Carousel_next_by_button.cs">
+      <DependentUpon>myapp_Carousel_next_by_button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c95b1eb-a355-465f-8c8b-6719b75ce7f0</id>
+      <BoundTo>c424f9ef-c8cb-4d6a-9597-0517fd91396a</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Carousel_next_by_button.UserCode.cs">
+      <DependentUpon>myapp_Carousel_next_by_button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>58105e6f-0aed-4113-bb51-8f8b1373e51b</id>
+      <BoundTo>c424f9ef-c8cb-4d6a-9597-0517fd91396a</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Carousel_previous_by_button.cs">
+      <DependentUpon>myapp_Carousel_previous_by_button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bbf40a77-e09b-4ff5-9821-1946873631f1</id>
+      <BoundTo>dbcac16a-9a77-4afd-ba40-c885acd656ce</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Carousel_previous_by_button.UserCode.cs">
+      <DependentUpon>myapp_Carousel_previous_by_button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cba8e4d5-f260-47ff-83ad-6b85100bf3b2</id>
+      <BoundTo>dbcac16a-9a77-4afd-ba40-c885acd656ce</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_NavbaLogo_redirect.cs">
+      <DependentUpon>myapp_NavbaLogo_redirect.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>561bb335-5277-4d8a-9a73-a7530c83b3cb</id>
+      <BoundTo>9f5ad26f-5ef7-4432-b2f9-6971c41be8ab</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_NavbaLogo_redirect.UserCode.cs">
+      <DependentUpon>myapp_NavbaLogo_redirect.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e93f7b82-1744-4096-a283-4386090f5634</id>
+      <BoundTo>9f5ad26f-5ef7-4432-b2f9-6971c41be8ab</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_OpenBrowser.cs">
+      <DependentUpon>myapp_OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45a249de-36ab-46bd-8661-607d59a4e179</id>
+      <BoundTo>4b58cd13-08d6-4127-93d9-e63fcc9c3c51</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_OpenBrowser.UserCode.cs">
+      <DependentUpon>myapp_OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bb35f04a-36f4-45d8-8f13-432a1366b1b3</id>
+      <BoundTo>4b58cd13-08d6-4127-93d9-e63fcc9c3c51</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_scrollToElement.cs">
+      <BoundTo>0b6d0a1d-c43c-4890-98d4-5e6a4fb5dc57</BoundTo>
+      <DependentUpon>myapp_scrollToElement.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e75d99f6-95c2-4276-8f36-00f671ed0413</id>
+    </Compile>
+    <Compile Include="React\myapp\myapp_scrollToElement.UserCode.cs">
+      <BoundTo>0b6d0a1d-c43c-4890-98d4-5e6a4fb5dc57</BoundTo>
+      <DependentUpon>myapp_scrollToElement.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bec7ce2c-8374-4828-9894-e74261b21801</id>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Uncheck_task.cs">
+      <DependentUpon>myapp_Uncheck_task.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>29821799-f69d-4945-9e30-087ff4d47b93</id>
+      <BoundTo>744eda9a-446d-4d97-9963-6e2a338f2ccc</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Uncheck_task.UserCode.cs">
+      <DependentUpon>myapp_Uncheck_task.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>744da374-17f3-4670-b583-2696c6887e45</id>
+      <BoundTo>744eda9a-446d-4d97-9963-6e2a338f2ccc</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\Recording_myApp.cs">
+      <DependentUpon>Recording_myApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>014e4229-0815-4ea7-90e3-aa6d2c51e266</id>
+      <BoundTo>52f6d91f-0020-417f-9768-96e73e9c8630</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\Recording_myApp.UserCode.cs">
+      <DependentUpon>Recording_myApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f0160042-1723-439d-a5c5-d4eb8ed86dbd</id>
+      <BoundTo>52f6d91f-0020-417f-9768-96e73e9c8630</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Screenshot_filtered.cs">
+      <DependentUpon>myapp_Screenshot_filtered.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8facb232-6b76-4d8b-afbe-e6d7435f1e01</id>
+      <BoundTo>80d25608-7d6f-4b38-a641-eaff1b8acade</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_Screenshot_filtered.UserCode.cs">
+      <DependentUpon>myapp_Screenshot_filtered.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c6fef7be-17a7-4b7f-85ff-4f4318cf935b</id>
+      <BoundTo>80d25608-7d6f-4b38-a641-eaff1b8acade</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_to_emojiPage_by_dropdown.cs">
+      <DependentUpon>myapp_to_emojiPage_by_dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>af813617-3baa-4763-8c57-09d1d2f2fe7a</id>
+      <BoundTo>b2c101d4-aaee-4b88-a12e-2da1521bbe04</BoundTo>
+    </Compile>
+    <Compile Include="React\myapp\myapp_to_emojiPage_by_dropdown.UserCode.cs">
+      <DependentUpon>myapp_to_emojiPage_by_dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4c5f683d-f0ee-453a-b838-e488bea226d3</id>
+      <BoundTo>b2c101d4-aaee-4b88-a12e-2da1521bbe04</BoundTo>
+    </Compile>
+    <Compile Include="Vue\GitLab\Close_gitlab.cs">
+      <DependentUpon>Close_gitlab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>52d385dc-04ef-48d4-a764-38e8fd445cc1</id>
+      <BoundTo>1bc1b8eb-cede-42a8-a5a1-7d1d40386540</BoundTo>
+    </Compile>
+    <Compile Include="Vue\GitLab\Close_gitlab.UserCode.cs">
+      <DependentUpon>Close_gitlab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81461adf-358d-4a61-966c-260e31893eda</id>
+      <BoundTo>1bc1b8eb-cede-42a8-a5a1-7d1d40386540</BoundTo>
+    </Compile>
+    <Compile Include="Vue\GitLab\GitLab_goto_account.cs">
+      <BoundTo>6665c6af-44f4-455b-bc07-73e4931d2f53</BoundTo>
+      <DependentUpon>GitLab_goto_account.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>74754bb0-e337-406f-a498-6563e2e14475</id>
+    </Compile>
+    <Compile Include="Vue\GitLab\GitLab_goto_account.UserCode.cs">
+      <BoundTo>6665c6af-44f4-455b-bc07-73e4931d2f53</BoundTo>
+      <DependentUpon>GitLab_goto_account.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be4600f2-ed41-4a64-94a7-6addad3cedb9</id>
+    </Compile>
+    <Compile Include="Vue\GitLab\Gitlab_login.cs">
+      <BoundTo>b4efb76a-6bbe-436c-95ee-f17585ef12ec</BoundTo>
+      <DependentUpon>Gitlab_login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bf54cbf6-4f82-4cf7-a9db-7c78678d169a</id>
+    </Compile>
+    <Compile Include="Vue\GitLab\Gitlab_login.UserCode.cs">
+      <BoundTo>b4efb76a-6bbe-436c-95ee-f17585ef12ec</BoundTo>
+      <DependentUpon>Gitlab_login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>30e956b3-3260-419d-a96d-58d84e42de39</id>
+    </Compile>
+    <Compile Include="Vue\GitLab\Gitlab_OpenBrowser.cs">
+      <DependentUpon>Gitlab_OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7cc120e8-32f6-4b50-842d-ba408c527514</id>
+      <BoundTo>244631f6-2b76-4b9e-9bcb-41154b909e34</BoundTo>
+    </Compile>
+    <Compile Include="Vue\GitLab\Gitlab_OpenBrowser.UserCode.cs">
+      <DependentUpon>Gitlab_OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b952bf05-94ca-4648-8293-571e3dd6094b</id>
+      <BoundTo>244631f6-2b76-4b9e-9bcb-41154b909e34</BoundTo>
+    </Compile>
+    <Compile Include="Vue\GitLab\Recording_gitlab.cs">
+      <DependentUpon>Recording_gitlab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>87ef1186-b410-4a9a-a386-7a83fa7ef430</id>
+      <BoundTo>2fa8ebfe-f7db-4e6a-8afc-d9a7bdb57c4d</BoundTo>
+    </Compile>
+    <Compile Include="Vue\GitLab\Recording_gitlab.UserCode.cs">
+      <DependentUpon>Recording_gitlab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7e75b6aa-f367-42d2-a9e2-bc87f9316b69</id>
+      <BoundTo>2fa8ebfe-f7db-4e6a-8afc-d9a7bdb57c4d</BoundTo>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_check_main_elements.cs">
+      <DependentUpon>Laracasts_check_main_elements.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1778d17-642a-4244-b6f4-2c65bfd12cbb</id>
+      <BoundTo>9fec5745-f6ae-4b36-b4dc-b55b0fe23fd4</BoundTo>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_check_main_elements.UserCode.cs">
+      <DependentUpon>Laracasts_check_main_elements.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6f63b923-067f-42fc-a97a-e595e825fae8</id>
+      <BoundTo>9fec5745-f6ae-4b36-b4dc-b55b0fe23fd4</BoundTo>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_CloseBrowser.cs">
+      <DependentUpon>Laracasts_CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dd23a020-444e-415d-9db8-5e9040237d3a</id>
+      <BoundTo>ee4dc7d9-65a1-44ca-8be2-9fb3106c698b</BoundTo>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_CloseBrowser.UserCode.cs">
+      <DependentUpon>Laracasts_CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>84d9d769-ac27-464d-84e7-a4e33af7f29c</id>
+      <BoundTo>ee4dc7d9-65a1-44ca-8be2-9fb3106c698b</BoundTo>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_close_singIn.cs">
+      <BoundTo>249f6084-efd8-4272-a136-84ffb8ea016a</BoundTo>
+      <DependentUpon>Laracasts_close_singIn.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>748b2d20-d6eb-4738-ac2f-78df8b306952</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_close_singIn.UserCode.cs">
+      <BoundTo>249f6084-efd8-4272-a136-84ffb8ea016a</BoundTo>
+      <DependentUpon>Laracasts_close_singIn.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d50d3c81-e177-417f-8c83-ea4933e3151d</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_finder_insert_Vue.cs">
+      <BoundTo>4e18261e-e78d-4476-a004-f11ff15ffafe</BoundTo>
+      <DependentUpon>Laracasts_finder_insert_Vue.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11824593-8a0b-4015-b3c8-438cd223b935</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_finder_insert_Vue.UserCode.cs">
+      <BoundTo>4e18261e-e78d-4476-a004-f11ff15ffafe</BoundTo>
+      <DependentUpon>Laracasts_finder_insert_Vue.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d596bbb1-5e68-429f-8636-4ea2f240de3c</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_goto_buildAClienCourse.cs">
+      <BoundTo>882603c2-2acc-4cc2-bba7-4b29df05ae74</BoundTo>
+      <DependentUpon>Laracasts_goto_buildAClienCourse.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6e0ab251-b894-4f34-b1ee-1018eefa8960</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_goto_buildAClienCourse.UserCode.cs">
+      <BoundTo>882603c2-2acc-4cc2-bba7-4b29df05ae74</BoundTo>
+      <DependentUpon>Laracasts_goto_buildAClienCourse.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23e9558b-f532-483c-9173-e1c33fd5c53b</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_goto_twitter.cs">
+      <BoundTo>bb96af4b-4a95-44ef-a2e3-a259efac5366</BoundTo>
+      <DependentUpon>Laracasts_goto_twitter.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d93a32fe-0c29-4905-bbd0-dc3cd065c5ec</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_goto_twitter.UserCode.cs">
+      <BoundTo>bb96af4b-4a95-44ef-a2e3-a259efac5366</BoundTo>
+      <DependentUpon>Laracasts_goto_twitter.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>35b247e0-d6db-467e-a4de-9639ae8cd767</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_go_to_LaravelCourse.cs">
+      <BoundTo>249e0497-9e8f-4700-a86c-bf8197bba997</BoundTo>
+      <DependentUpon>Laracasts_go_to_LaravelCourse.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2b96554-f6be-483f-a457-e8b3ea5223dd</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_go_to_LaravelCourse.UserCode.cs">
+      <BoundTo>249e0497-9e8f-4700-a86c-bf8197bba997</BoundTo>
+      <DependentUpon>Laracasts_go_to_LaravelCourse.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cb2c7655-cbcb-40b0-b1aa-f757e8ee5570</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_log_main_stats.cs">
+      <BoundTo>e56309a4-d154-4c24-a424-b5b5f101f2d4</BoundTo>
+      <DependentUpon>Laracasts_log_main_stats.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9b13051-3853-411c-b50f-68052cffeae9</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_log_main_stats.UserCode.cs">
+      <BoundTo>e56309a4-d154-4c24-a424-b5b5f101f2d4</BoundTo>
+      <DependentUpon>Laracasts_log_main_stats.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1b950181-ff64-4a6a-b31c-f7b3bd767973</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_OpenBrowser.cs">
+      <DependentUpon>Laracasts_OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>05cdd5df-cc58-449d-aad1-2f88cded3550</id>
+      <BoundTo>dfd6d2bd-cb05-4031-860a-64b01a04b827</BoundTo>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_OpenBrowser.UserCode.cs">
+      <DependentUpon>Laracasts_OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be26dd27-c77c-4a06-abdd-7a467bcfcc8e</id>
+      <BoundTo>dfd6d2bd-cb05-4031-860a-64b01a04b827</BoundTo>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_play_Laravel.cs">
+      <BoundTo>9ae5632d-12bb-47a2-933d-8821b01114a6</BoundTo>
+      <DependentUpon>Laracasts_play_Laravel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fd41a750-93e8-4ec8-9f0b-4253fdbadb96</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_play_Laravel.UserCode.cs">
+      <BoundTo>9ae5632d-12bb-47a2-933d-8821b01114a6</BoundTo>
+      <DependentUpon>Laracasts_play_Laravel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0c5e5997-d011-4dc2-af57-e516538f534a</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_redirect_by_logo.cs">
+      <BoundTo>f1f9b2df-142f-4dac-975f-f3682e57d5fd</BoundTo>
+      <DependentUpon>Laracasts_redirect_by_logo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69878873-9370-4bdb-8a20-7a4b122ed5cf</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_redirect_by_logo.UserCode.cs">
+      <BoundTo>f1f9b2df-142f-4dac-975f-f3682e57d5fd</BoundTo>
+      <DependentUpon>Laracasts_redirect_by_logo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e1c2a43a-3e5a-41b1-bb3e-5d1165cbfefa</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_screenshot_during_hover_mainStats.cs">
+      <BoundTo>88fb9711-245b-45bf-a7ba-b70876602a78</BoundTo>
+      <DependentUpon>Laracasts_screenshot_during_hover_mainStats.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>627ad8bb-0427-4dd7-8163-b94fab2ac1ae</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_screenshot_during_hover_mainStats.UserCode.cs">
+      <BoundTo>88fb9711-245b-45bf-a7ba-b70876602a78</BoundTo>
+      <DependentUpon>Laracasts_screenshot_during_hover_mainStats.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2a28d628-b989-4027-ba30-98f1473a62d2</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_search_results.cs">
+      <BoundTo>3bb8c211-e655-4044-b190-2b92b1a8cb3a</BoundTo>
+      <DependentUpon>Laracasts_search_results.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0e33c52c-b2aa-439c-a4a5-20a010489433</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_search_results.UserCode.cs">
+      <BoundTo>3bb8c211-e655-4044-b190-2b92b1a8cb3a</BoundTo>
+      <DependentUpon>Laracasts_search_results.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b234d2d3-654c-4d1d-a6a0-f04558aace39</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_show_finder.cs">
+      <BoundTo>69de565e-ddf8-4f51-ac3e-173f9630a6ec</BoundTo>
+      <DependentUpon>Laracasts_show_finder.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>52aa1224-bdd4-4aa5-8e72-ad4e9facf491</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_show_finder.UserCode.cs">
+      <BoundTo>69de565e-ddf8-4f51-ac3e-173f9630a6ec</BoundTo>
+      <DependentUpon>Laracasts_show_finder.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1e373a87-92d4-4324-8dc5-2b8a56990532</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_show_more.cs">
+      <BoundTo>62eea658-c95e-4451-9f4b-4c59d2f31348</BoundTo>
+      <DependentUpon>Laracasts_show_more.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d638e190-16e2-4980-ab74-f83741c0e2fa</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_show_more.UserCode.cs">
+      <BoundTo>62eea658-c95e-4451-9f4b-4c59d2f31348</BoundTo>
+      <DependentUpon>Laracasts_show_more.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0ca2dbe9-8d29-4ea2-8cff-c141d9f5b42f</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_show_signIn.cs">
+      <BoundTo>7b8fdb0e-ef3b-41ad-ad2f-95e00d212913</BoundTo>
+      <DependentUpon>Laracasts_show_signIn.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>624759f3-b98b-48b6-9c41-4dd4d83c5a8f</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Laracasts_show_signIn.UserCode.cs">
+      <BoundTo>7b8fdb0e-ef3b-41ad-ad2f-95e00d212913</BoundTo>
+      <DependentUpon>Laracasts_show_signIn.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>60fd3580-191f-4331-a92a-73f8b4506604</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Logo_redirect.cs">
+      <BoundTo>94e6e84e-6b7d-41a7-bd5f-b6f226d71a9e</BoundTo>
+      <DependentUpon>Logo_redirect.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b88ccde8-452f-4cb5-b88a-e34bd57a6524</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Logo_redirect.UserCode.cs">
+      <BoundTo>94e6e84e-6b7d-41a7-bd5f-b6f226d71a9e</BoundTo>
+      <DependentUpon>Logo_redirect.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ee357512-8997-43bd-9434-f7d6037d44fe</id>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Recording_Laracasts.cs">
+      <DependentUpon>Recording_Laracasts.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>28f6a8e4-3e37-480c-b5da-88c160a9b5f8</id>
+      <BoundTo>ef7dedb3-1683-4f0c-94d8-40ffe8068817</BoundTo>
+    </Compile>
+    <Compile Include="Vue\Laracasts\Recording_Laracasts.UserCode.cs">
+      <DependentUpon>Recording_Laracasts.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>898a2b60-3b24-429a-a3f6-2f562d3fd396</id>
+      <BoundTo>ef7dedb3-1683-4f0c-94d8-40ffe8068817</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Angular_Gmail.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>ef671765-5d03-415d-b7c1-3baf3fb7a0db</id>
+    </Content>
+    <Content Include="Angular_Prezman.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e1ffab29-4f14-4950-85df-ca5f59338ee4</id>
+    </Content>
+    <Content Include="React_Facebook.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>05ed51e2-d165-41d4-ab93-ed49a0e6dc6f</id>
+    </Content>
+    <Content Include="Vue_gitlab.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>da8b2aa4-eb6c-4e48-9c1e-de707b1d5f63</id>
+    </Content>
+    <Content Include="Vue_Laracasts.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>45d6d734-a7db-4a32-869a-acef586a6228</id>
+    </Content>
+    <None Include="Angular\Gmail\Close_Gmail.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>33ce865f-cffa-4602-839a-2361069495a7</id>
+      <recordtableid>8beed5a1-0302-4d94-81f3-29dd5a9e2428</recordtableid>
+    </None>
+    <None Include="Angular\Gmail\Gmail_go_to_login.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>1b087f3e-9824-49f4-851d-465242302c2c</id>
+      <recordtableid>20cd35f3-5414-487e-bdeb-944e1805a6da</recordtableid>
+    </None>
+    <None Include="Angular\Gmail\Gmail_open_new_message.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>f763afaf-29ca-4814-80b0-746acb6434b9</id>
+      <recordtableid>c6419b79-351f-4da6-821a-df96e08dc95e</recordtableid>
+    </None>
+    <None Include="Angular\Gmail\Open_Gmail.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>3f262a65-97ff-4e96-8901-e9bfd5ff3974</id>
+      <recordtableid>9d894691-5de9-4480-af70-6da9813431ae</recordtableid>
+    </None>
+    <None Include="Angular\Gmail\Recording_Gmail.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>4be70068-8e74-4539-bff7-bad4883a6be5</id>
+      <recordtableid>886aabad-2ef9-4fd4-acfa-c91336fc0aec</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prazman_goto_next.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>ee033c9c-dcde-4334-a716-920c1fe194d8</id>
+      <recordtableid>91c3f8ef-8286-4ee0-9d12-48205d7198dd</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_check_main_elements.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>daf81449-5d48-4eb7-ab17-d2977223823a</id>
+      <recordtableid>be3e0aa9-ef0c-4454-8779-76b3d536f9f8</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_click_logo.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>3c2f35f0-201e-44fa-b682-9e2dc58b4518</id>
+      <recordtableid>fc9b1ed3-62a4-43ae-874f-56ef86691095</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_CloseBrowser.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>eb5748dd-a553-4c8e-90aa-efbb363ed422</id>
+      <recordtableid>163f6e74-6c7c-413b-aa60-9e6187f3bea6</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_gotop.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>d675a15d-1bd3-4679-9415-9364841397c3</id>
+      <recordtableid>83b3c626-7e0b-4036-b2ac-c342ebac9be7</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_goto_agence.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>d3268f93-7558-434b-8baa-d1cb2b2e9ec7</id>
+      <recordtableid>be2ee22b-cb3c-4bd2-a2d8-0a36901b7e6f</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_goto_linkedIn.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>a3830c62-324a-49bd-a452-69053e629d6b</id>
+      <recordtableid>d446dd6c-2ac5-4adb-b857-7d24264aaa4e</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_goto_previous.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>86348777-6e34-438b-b00f-c2891a3422df</id>
+      <recordtableid>2a72a1e0-a827-4de0-b697-af91d18544d4</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_go_back.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>89d3d752-08fa-4ec5-bc67-94392e89ba07</id>
+      <recordtableid>1113b36c-8329-4895-8129-2bd68b7f38a0</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_hoverOver_mainImage.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>d21775dd-0ab5-4e81-86b6-765e85baa526</id>
+      <recordtableid>9583f4f7-daed-406e-a228-9372da30c405</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_log_paragraph.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>a63c12d7-382b-49b6-a4d9-e1945c8f17cc</id>
+      <recordtableid>db4cd42b-a651-4d41-a192-0be436e2740b</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_OpenBrowser.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>0d950cf2-42ff-4e5f-afdb-0c2989d1be49</id>
+      <recordtableid>77d88436-3d03-4480-b2f2-4ca83aa9fb62</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_open_Carousel.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>16ae075f-0282-4b4e-a7ff-4dcff768b0f3</id>
+      <recordtableid>dd60bf6a-c733-454e-bc9e-97735af0a525</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_play_video.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>0b8db59e-7a4e-4c4d-9934-bbc5a109313b</id>
+      <recordtableid>715738e0-d67c-41bc-b2ff-4c5a32e7b3e4</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_redirect_to_item.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>2d5e094e-44d6-4416-9da5-4ed9d57b1014</id>
+      <recordtableid>b68955a6-6460-4dd2-bdfc-ce2920675099</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_screenshot_duringHover_navbar.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>028c7533-b66f-4667-8cd4-c547d3acfc87</id>
+      <recordtableid>5aa9d35e-fda8-4665-a4f7-86a90ea5fb06</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Prezman_search_in_blog.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>0d73c1a5-d828-46ec-b486-39faed85095d</id>
+      <recordtableid>800131ea-5c1f-4254-ba5c-a20880bbe909</recordtableid>
+    </None>
+    <None Include="Angular\Prezman\Recording_Prezman.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>c745fc3d-dbc7-43e1-90e2-72ca709aa1b7</id>
+      <recordtableid>49828835-6e63-42e5-a136-50f1db7f6b08</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>18960e41-f3d6-4ee9-9412-9cfb6fbd9e38</id>
+    </None>
+    <Content Include="Bakalarka.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>0f3ea54c-382e-4bcf-80e1-e2656763e062</id>
+    </Content>
+    <None Include="BakalarkaRepository.rximg">
+      <DependentUpon>BakalarkaRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>b0b23ff2-e339-4cd2-91b6-9949991db82b</id>
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+    </None>
+    <None Include="BakalarkaRepository.rxrep">
+      <id>66e478c5-5c24-4357-808d-d0484a1d6054</id>
+      <repoid>2ba74124-a7ab-4324-a1f4-0cacb5134cfc</repoid>
+      <reporootid>99729ac5-3fa7-4107-9f39-36c2c6d2ddf0</reporootid>
+    </None>
+    <None Include="React\Facebook\FB_allow_cookies.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>a10ec192-67d9-443e-9340-1cf8490dd8d5</id>
+      <recordtableid>c8161900-df01-4fbe-bdd8-a543399a99a1</recordtableid>
+    </None>
+    <None Include="React\Facebook\FB_check_navbar.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>6235c7a6-fad2-4049-824f-33ef05443e7c</id>
+      <recordtableid>e2846e5e-6434-41de-8665-adcf70aa43d1</recordtableid>
+    </None>
+    <None Include="React\Facebook\FB_CloseFacebook.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>31dae73d-acc0-459b-a3da-53c37509ea81</id>
+      <recordtableid>c887b3cc-30cc-438f-a39d-53e2f0a40429</recordtableid>
+    </None>
+    <None Include="React\Facebook\FB_goto_profile.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>b02bf1e0-b287-4704-b5fb-80fbe6395c08</id>
+      <recordtableid>6b4dc2cc-a631-4cc5-bc8d-7905e3f3942f</recordtableid>
+    </None>
+    <None Include="React\Facebook\FB_login.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>e36986bf-34aa-431a-88dd-8db0afa77d44</id>
+      <recordtableid>ed68ddf0-d034-4647-bb7f-385167ecf9b0</recordtableid>
+    </None>
+    <None Include="React\Facebook\FB_OpenFacebook.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>1b71c539-8d0d-4bfe-bd89-78ce0c136302</id>
+      <recordtableid>44897596-7758-4006-82bb-951862dfe239</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Check_task.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>39719584-6285-455d-a598-721803e3ff15</id>
+      <recordtableid>470640c7-08f6-423b-90af-c761a2df60ad</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_About_redirect.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>10e4c775-b0bb-431e-a333-905bf7530c9d</id>
+      <recordtableid>deda5462-832e-4b38-94d6-89a6e99a6488</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Add_new_item.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>c7f93116-9851-41e1-b64c-58a23debd594</id>
+      <recordtableid>43f38394-d962-4520-bbf5-ebb4bc864ab7</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Carousel_switch_to_4th.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>d4c73b07-b260-42ce-a838-587bf7b12f58</id>
+      <recordtableid>6c5dfb6c-e8eb-4a75-b608-e29f72f94a2d</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Check_main_elements.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>c911066a-e346-49ca-a50f-d423d6faa79b</id>
+      <recordtableid>b5f17c18-cd1f-4e2f-be7e-457e08096df2</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_CloseBrowser.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>a999c862-5300-409a-b541-28d3503e0bfe</id>
+      <recordtableid>00c4bd37-8750-4477-b329-943da28d1cc5</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Delete_item.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>7c79e57d-ce38-4457-af6e-5d9ec7e241c0</id>
+      <recordtableid>51cdd64f-5d12-4043-9744-0d0e0b4bb144</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Edit_item.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>0d7f5813-6233-4eca-9a70-ab1e0a6c7715</id>
+      <recordtableid>2213d955-e0ed-4403-ace0-3671740f4da1</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Edit_item_cancel.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>74a4ffe4-5487-45af-a9c5-b516c982a91f</id>
+      <recordtableid>8cecf650-1e99-46a5-b314-89f663679db2</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Edit_item_confirm.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>87b756cc-10a8-43ab-ac2b-3021ab2a363a</id>
+      <recordtableid>66afbea3-57fd-4ec9-b7e8-1eb9b19599ed</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Emoji_clipboard_by_click.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>e24e066c-4d63-4562-9741-384e2ba768d8</id>
+      <recordtableid>0562347b-4bb9-4cb2-9d9a-418a185f8b0a</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Get_text_of_the_main_paragraph.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>90bb3b23-1b44-4be1-91c0-b9ff12106c09</id>
+      <recordtableid>a03a3ae2-a2b6-4960-8d6e-d0645508b661</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Go_to_carouselPage.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>21f4d3b7-29e1-4f1d-8edb-39340a6b5255</id>
+      <recordtableid>27bb4f0d-0e20-4344-82d9-09f211cf853d</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Hover_over_navbarItems_and_screen.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>b85fc8d1-e205-4dbe-adac-f80aa867c3e2</id>
+      <recordtableid>762e6a08-d48c-4854-a311-ab41d2f2e960</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Insert_from_clipboard.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>701edf24-a07a-40a2-93b0-ce4dacd1356d</id>
+      <recordtableid>ca652928-5e6e-45f6-bfe6-f22f7a2a620d</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Carousel_next_by_button.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>c424f9ef-c8cb-4d6a-9597-0517fd91396a</id>
+      <recordtableid>82dcbc5c-6e8a-4b37-b3b1-ea7ac46c7117</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Carousel_previous_by_button.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>dbcac16a-9a77-4afd-ba40-c885acd656ce</id>
+      <recordtableid>f6806c6d-348a-4fa8-b243-5c17d97e3da1</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_NavbaLogo_redirect.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>9f5ad26f-5ef7-4432-b2f9-6971c41be8ab</id>
+      <recordtableid>562014f3-d84a-4f98-88d9-ff5ad0a14763</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_OpenBrowser.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>4b58cd13-08d6-4127-93d9-e63fcc9c3c51</id>
+      <recordtableid>2a14d76e-667d-496d-845a-d8c47171edb0</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_scrollToElement.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>0b6d0a1d-c43c-4890-98d4-5e6a4fb5dc57</id>
+      <recordtableid>42d30814-4dc5-4c9a-9f9d-a2b81cd979b4</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Uncheck_task.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>744eda9a-446d-4d97-9963-6e2a338f2ccc</id>
+      <recordtableid>ba06c76e-632d-48c2-826e-4a81d9c14582</recordtableid>
+    </None>
+    <None Include="React\myapp\Recording_myApp.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>52f6d91f-0020-417f-9768-96e73e9c8630</id>
+      <recordtableid>9d94841b-3d01-4c0a-856c-a0cdf9288db7</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_Screenshot_filtered.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>80d25608-7d6f-4b38-a641-eaff1b8acade</id>
+      <recordtableid>c0d71fde-73af-451c-8f2a-7cc53cf02be6</recordtableid>
+    </None>
+    <None Include="React\myapp\myapp_to_emojiPage_by_dropdown.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>b2c101d4-aaee-4b88-a12e-2da1521bbe04</id>
+      <recordtableid>236aa0aa-f40c-4e8c-b61d-91879bceda3a</recordtableid>
+    </None>
+    <None Include="Vue\GitLab\Close_gitlab.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>1bc1b8eb-cede-42a8-a5a1-7d1d40386540</id>
+      <recordtableid>bd9c18f6-279f-4716-8cd6-15ec3cdd9ec1</recordtableid>
+    </None>
+    <None Include="Vue\GitLab\GitLab_goto_account.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>6665c6af-44f4-455b-bc07-73e4931d2f53</id>
+      <recordtableid>3fd85499-e922-4b07-a809-5398d03efbd6</recordtableid>
+    </None>
+    <None Include="Vue\GitLab\Gitlab_login.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>b4efb76a-6bbe-436c-95ee-f17585ef12ec</id>
+      <recordtableid>6f1b6486-dd99-4714-8a45-283eeac405e6</recordtableid>
+    </None>
+    <None Include="Vue\GitLab\Gitlab_OpenBrowser.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>244631f6-2b76-4b9e-9bcb-41154b909e34</id>
+      <recordtableid>aa27309e-2408-4f4e-8496-0e5dabfb8083</recordtableid>
+    </None>
+    <None Include="Vue\GitLab\Recording_gitlab.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>2fa8ebfe-f7db-4e6a-8afc-d9a7bdb57c4d</id>
+      <recordtableid>09008324-7666-4a4c-93cf-0355e43cf089</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_check_main_elements.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>9fec5745-f6ae-4b36-b4dc-b55b0fe23fd4</id>
+      <recordtableid>9b2933f6-14c1-44b3-9954-8ae467dedbf1</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_CloseBrowser.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>ee4dc7d9-65a1-44ca-8be2-9fb3106c698b</id>
+      <recordtableid>d468d8cb-f9b2-41bf-92cc-fff8c1fc1aa5</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_close_singIn.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>249f6084-efd8-4272-a136-84ffb8ea016a</id>
+      <recordtableid>f6094fd5-aa5a-4ba7-b184-06d725d3710e</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_finder_insert_Vue.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>4e18261e-e78d-4476-a004-f11ff15ffafe</id>
+      <recordtableid>5a10617e-5e7e-4a8a-963e-a1bcb08e92a7</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_goto_buildAClienCourse.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>882603c2-2acc-4cc2-bba7-4b29df05ae74</id>
+      <recordtableid>8c689d44-cbb9-4dd5-8cbf-f4301279f369</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_goto_twitter.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>bb96af4b-4a95-44ef-a2e3-a259efac5366</id>
+      <recordtableid>c3b51dea-be44-4878-bd18-1b1ab59aacbc</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_go_to_LaravelCourse.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>249e0497-9e8f-4700-a86c-bf8197bba997</id>
+      <recordtableid>6cb446d3-0c3e-4bcb-ac9f-2fbef9ffa6d0</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_log_main_stats.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>e56309a4-d154-4c24-a424-b5b5f101f2d4</id>
+      <recordtableid>efbdccc3-fd7a-4e84-824d-b25614e2a4d3</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_OpenBrowser.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>dfd6d2bd-cb05-4031-860a-64b01a04b827</id>
+      <recordtableid>0a9b045d-76fc-4b0c-a95e-ac1c6ea6b720</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_play_Laravel.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>9ae5632d-12bb-47a2-933d-8821b01114a6</id>
+      <recordtableid>4056f225-679d-4823-bc2f-27aec9777726</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_redirect_by_logo.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>f1f9b2df-142f-4dac-975f-f3682e57d5fd</id>
+      <recordtableid>dde2ce1a-8bca-4a37-870b-ec5ee2649f5a</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_screenshot_during_hover_mainStats.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>88fb9711-245b-45bf-a7ba-b70876602a78</id>
+      <recordtableid>13e94c37-0a34-47c6-8a48-8b4416ec90e7</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_search_results.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>3bb8c211-e655-4044-b190-2b92b1a8cb3a</id>
+      <recordtableid>760ea098-9bbe-4e72-8429-04645f7016f4</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_show_finder.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>69de565e-ddf8-4f51-ac3e-173f9630a6ec</id>
+      <recordtableid>7b287804-5dd6-45a2-98ca-a0f1281c4467</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_show_more.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>62eea658-c95e-4451-9f4b-4c59d2f31348</id>
+      <recordtableid>1d2aee17-3fca-478f-a823-f0eb5a2557ca</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Laracasts_show_signIn.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>7b8fdb0e-ef3b-41ad-ad2f-95e00d212913</id>
+      <recordtableid>167272a6-beb4-47f4-a453-ce2235d6b524</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Logo_redirect.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>94e6e84e-6b7d-41a7-bd5f-b6f226d71a9e</id>
+      <recordtableid>6a0dde0a-e476-4ed7-a154-ed770f630264</recordtableid>
+    </None>
+    <None Include="Vue\Laracasts\Recording_Laracasts.rxrec">
+      <BoundTo>66e478c5-5c24-4357-808d-d0484a1d6054</BoundTo>
+      <id>ef7dedb3-1683-4f0c-94d8-40ffe8068817</id>
+      <recordtableid>c9ee9acb-77a3-47be-932a-c4f1e75b87fa</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bakalarka.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>6ad3ce16-d31b-4739-b458-1cf8fa6c3942</id>
+    </Content>
+    <Content Include="React_myapp.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2612da78-b4b1-48ec-8388-a611acf4f68b</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Angular">
+      <id>fdec81ae-c37c-44e3-8002-c0a4099d451d</id>
+    </Folder>
+    <Folder Include="Angular\Gmail">
+      <id>674dd7ad-7e5e-4c25-8bdb-3bc419c88363</id>
+    </Folder>
+    <Folder Include="Angular\Prezman">
+      <id>bd884cfa-52e2-44ad-8d17-aa941b2bac30</id>
+    </Folder>
+    <Folder Include="Vue">
+      <id>c2c93734-a570-4003-8664-3cd1af908e56</id>
+    </Folder>
+    <Folder Include="React">
+      <id>35af12ec-dbff-4c33-86e0-4af32448c1bd</id>
+    </Folder>
+    <Folder Include="React\myapp">
+      <id>d30d2b56-555d-4181-9e50-3d63b4158f52</id>
+    </Folder>
+    <Folder Include="React\Facebook">
+      <id>ea783415-71a5-4ee6-8028-13256a9c3a19</id>
+    </Folder>
+    <Folder Include="Vue\GitLab">
+      <id>74f1137b-181e-40f1-9149-6b9934376d52</id>
+    </Folder>
+    <Folder Include="Vue\Laracasts">
+      <id>17d40c73-0556-4978-8c7d-cbcca140ce54</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

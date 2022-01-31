@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c0d71fde-73af-451c-8f2a-7cc53cf02be6"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Myapp_Screenshot_filtered"
+	namespace="Bakalarka.React.myapp">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e02a97be-c11f-421b-9916-1766a035fa10">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="262cdaf7-6b7b-4997-b6fe-565e3971e78b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]//input[@type='text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="4d6a963b-bf42-472a-a580-18b897f4a673">
+			</arguments>
+		</invokeactionrecorditem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="BeforeSearch"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="9af5029d-1bf7-4d1e-ac62-8876ea1d335e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Filter emojis
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="824d71bd-7b46-447f-a673-5e0f89ac8ef8"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="262cdaf7-6b7b-4997-b6fe-565e3971e78b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]//input[@type='text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="happy"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="5a774fa6-3e43-49c0-8739-5c636951d3be">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="262cdaf7-6b7b-4997-b6fe-565e3971e78b"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="12,301,1873,56"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='localhost:3000']//div[#'root']/div/div[1]//input[@type='text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="eb920f60-c2c9-4b7d-9818-f8f82e9fe882">
+				/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABaAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKj8
+6P8AvfpR50f979Kz9rT/AJl94+V9iSio/Oj/AL36UedH/e/Sj2tP+ZfeHK+xJRUfnR/3v0o86P8A
+vfpR7Wn/ADL7w5X2JKKj86P+9+lHnR/3v0o9rT/mX3hyvsSUVH50f979KPOj/vfpR7Wn/MvvDlfY
+koqPzo/736UedH/e/Sj2tP8AmX3hyvsSUVH50f8Ae/Sjzo/736Ue1p/zL7w5X2JKKj86P+9+lHnR
+/wB79KPa0/5l94cr7ElFR+dH/e/Sjzo/736Ue1p/zL7w5X2JKKj86P8AvfpR50f979KPa0/5l94c
+r7ElFR+dH/e/Sjzo/wC9+lHtaf8AMvvDlfYkoqPzo/736UedH/e/Sj2tP+ZfeHK+xJRUfnR/3v0o
+86P+9+lHtaf8y+8OV9iSio/Oj/vfpR50f979KPa0/wCZfeHK+xJRUfnR/wB79KPOj/vfpR7Wn/Mv
+vDlfYkoqPzo/736UedH/AHv0o9rT/mX3hyvsSUVH50f979KPOj/vfpR7Wn/MvvDlfYkoqPzo/wC9
++lHnR/3v0o9rT/mX3hyvsSUVH50f979KPOj/AL36Ue1p/wAy+8OV9iSio/Oj/vfpR50f979KPa0/
+5l94cr7ElFR+dH/e/Sjzo/736Ue1p/zL7w5X2JKKj86P+9+lHnR/3v0o9rT/AJl94cr7ElFR+dH/
+AHv0o86P+9+lHtaf8y+8OV9iSio/Oj/vfpR50f8Ae/Sj2tP+ZfeHK+xJRUfnR/3v0o86P+9+lHta
+f8y+8OV9iSio/Oj/AL36UedH/e/Sj2tP+ZfeHK+xJRUfnR/3v0o86P8AvfpR7Wn/ADL7w5X2JKKj
+86P+9+lHnR/3v0o9rT/mX3hyvsSUVH50f979KPOj/vfpR7Wn/MvvDlfYkoqPzo/736UedH/e/Sj2
+tP8AmX3hyvsSUVH50f8Ae/Sjzo/736Ue1p/zL7w5X2JKKj86P+9+lFHtaf8AMvvDlfYobNX/ALmn
+fk9GzV/7mnfk9adFVyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnR
+RyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35
+PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRy
+R7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PR
+s1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7
+BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1
+f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7Bd
+mZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+
+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZ
+s1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p
+35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1
+f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35PWnRRyR7BdmZs1f+5p35PRs1f+5p35
+PWnRRyR7BdmZs1f+5p35PRWnRRyR7BdhRRRVCCiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiots/9
+9aNs/wDfWsfav+V/18yuXzJaKi2z/wB9aNs/99aPav8Alf8AXzDl8yWiots/99aNs/8AfWj2r/lf
+9fMOXzJaKi2z/wB9aNs/99aPav8Alf8AXzDl8yWiots/99aNs/8AfWj2r/lf9fMOXzJaKi2z/wB9
+aNs/99aPav8Alf8AXzDl8yWiots/99aNs/8AfWj2r/lf9fMOXzJaKi2z/wB9aNs/99aPav8Alf8A
+XzDl8yWiots/99aNs/8AfWj2r/lf9fMOXzJaKi2z/wB9aNs/99aPav8Alf8AXzDl8yWiots/99aN
+s/8AfWj2r/lf9fMOXzJaKi2z/wB9aNs/99aPav8Alf8AXzDl8yWiots/99aNs/8AfWj2r/lf9fMO
+XzJaKi2z/wB9aNs/99aPav8Alf8AXzDl8yWiots/99aNs/8AfWj2r/lf9fMOXzJaKi2z/wB9aNs/
+99aPav8Alf8AXzDl8yWiots/99aNs/8AfWj2r/lf9fMOXzJaKi2z/wB9aNs/99aPav8Alf8AXzDl
+8yWiots/99aNs/8AfWj2r/lf9fMOXzJaKi2z/wB9aNs/99aPav8Alf8AXzDl8yWiots/99aNs/8A
+fWj2r/lf9fMOXzJaKi2z/wB9aNs/99aPav8Alf8AXzDl8yWiots/99aNs/8AfWj2r/lf9fMOXzJa
+Ki2z/wB9aNs/99aPav8Alf8AXzDl8yWiots/99aNs/8AfWj2r/lf9fMOXzJaKi2z/wB9aNs/99aP
+av8Alf8AXzDl8yWiots/99aNs/8AfWj2r/lf9fMOXzJaKi2z/wB9aNs/99aPav8Alf8AXzDl8yWi
+ots/99aNs/8AfWj2r/lf9fMOXzJaKi2z/wB9aNs/99aPav8Alf8AXzDl8yWiots/99aNs/8AfWj2
+r/lf9fMOXzJaKi2z/wB9aKPav+V/18w5fMlopuxP7q/lRsT+6v5VsSOopuxP7q/lRsT+6v5UAOop
+uxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOop
+uxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOop
+uxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOop
+uxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOop
+uxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOop
+uxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOop
+uxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOopuxP7q/lRsT+6v5UAOop
+uxP7q/lRsT+6v5UAOopuxP7q/lRQB//Z
+			</helperscreenshot>
+		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="SearchHappy"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="9af5029d-1bf7-4d1e-ac62-8876ea1d335e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		myapp_Screenshot_filtered.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

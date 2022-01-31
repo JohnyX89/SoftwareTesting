@@ -1,0 +1,205 @@
+{
+  "uid" : "22f4c88fb967b74f",
+  "name" : "010-Redirect by logo",
+  "fullName" : "Angular_Prezman.010-Redirect by logo",
+  "historyId" : "2188a57225fabe570e0568b06a59b923",
+  "time" : {
+    "start" : 1619981540374,
+    "stop" : 1619981544723,
+    "duration" : 4349
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1619981540375,
+        "stop" : 1619981540420,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "928e17133f363cb4",
+        "name" : "Request",
+        "source" : "928e17133f363cb4.json",
+        "type" : "application/json",
+        "size" : 96
+      }, {
+        "uid" : "60d7e26406a0650a",
+        "name" : "Response",
+        "source" : "60d7e26406a0650a.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "POST /session/:sessionId/execute/sync",
+      "time" : {
+        "start" : 1619981540423,
+        "stop" : 1619981540462,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9bcdf2d95384c58a",
+        "name" : "Request",
+        "source" : "9bcdf2d95384c58a.json",
+        "type" : "application/json",
+        "size" : 302
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "POST /session/:sessionId/element/2a9b8e8d-0840-42ad-9967-4dc447621d1b/click",
+      "time" : {
+        "start" : 1619981540463,
+        "stop" : 1619981541487,
+        "duration" : 1024
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "GET /session/:sessionId/url",
+      "time" : {
+        "start" : 1619981544496,
+        "stop" : 1619981544515,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fcfa19ea8d1f9992",
+        "name" : "Response",
+        "source" : "fcfa19ea8d1f9992.json",
+        "type" : "application/json",
+        "size" : 25
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "GET /session/:sessionId/screenshot",
+      "time" : {
+        "start" : 1619981544520,
+        "stop" : 1619981544721,
+        "duration" : 201
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e1ef13a9bdcbd8fd",
+        "name" : "Screenshot",
+        "source" : "e1ef13a9bdcbd8fd.png",
+        "type" : "image/png",
+        "size" : 59180
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testClass",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "testMethod",
+    "value" : "010-Redirect by logo"
+  }, {
+    "name" : "package",
+    "value" : "Angular_Prezman"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-90.0.4430.93"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b43af997a543d7d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619981063041,
+        "stop" : 1619981067521,
+        "duration" : 4480
+      }
+    }, {
+      "uid" : "bc937b02d24d8c3c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619980435378,
+        "stop" : 1619980439240,
+        "duration" : 3862
+      }
+    }, {
+      "uid" : "145b7323735b221e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619980336144,
+        "stop" : 1619980339981,
+        "duration" : 3837
+      }
+    }, {
+      "uid" : "f368499d6c9e7a57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619980279893,
+        "stop" : 1619980283726,
+        "duration" : 3833
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "22f4c88fb967b74f.json",
+  "parameterValues" : [ "chrome-90.0.4430.93" ]
+}

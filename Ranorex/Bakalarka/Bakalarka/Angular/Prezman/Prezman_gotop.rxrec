@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="83b3c626-7e0b-4036-b2ac-c342ebac9be7"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Prezman_gotop"
+	namespace="Bakalarka.Angular.Prezman">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="52;16"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e22b2102-cb72-4f2a-8e3e-76fe6814d0d0"
+		sx="102"
+		sy="256"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="02aa9458-45ba-4886-b424-3c5c2aca3c47"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="50,240,61,61"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						icon-wrap-circle
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						icon-wrap-circle
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="_ngcontent-sic-c11"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='www.prezman.fr']//tag[#'bt-scroll-top']/div/span/span/span
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="4495fd66-9e37-447e-b70a-49479badf08d">
+				/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAB2AGoDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDMpnen
+1Hn5qQyTIApC3pTDS0mx2HKxIpcmmr0paYhNxpQ3rSUAUwHjpQWAphbAwKZuzwaLgDMCeaMij8KQ
+nBxikApIpM+4oIxyKb+FAFnHNN2oG6nNWC5x1NRBj5mATUPVnRC0afNa+ozCeppcJ6mrEEMtxJtQ
+nA5LE8Ae9WTJbW/Cg3D/AN5jhfy70reYe1X8q/r5meoXHBNLhfer66jPj5NkY9FUUv8AaFx/EyuP
+QqKaj5i9qv5V/XzM7avqaPlHc1oie3n4ljMLH+OPp+VQXcMkGG3bkb7rqeDT5fMPar+Vf18ykVjH
+VjTJECPxk8VI5Y9WNErFXGD2o2ZTanTbslaxD1oHPHpT9zEcE/nTgWDY3H86o5iPqtJz6VP8w7n8
+6d8394/nTAdRBE092I06n9KBkjkYq1bjyLSaf+Nz5an07ms/tG//AC5+f6MbdTqF+zW5xEvU/wB8
++pqvTT1p3ahmY6MU7tRCpchVGWJ4FS3EEltJskHbII6GqWxLK5PFSW1yYj5UoLwyHDIBn8R71GeR
+S2uft9sD/wA9k/8AQhTBkU6COZ0UsVB4LKVP5GmyDMg+la2sQyyTXDRw7gsy/Nk5yVQYxj6d6yGc
++YVKlWXg5HcdqTWqNIyXs5L0BRgGlI3EMKbuyMetKpwuO4qjEeG3DpzTefWlXqadgUDHFvn2+1Wp
++NPtQP4i5P51R3fvPqauyfPpsTD/AJZuyn8eaz6m6/hfP9GVGHNOA7UlSRu0UiuuNynIyKGQaltC
+mn25nnGZW6L6e1Oilj1KAxS4WUcgis6e5e6fe/GOAB0FMRmjYOhww5Bq0Qxs0LwyFJBhhUttbziW
+0maFhG8qFX4I+8PTpTbu6e6cM4AwMAAVc0e9KzR2lwwaE/6vcPusOQM/56U0Jmy1rnzfn/1kqSdO
+m3bx/wCO/rWRrNr9msWywbzbsycDplTxW/WL4nlUW0EWRuMm7HsAR/WgRz/Slzhh+tNLZ4PWkzzz
+QBKDg0bjUQfAow1A7Dx94fWr1gweSW1c4WUDaT2YdKop94VKAfMyDzUP4jZfwX6/oK6skhVhhgcE
+UtXPlvwAxCXKjGT0k/8Ar1WkjeNtrqVYdjSZA1fu0uOKRCMU4kYPNUiWRmgjeu3HWlVSzBVBYnoB
+V1ESwAeUhp8fKn933NNAO867sIEtxOGOOQwOU9s5rJmDM5eR2dj3Y5q4zlzuZsseSajCqyENSvqj
+SMV7OT9Ckw469KN2ABUk0JQZByKhJA96oyFzU4PFVt3HNO8z2pDTJl+8Paph97NQ/wAdTJ94Umr6
+mlOolHlauObn+E5qyl7IE2TIsyDs45H41F2pKXK+4/aw/k/Fiu9qxyIHT2Ev+IpqtaqcmGRvrL/9
+amNGCeKiI5I70nF9ylUp/wAv4suNe7VK2qRwA915b86pldxJMmSepNJtpMEUrPuPnh/L+LHbR/fF
+DnLcHtTNppdtCWoSqLlcUrBTWjB5HFOxSgDvVowZXKEdRRirfykYK8U3yY/U0xCDlhUy/eqFcbqm
+T71MlEppAKXNFAxMc1FKOnrUhIB5qF2yxNSxobSUpppqSxaKSkpiHUZpKSgQ/NPA4pioSMkYFTcU
+0JldPvGp0+9RRTJRIz4OKaXP0ooqWy0iBmJNIOlFFIoCabmiigQUtFFMQqjccVKEC+59aKKaExw5
+FGKKKoR//9k=
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="ScrollTopResult"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="eca399c5-6761-45d5-a026-ee1157dd6267">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Prezman_gotop.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on win32)" generated="20210511 19:29:43.254" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\Users\bure\Desktop\UTB\Bakalarka\Testovani\RobotFW\BP\TS_001-React\TS_001_001-Facebook\test.robot">
+<test id="s1-t1" name="Pre-conditions">
+<kw name="Prepare Main Page" library="globalKeywords">
+<arg>${MainPage}</arg>
+<arg>Chrome</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${MainPage}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210511 19:29:43.633" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20210511 19:29:43.632" endtime="20210511 19:29:46.412"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210511 19:29:46.413" endtime="20210511 19:29:46.600"/>
+</kw>
+<status status="PASS" starttime="20210511 19:29:43.630" endtime="20210511 19:29:46.601"/>
+</kw>
+<status status="PASS" starttime="20210511 19:29:43.629" endtime="20210511 19:29:46.601"/>
+</test>
+<test id="s1-t2" name="TC_001_001_001-Allow cookies">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Cookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:29:46.604" endtime="20210511 19:29:46.676"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:29:46.677" level="INFO">Clicking element '//body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20210511 19:29:46.676" endtime="20210511 19:29:46.762"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/LoginPage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:29:47.015" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/LoginPage.png"&gt;&lt;img src="Screenshots/LoginPage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:29:46.762" endtime="20210511 19:29:47.016"/>
+</kw>
+<status status="PASS" starttime="20210511 19:29:46.603" endtime="20210511 19:29:47.017"/>
+</test>
+<test id="s1-t3" name="TC_001_001_002-Login">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${EmailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:29:47.019" endtime="20210511 19:29:47.062"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EmailInput}</arg>
+<arg>burdy8910@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 19:29:47.063" level="INFO">Typing text 'burdy8910@gmail.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210511 19:29:47.062" endtime="20210511 19:29:47.224"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PasswordInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210511 19:29:47.225" endtime="20210511 19:29:47.247"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PasswordInput}</arg>
+<arg>aaa123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210511 19:29:47.247" level="INFO">Typing text 'aaa123' into text field '//*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20210511 19:29:47.247" endtime="20210511 19:29:47.348"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:29:47.349" level="INFO">Clicking element '//body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[2]/button[1]'.</msg>
+<status status="PASS" starttime="20210511 19:29:47.349" endtime="20210511 19:29:47.402"/>
+</kw>
+<status status="PASS" starttime="20210511 19:29:47.018" endtime="20210511 19:29:47.403"/>
+</test>
+<test id="s1-t4" name="TC_001_001_003-Hover over header items">
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210511 19:29:57.414" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210511 19:29:47.405" endtime="20210511 19:29:57.414"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Market}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210511 19:29:57.416" level="INFO">Clicking element '//body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[3]/span[1]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20210511 19:29:57.415" endtime="20210511 19:29:57.962"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/BeforeHoverStart.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210511 19:29:58.460" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/BeforeHoverStart.png"&gt;&lt;img src="Screenshots/BeforeHoverStart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210511 19:29:57.966" endtime="20210511 19:29:58.461"/>
+</kw>
+<for flavor="IN">
+<var>${Item}</var>
+<value>@{HeaderItems}</value>
+<iter>
+<var name="${Item}">//*[@id="mount_0_0_Od"]/div/div[1]/div/div[2]/div[3]/div/div[1]/div[1]/ul/li[1]/span/div/a</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20210511 19:30:03.671" level="FAIL">Element '//*[@id="mount_0_0_Od"]/div/div[1]/div/div[2]/div[3]/div/div[1]/div[1]/ul/li[1]/span/div/a' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20210511 19:29:58.498" endtime="20210511 19:30:03.671"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20210511 19:30:03.671" endtime="20210511 19:30:03.671"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Screenshots/Hover${Item}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20210511 19:30:03.672" endtime="20210511 19:30:03.672"/>
+</kw>
+<status status="FAIL" starttime="20210511 19:29:58.498" endtime="20210511 19:30:03.672"/>
+</iter>
+<status status="FAIL" starttime="20210511 19:29:58.497" endtime="20210511 19:30:03.672"/>
+</for>
+<status status="FAIL" starttime="20210511 19:29:47.404" endtime="20210511 19:30:03.673">Element '//*[@id="mount_0_0_Od"]/div/div[1]/div/div[2]/div[3]/div/div[1]/div[1]/ul/li[1]/span/div/a' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t5" name="Post-conditions">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210511 19:30:03.677" endtime="20210511 19:30:06.240"/>
+</kw>
+<status status="PASS" starttime="20210511 19:30:03.676" endtime="20210511 19:30:06.241"/>
+</test>
+<status status="FAIL" starttime="20210511 19:29:43.257" endtime="20210511 19:30:06.245"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

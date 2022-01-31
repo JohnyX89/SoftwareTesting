@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e2846e5e-6434-41de-8665-adcf70aa43d1"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="FB_check_navbar"
+	namespace="Bakalarka.React.Facebook">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="27bb3582-e57a-4785-bfa2-c3a21a36c071">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a0192ac4-7edb-470f-a290-ea4b07a7a5d4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']//*[@id='mount_0_0_Yw']/div/div[1]/div/div[2]/div[3]/div/div[1]/div[1]/ul/li[1]/span/div/a
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="3001a244-25c0-4fe8-b388-72088e53c65e">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="27bb3582-e57a-4785-bfa2-c3a21a36c071">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a53dc810-2465-43ad-9b27-b67ddb919ad6"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'Facebook &#8211; p&#345;ihlaste se, nebo']//*[@id='mount_0_0_Yw']/div/div[1]/div/div[2]/div[4]/div[1]/span/div/div[1]/img
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="3001a244-25c0-4fe8-b388-72088e53c65e">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="2ba74124-a7ab-4324-a1f4-0cacb5134cfc"
+	name="BakalarkaRepository"
+	relativepath="..\..\BakalarkaRepository.rxrep">
+		<codegen
+		classname="BakalarkaRepository"
+		namespace="Bakalarka">
+		</codegen>
+		<rootfolder
+		id="99729ac5-3fa7-4107-9f39-36c2c6d2ddf0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		FB_check_navbar.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

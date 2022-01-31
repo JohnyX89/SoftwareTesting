@@ -1,0 +1,32 @@
+[
+  {
+    "Enabled": "True",
+    "TestSuite": "React_myapp",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Vue_gitlab",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Angular_Gmail",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Vue_Laracasts",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Angular_Prezman",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "React_Facebook",
+    "RunConfig": "TestRun"
+  }
+]
